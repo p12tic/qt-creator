@@ -7,12 +7,11 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/src/libs/utils/consoleprocess_unix.cpp
 +++ b/src/libs/utils/consoleprocess_unix.cpp
-@@ -284,7 +284,7 @@ QString ConsoleProcess::defaultTerminalE
- #ifdef Q_OS_MAC
-     return QLatin1String("/usr/X11/bin/xterm");
- #else
--    return QLatin1String("xterm");
-+    return QLatin1String("x-terminal-emulator");
- #endif
- }
+@@ -283,6 +283,7 @@ struct Terminal {
  
+ static const Terminal knownTerminals[] =
+ {
++    {"x-terminal-emulator", "-e"},
+     {"xterm", "-e"},
+     {"aterm", "-e"},
+     {"Eterm", "-e"},
