@@ -1,0 +1,102 @@
+commit acd49da4925103dc83bd2d8053d915d81cf26492
+Author: Aurélien Gâteau <aurelien.gateau@canonical.com>
+Date:   Thu Jan 26 14:18:59 2012 +0100
+
+    Fix revno detection in bzr log
+    
+    Avoid false-positives when looking for changes under cursor in log view.
+    
+    Change-Id: Ic0f9c105747ee2c1792b372f9cb3757017633861
+    Reviewed-by: Hugues Delorme <delorme.hugues@fougsys.fr>
+
+---
+ src/plugins/bazaar/annotationhighlighter.cpp |    2 +-
+ src/plugins/bazaar/bazaareditor.cpp          |   27 +++++++++++++++++++++++----
+ src/plugins/bazaar/bazaareditor.h            |    1 +
+ src/plugins/bazaar/constants.h               |    9 +++++++--
+ 4 files changed, 32 insertions(+), 7 deletions(-)
+
+--- a/src/plugins/bazaar/annotationhighlighter.cpp
++++ b/src/plugins/bazaar/annotationhighlighter.cpp
+@@ -40,7 +40,7 @@ BazaarAnnotationHighlighter::BazaarAnnot
+                                                          const QColor &bg,
+                                                          QTextDocument *document)
+     : VcsBase::BaseAnnotationHighlighter(changeNumbers, bg, document),
+-      m_changeset(QLatin1String(Constants::CHANGESET_ID))
++      m_changeset(QLatin1String(Constants::ANNOTATE_CHANGESET_ID))
+ {
+ }
+ 
+--- a/src/plugins/bazaar/bazaareditor.cpp
++++ b/src/plugins/bazaar/bazaareditor.cpp
+@@ -55,6 +55,7 @@ using namespace Bazaar;
+ 
+ BazaarEditor::BazaarEditor(const VcsBase::VcsBaseEditorParameters *type, QWidget *parent)
+     : VcsBase::VcsBaseEditorWidget(type, parent),
++      m_changesetId(QLatin1String(Constants::CHANGESET_ID)),
+       m_exactChangesetId(QLatin1String(Constants::CHANGESET_ID_EXACT)),
+       m_diffFileId(QLatin1String("^=== [a-z]+ [a-z]+ '(.*)'\\s*"))
+ {
+@@ -86,12 +87,30 @@ QSet<QString> BazaarEditor::annotationCh
+ 
+ QString BazaarEditor::changeUnderCursor(const QTextCursor &cursorIn) const
+ {
++    // The test is done in two steps: first we check if the line contains a
++    // changesetId. Then we check if the cursor is over the changesetId itself
++    // and not over "revno" or another part of the line.
++    // The two steps are necessary because matching only for the changesetId
++    // leads to many false-positives (a regex like "[0-9]+" matches a lot of text).
++    const int cursorCol = cursorIn.columnNumber();
+     QTextCursor cursor = cursorIn;
+-    cursor.select(QTextCursor::WordUnderCursor);
++    cursor.select(QTextCursor::LineUnderCursor);
+     if (cursor.hasSelection()) {
+-        const QString change = cursor.selectedText();
+-        if (m_exactChangesetId.exactMatch(change))
+-            return change;
++        const QString line = cursor.selectedText();
++        const int start = m_changesetId.indexIn(line);
++        if (start > -1) {
++            const QString match = m_changesetId.cap(0);
++            const int stop = start + match.length();
++            if (start <= cursorCol && cursorCol <= stop) {
++                cursor = cursorIn;
++                cursor.select(QTextCursor::WordUnderCursor);
++                if (cursor.hasSelection()) {
++                    const QString change = cursor.selectedText();
++                    if (m_exactChangesetId.exactMatch(change))
++                        return change;
++                }
++            }
++        }
+     }
+     return QString();
+ }
+--- a/src/plugins/bazaar/bazaareditor.h
++++ b/src/plugins/bazaar/bazaareditor.h
+@@ -54,6 +54,7 @@ private:
+     virtual VcsBase::BaseAnnotationHighlighter *createAnnotationHighlighter(const QSet<QString> &changes, const QColor &bg) const;
+     virtual QString fileNameFromDiffSpecification(const QTextBlock &diffFileSpec) const;
+ 
++    const QRegExp m_changesetId;
+     const QRegExp m_exactChangesetId;
+     const QRegExp m_diffFileId;
+ };
+--- a/src/plugins/bazaar/constants.h
++++ b/src/plugins/bazaar/constants.h
+@@ -41,8 +41,13 @@ const char BAZAARREPO[] = ".bzr";
+ const char BAZAARDEFAULT[] = "bzr";
+ 
+ // Changeset identifiers
+-const char CHANGESET_ID[] = "([0-9]+)"; // match and capture
+-const char CHANGESET_ID_EXACT[] = "[0-9]+"; // match
++const char CHANGESET_ID[] = "^("
++                            "revno: [.0-9]+" // detailed
++                            "| +[.0-9]+"     // short
++                            "|[.0-9]+: "     // line
++                            ")";
++const char CHANGESET_ID_EXACT[] = "([.0-9]+)";
++const char ANNOTATE_CHANGESET_ID[] = "([.0-9]+)";
+ 
+ // Base editor parameters
+ const char COMMANDLOG_ID[] = "Bazaar Command Log Editor";

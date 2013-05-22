@@ -1,0 +1,67 @@
+Source: qtcreator
+Section: devel
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Adam Majer <adamm@zombino.com>,
+           Fathi Boudra <fabo@debian.org>,
+           Jeremy Lainé <jeremy.laine@m4x.org>
+Build-Depends: debhelper (>= 9),
+               libicu-dev,
+               libqt4-dev (>= 4:4.8.1),
+               libqt4-private-dev (>= 4:4.8.1),
+               libqtwebkit-dev (>= 2.1.0~2011week13-2),
+               qt4-dev-tools (>= 4:4.8.1)
+Standards-Version: 3.9.3
+Homepage: http://qt.nokia.com/products/developer-tools/
+Vcs-Browser: http://git.debian.org/?p=collab-maint/qt-creator.git
+Vcs-Git: git://git.debian.org/collab-maint/qt-creator.git
+
+Package: qtcreator
+Architecture: any
+Depends: libqt4-help, libqt4-sql-sqlite, ${misc:Depends}, ${shlibs:Depends}
+Recommends: gdb,
+            make,
+            qt4-demos,
+            qt4-dev-tools,
+            qt4-doc,
+            qt4-qmlviewer,
+            qtcreator-doc,
+            xterm | x-terminal-emulator
+Suggests: cmake, g++, git, kdelibs5-data, subversion
+Description: lightweight integrated development environment (IDE) for Qt
+ Qt Creator is a new, lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ It includes:
+  * An advanced C++ code editor
+  * Integrated GUI layout and forms designer
+  * Project and build management tools
+  * Integrated, context-sensitive help system
+  * Visual debugger
+  * Rapid code navigation tools
+  * Supports multiple platforms
+
+Package: qtcreator-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: qtcreator (= ${binary:Version}), ${misc:Depends}
+Description: debugging symbols for Qt Creator IDE
+ Qt Creator is a new, lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ This package contains the debugging symbols for Qt Creator IDE.
+
+Package: qtcreator-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Suggests: qt4-dev-tools, qt4-doc
+Description: documentation for Qt Creator IDE
+ Qt Creator is a new, lightweight, cross-platform integrated development
+ environment (IDE) designed to make development with the Qt application
+ framework even faster and easier.
+ .
+ This package contains the documentation for Qt Creator IDE.

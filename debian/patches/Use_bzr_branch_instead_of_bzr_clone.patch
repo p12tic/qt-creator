@@ -1,0 +1,45 @@
+commit 4790641934fea76a8930c4157ceb54a6536cdd57
+Author: Aurélien Gâteau <aurelien.gateau@canonical.com>
+Date:   Wed Feb 1 11:24:54 2012 +0100
+
+    Use "bzr branch" instead of "bzr clone"
+    
+    "bzr clone" is deprecated. "bzr branch" does the same thing.
+    
+    Change-Id: Iafed249ff213fbd2734a900cb410fa7f23f3e84f
+    Reviewed-by: Hugues Delorme <delorme.hugues@fougsys.fr>
+
+---
+ src/plugins/bazaar/bazaarclient.cpp |   10 ++++++++++
+ src/plugins/bazaar/bazaarclient.h   |    1 +
+ 2 files changed, 11 insertions(+)
+
+--- a/src/plugins/bazaar/bazaarclient.cpp
++++ b/src/plugins/bazaar/bazaarclient.cpp
+@@ -140,6 +140,16 @@ QString BazaarClient::vcsEditorKind(VcsC
+     }
+ }
+ 
++QString BazaarClient::vcsCommandString(VcsCommand cmd) const
++{
++    switch (cmd) {
++    case CloneCommand:
++        return QLatin1String("branch");
++    default:
++        return VcsBaseClient::vcsCommandString(cmd);
++    }
++}
++
+ QStringList BazaarClient::revisionSpec(const QString &revision) const
+ {
+     QStringList args;
+--- a/src/plugins/bazaar/bazaarclient.h
++++ b/src/plugins/bazaar/bazaarclient.h
+@@ -64,6 +64,7 @@ public:
+ 
+ protected:
+     QString vcsEditorKind(VcsCommand cmd) const;
++    QString vcsCommandString(VcsCommand cmd) const;
+     QStringList revisionSpec(const QString &revision) const;
+     VcsBase::VcsBaseEditorParameterWidget *createDiffEditor(const QString &workingDir,
+                                                             const QStringList &files,

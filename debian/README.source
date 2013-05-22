@@ -1,0 +1,94 @@
+NOTE: This overview is based on XStrikeForce git-usage Wiki page that
+may be found at http://wiki.debian.org/XStrikeForce/git-usage .
+
+
+## New upstream version (new upstream branch)
+
+Upstream development of Qt Creator seems to follow a principle of
+branching the development source and stabilizing it via cherry-pick.
+This introduces some problems as consecutive releases may not follow
+each other in history. The solution is to "trick" git by merging
+history but not merging actual code.
+
+
+In the following example we assume to latest debian version is on the
+debian-1.2 branch based on latest upstream tag v1.2.1
+
+First, we make sure to be on the correct branch, and sync upstream and
+debian Git repositories,
+
+  * git checkout debian-1.2
+  * git fetch upstream
+  * git pull
+
+Upstream has created a new branch they called upstream/1.3.0 and
+they have tagged v1.3.0 on it. So, first we need a new debian branch
+for the release by checking out the upstream 1.3.0 as a new branch
+
+  * git checkout -b debian-1.3 v1.3.0
+
+Now, we only want to merge Debian changes and *ignore* upstream
+changes in the 1.2.x branch as they are superseded by 1.3.x changes
+anyway. Thus we 'fake' merge the latest upstream release into our
+history. This effectively tells Git that all the upstream changes were
+included in current branch, without actually merging the code.
+
+  * git merge -s ours v1.2.1
+
+Following the fake merge, we need to merge out work into the current
+branch,
+
+  * git merge debian-1.2
+
+This merge actually merges code changes so it is likely there will be
+a few conflicts to resolve. After the conflicts are resolved, commit
+the merge,
+
+  * git commit
+
+
+
+
+
+## New upstream patch version (same upstream branch, some patches)
+
+Here we assume that upstream continues to work on same branch as their
+last tagged release. In this example, the assumption is that v1.3.1
+follows v.1.3.0 in history. This allows us to easily merge 
+
+  * git checkout debian-1.3
+  * git merge v1.3.1
+
+Fixing any conflicts here, and committing,
+
+  * git commit
+
+
+NOTE: If the merge results in large amounts of conflicts, it is likely
+that upstream version 1.3.1 is not based directly on 1.3.0
+(ie. different branch)
+
+
+
+
+## Verifying merges
+
+The simplest way to verify a merge is to look at a diff from current
+HEAD of the debian branch to the latest upstream tag. For example,
+
+  git diff v1.3.0
+
+If the diff contains a lot of non-Debian specific changes, then it is
+likely something went wrong in the large attempted merge. To undo
+changes, use
+
+  git reset --hard HEAD^
+
+to undo last commit and try again. If changes were not yet committed,
+a simple
+
+ git reset --hard
+
+will reset the working directory back to last commit.
+
+(look in `git reset --help` for usage examples)

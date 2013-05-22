@@ -1,0 +1,7 @@
+# Installed through qtcreator.install in usr/lib/qtcreator
+./usr/share/qtcreator/gdbmacros/Makefile
+./usr/share/qtcreator/gdbmacros/gdbmacros.o
+./usr/share/qtcreator/gdbmacros/libgdbmacros.so
+./usr/share/qtcreator/gdbmacros/libgdbmacros.so.1
+./usr/share/qtcreator/gdbmacros/libgdbmacros.so.1.0
+./usr/share/qtcreator/gdbmacros/libgdbmacros.so.1.0.0

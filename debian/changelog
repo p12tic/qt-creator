@@ -1,0 +1,287 @@
+qtcreator (2.5.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Build tm_posix.cpp on kFreeBSD and Hurd to fix a crash because of an
+    undefined symbol. (Closes: #683933)
+    - Add posix_rt_nonlinux.diff
+
+ -- Felix Geyer <fgeyer@debian.org>  Tue, 07 Aug 2012 11:33:13 +0200
+
+qtcreator (2.5.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Pino Toscano ]
+  * Fix the installation of the upstream changelogs: use dh_installdocs
+    for them, and install them only in qtcreator.
+  * Build the documentation only when qtcreator-doc is being built too.
+  * Remove unuseful ${shlibs:Depends} from qtcreator-dbg.
+  * Enable RPATH also on kFreeBSD and Hurd; patch rpath_nonlinux.diff.
+    (Closes: #672527)
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 10 May 2012 21:57:24 +0300
+
+qtcreator (2.5.0~rc-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add patches, cheery-picked upstream:
+    - Use_bzr_branch_instead_of_bzr_clone.patch
+    - Fix_revno_detection_in_bzr_log.patch
+  * Update debian/control:
+    - bump debhelper build dependency to 9.
+    - bump build dependencies to Qt >= 4.8.1.
+    - bump Standards-Version to 3.9.3 (no changes needed).
+  * Update installed files and adjust paths for multiarch.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 02 May 2012 09:47:02 +0300
+
+qtcreator (2.4.0-1) experimental; urgency=low
+
+  * New upstream release (Closes: #653634):
+    - FTBFS: error: no matching function for call to 'qMin(double&, qreal)'.
+      (Closes: #638813)
+  * Drop patches:
+    - install_application_icons_according_to_freedesktop_spec.diff
+      merged upstream.
+    - 01_fix_installation_paths.diff
+      use INSTALL_ROOT=$(CURDIR)/debian/tmp/usr to avoid to refresh this patch
+      continously.
+    - 04_append_Debian_search_path_for_pre-built_gdbmacros.diff
+      we don't ship pre-built gdbmacros anymore.
+  * Update debian/compat: bump to 9 for multiarch support.
+  * Update debian/control:
+    - bump build dependencies to Qt >= 4.8.0, version with multiarch support.
+    - fix Homepage. (Closes: 627890)
+    - add qt4-qmlviewer to Recommends.
+    - add g++ to Suggests. (Closes: #649212)
+    - suggests git instead of git-core (transitional package).
+  * Update debian/rules:
+    - remove QMAKE export using qmake_qt4 buildsystem (requires
+      debhelper >= 8.9.1)
+    - remove pre-built gdbmacros to simplify multiarch support.
+    - install the documentation, not handled by make install.
+    - do not remove bin/qtcreator.sh in override_dh_auto_clean target.
+    - drop override_dh_{makeshlibs,shlibdeps}, Qt Creator provides private
+      libraries only.
+  * Add missing binaries: usr/lib/qmldesigner/*.so and usr/bin/qmlpuppet.*
+    (Closes: #618339, #633915)
+  * Enable multiarch support and update debian/*.install files accordingly.
+  * Fix debian/watch file: download the tarball instead of zip archive.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 29 Dec 2011 22:11:49 +0200
+
+qtcreator (2.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add Qt Creator debug package.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 23 Jun 2011 12:26:27 +0300
+
+qtcreator (2.2.0-2) unstable; urgency=low
+
+  * Add QML Designer plugin:
+    - build depends on libqt4-private-dev.
+    - update debian/qtcreator.install file.
+  * Add kdelibs5-data to Suggests. Qt Creator can use kate syntax highlighting
+    definitions.
+  * Add debian/qtcreator.install.linux: ptracepreload plugin is available on
+    linux only.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 22 Jun 2011 09:19:32 +0300
+
+qtcreator (2.2.0-1) unstable; urgency=low
+
+  * New upstream release (Closes: #627889):
+    - fix ftbfs on kfreebsd. (Closes: #600652)
+  * Add install_application_icons_according_to_freedesktop_spec.diff patch.
+  * Update debian/rules:
+    - build depends on libqtwebkit-dev >= 2.1.0~2011week13-2. This version
+      contains a fix to define QT_WEBKIT and display correctly documentation
+      in Qt Creator Help plugin.
+    - bump Standards-Version to 3.9.2 (no changes needed).
+  * Update debian/qtcreator.desktop: set InitialPreference=9.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 17 Jun 2011 20:47:08 +0300
+
+qtcreator (2.2.0~beta-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update 01_fix_installation_paths.diff to apply on 2.2.0~beta and fix
+    qtpromaker path.
+  * Update debian/qtcreator.install file.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 31 Mar 2011 11:39:45 +0300
+
+qtcreator (2.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update debian/control: add libqtwebkit-dev build dependency.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 16 Feb 2011 08:49:10 +0200
+
+qtcreator (2.1.0~rc1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update debian/control:
+    - bump libqt4-dev build dependency to 4:4.7.1.
+  * Remove QTCREATOR_WITH_QML=1 environment variable - enabled by default.
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 11 Dec 2010 15:17:02 +0200
+
+qtcreator (2.1.0~beta1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update debian/rules:
+    - remove QTCREATOR_WITH_QML export, enabled by default.
+    - remove plugins exclusion from dh_shlibdeps. (Closes: #597647)
+  * Update qtcreator.install file.
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 09 Oct 2010 19:55:37 +0300
+
+qtcreator (2.0.1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update 01_fix_installation_paths.diff patch.
+  * Update qtcreator.install file.
+  * Update debian/control:
+    - bump libqt4-dev build dependency to 4:4.7.0~rc1.
+    - bump Standards-Version to 3.9.1 (no changes needed).
+  * Enable Qml support with QTCREATOR_WITH_QML environment variable.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 25 Aug 2010 14:26:11 +0300
+
+qtcreator (2.0.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * Switch Debian changes to patches. It makes derivatives distributions happy.
+  * Update debian/control:
+    - drop cdbs build dependency.
+    - bump libqt4-dev build dependency to 4:4.7.0~beta2.
+    - bump Standards-Version to 3.9.0 (no changes needed).
+    - cleanup long description. (Closes: #528567)
+  * Update debian/rules: convert to dh usage.
+  * Update debian/qtcreator.install file.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 08 Jul 2010 17:39:46 +0300
+
+qtcreator (1.3.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Bump debhelper build dependency to 7.4.15.
+  * Bump Standards-Version to 3.8.4 (no changes needed).
+  * Update copyright years.
+  * Remove lintian overrides - unused.
+  * Cleanup debian/rules: remove lintian warnings fix - fixed upstream.
+  * Add debian/watch file.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 18 May 2010 16:28:06 +0300
+
+qtcreator (1.3.1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add epoch to build-depends. (closes: #565786)
+
+ -- Adam Majer <adamm@zombino.com>  Tue, 19 Jan 2010 14:31:57 -0600
+
+qtcreator (1.3.0-1) experimental; urgency=low
+
+  * New upstream release:
+    + added CVS and QML plugins.
+    + some translations were added for international users.
+    + plugin API/ABI modified.
+  * README.source added as an explanation how to merge new upstream
+    releases.
+  * Bump build depends to Qt 4.6.
+  * Bump Standards-Version to 3.8.3. No changes required.
+  * Install the latest upstream changelog only.
+
+ -- Adam Majer <adamm@zombino.com>  Sat, 26 Dec 2009 23:17:34 -0600
+
+qtcreator (1.2.1-3) unstable; urgency=low
+
+  [ Fathi Boudra ]
+  * Add missing dependency on libqt4-help.
+    Thanks to André Wöbbeking for the notice.
+
+  [ Adam Majer ]
+  * Add missing dependency on libqt4-sql-sqlite without which help file is
+    not accessible. This was noticed missing in Ubuntu bug #388129.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 28 Aug 2009 10:36:51 +0200
+
+qtcreator (1.2.1-2) unstable; urgency=low
+
+  * Use the pre-built gdbmacros for Debian's Qt installation only.
+    Qt Creator will no longer errenously try to use the pre-built
+    gdbmacros for all Qt installations.
+
+ -- Adam Majer <adamm@zombino.com>  Thu, 30 Jul 2009 09:18:51 -0500
+
+qtcreator (1.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Fathi Boudra ]
+  * Re-add installation of gdbmacros. Debian is shipped with a known Qt version
+    and we should provide a ready to use debugger helper for this version.
+  * Install libDebuggingHelper.
+
+  [ Adam Majer ]
+  * Move the gdbmacros helper under /usr/lib/qtcreator.
+  * Build gdbmacros from the correct .pro file.
+  * Install upstream changelogs.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 15 Jul 2009 12:37:19 +0200
+
+qtcreator (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+    + Includes git patches to 1.2.x tree until 2009-07-07.
+
+  [ Fathi Boudra ]
+  * Bump Standard-Version to 3.8.2. No changes needed.
+  * Update debian/rules:
+    - Remove translations build. Infrastructure for translations added
+      upstream.
+    - Improve clean target by removing extra directories.
+    - Remove dh_desktop call. Deprecated.
+    - Add qt4-demos to Recommends. The combobox in the welcome page relies on
+      qt4-docs and qt4-demos being installed.
+  * Update debian/qtcreator.install.
+  * Fix wrapper target path moved to bin/bin.pro.
+  * Fix static and translations target installation.
+
+  [ Adam Majer ]
+  * Removed some lintian errors from overrides. They should not be ignored.
+  * Remove installation of gdbmacros. This needs to be compiled per
+    version of Qt. Qt Creator automates this process and will compile
+    and install the debugging helper in the user's local directory.
+    The compilation routine is in the Tools -> Options -> Qt 4 -> Version
+    window.
+  * Install the LGPL_EXCEPTION.TXT in addition to mentioning it in copyright
+    as gdbmacros source code that is copied to user's local directory
+    requires a license.
+
+ -- Adam Majer <adamm@zombino.com>  Sun, 12 Jul 2009 18:52:19 -0500
+
+qtcreator (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Bump Standard-Version to 3.8.1. No changes needed.
+  * Update debian/rules:
+    - adjust clean target to not remove qtcreator wrapper script.
+  * Update debian/qtcreator.install.
+  * Fix qtcreator wrapper/target installation.
+  * Update debian/rules to move and rename the debugging helper library.
+  * Update debian/qtcreator.desktop:
+    - fix missing icon.
+    - remove duplicate mimetype entry.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 24 Apr 2009 00:01:08 +0200
+
+qtcreator (1.0.0-1) experimental; urgency=low
+
+  * Initial release (Closes: #509213).
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 06 Mar 2009 13:14:21 +0100
