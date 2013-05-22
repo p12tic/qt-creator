@@ -17,7 +17,8 @@ upstream_changes := $(wildcard dist/changes-*)
 	dh $@ --parallel --list-missing --dbg-package=qtcreator-dbg --builddirectory=builddir
 
 override_dh_auto_configure:
-	dh_auto_configure -- IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) $(extra_configure_opts)
+	mkdir -p builddir
+	dh_auto_configure -- $(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 USE_SYSTEM_BOTAN=1 $(extra_configure_opts)
 
 override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
