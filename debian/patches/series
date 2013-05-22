@@ -1,7 +1,5 @@
 02_use_x-terminal-emulator.diff
 03_fix_DOCPATH.diff
-Use_bzr_branch_instead_of_bzr_clone.patch
-Fix_revno_detection_in_bzr_log.patch
 rpath_nonlinux.diff
 posix_rt_nonlinux.diff
 

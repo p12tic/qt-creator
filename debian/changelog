@@ -15,6 +15,8 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
         the bundled one.
         - Add botan_system_lib.diff slightly adapted from openSUSE.
         - Build-depend on libbotan1.10-dev and pkg-config.
+      - Drop Use_bzr_branch_instead_of_bzr_clone.patch and
+        Fix_revno_detection_in_bzr_log.patch: merged upstream.
   * Remove posix_rt_nonlinux.diff. It applies against 3rd party botan, but we
     are now using the system botan.
   * Start using Qt5 to compile. Adapt B-Ds:
