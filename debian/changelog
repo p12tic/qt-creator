@@ -18,6 +18,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Remove posix_rt_nonlinux.diff. It applies against 3rd party botan, but we
     are now using the system botan.
   * Start using Qt5 to compile.
+  * Export CFLAGS, CXXFLAGS, LDFLAGS for hardening and QT_SELECT to choose qt5.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 
