@@ -9,8 +9,9 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
     Felix Geyer:
       - Compress binary packages with xz.
       - Build qtcreator out-of-source.
-      - Add botan_system_lib.diff slightly adapted from openSUSE to use
-        system's botan.
+      - Link Qt Creator against the system botan library instead of using
+        the bundled one.
+        - Add botan_system_lib.diff slightly adapted from openSUSE.
         - Build-depend on libbotan1.10-dev and pkg-config.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
