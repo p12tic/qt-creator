@@ -1,2 +1,2 @@
 version=3
-http://get.qt.nokia.com/qtcreator/qt-creator-([^-]*)-src\.tar\.gz
+http://releases.qt-project.org/qtcreator/([\d\.]*)/qt-creator-([^-]*)-src\.tar\.gz
