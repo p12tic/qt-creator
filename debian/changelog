@@ -5,6 +5,8 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Update Homepage, Vcs-Browser and Vcs-Git in debian/control.
   * Add changes done by Ubuntu:
     - Update debian/watch.
+    Felix Geyer:
+      - Compress binary packages with xz.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 

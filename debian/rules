@@ -34,3 +34,6 @@ override_dh_auto_clean:
 override_dh_installdocs:
 	dh_installdocs -pqtcreator $(upstream_changes)
 	dh_installdocs --remaining-packages
+
+override_dh_builddeb:
+	dh_builddeb -- -Zxz
