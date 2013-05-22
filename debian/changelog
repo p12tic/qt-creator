@@ -17,7 +17,8 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
         - Build-depend on libbotan1.10-dev and pkg-config.
   * Remove posix_rt_nonlinux.diff. It applies against 3rd party botan, but we
     are now using the system botan.
-  * Start using Qt5 to compile.
+  * Start using Qt5 to compile. Adapt B-Ds:
+    - Use qtdeclarative5-private-dev, as described in the README.
   * Export CFLAGS, CXXFLAGS, LDFLAGS for hardening and QT_SELECT to choose qt5.
   * Change Depends and Recommends of packages qtcreator and qtcreator-doc.
 
