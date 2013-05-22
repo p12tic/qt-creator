@@ -19,6 +19,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
     are now using the system botan.
   * Start using Qt5 to compile.
   * Export CFLAGS, CXXFLAGS, LDFLAGS for hardening and QT_SELECT to choose qt5.
+  * Change Depends and Recommends of package qtcreator.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 

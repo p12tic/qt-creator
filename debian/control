@@ -19,15 +19,14 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
 
 Package: qtcreator
 Architecture: any
-Depends: libqt4-help, libqt4-sql-sqlite, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt5help5, libqt5sql5-sqlite, ${misc:Depends}, ${shlibs:Depends}
 Recommends: gdb,
             make,
-            qt4-demos,
-            qt4-dev-tools,
-            qt4-doc,
-            qt4-qmlviewer,
+            qttools5-dev-tools,
             qtcreator-doc,
+            qmlscene
             xterm | x-terminal-emulator
+# Missing stuff due to Qt4 to Qt5 transition: qt5 demos, doc.
 Suggests: cmake, g++, git, kdelibs5-data, subversion
 Description: lightweight integrated development environment (IDE) for Qt
  Qt Creator is a new, lightweight, cross-platform integrated development
