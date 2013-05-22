@@ -5,7 +5,8 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Add myself to Uploaders.
   * Update Homepage, Vcs-Browser and Vcs-Git in debian/control.
   * Add changes done by Ubuntu:
-    - Update debian/watch.
+    Timo Jyrinki:
+      - Update debian/watch.
     Felix Geyer:
       - Compress binary packages with xz.
       - Build qtcreator out-of-source.
