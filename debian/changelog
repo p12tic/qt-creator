@@ -14,7 +14,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
         - Add botan_system_lib.diff slightly adapted from openSUSE.
         - Build-depend on libbotan1.10-dev and pkg-config.
   * Remove posix_rt_nonlinux.diff. It applies against 3rd party botan, but we
-    are now using the system botan. 
+    are now using the system botan.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 
