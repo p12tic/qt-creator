@@ -1,7 +1,6 @@
 02_use_x-terminal-emulator.diff
 03_fix_DOCPATH.diff
 rpath_nonlinux.diff
-posix_rt_nonlinux.diff
 
 # Debian patches.
 botan_system_lib.diff

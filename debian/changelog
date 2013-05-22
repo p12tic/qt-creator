@@ -25,6 +25,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Change Depends and Recommends of packages qtcreator and qtcreator-doc.
   * Update 02_use_x-terminal-emulator.diff. The changes seems to come from
     Ubuntu, but I don't know who did it.
+  * Remove unused patch posix_rt_nonlinux.diff.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 
