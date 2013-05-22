@@ -7,7 +7,7 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Jeremy Lainé <jeremy.laine@m4x.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Build-Depends: debhelper (>= 9),
-               qtbase5-dev (>= 5.0.2~)
+               qtbase5-dev (>= 5.0.2~),
                libicu-dev,
                libqtwebkit-dev (>= 2.1.0~2011week13-2),
                libbotan1.10-dev,
