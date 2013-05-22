@@ -1,6 +1,7 @@
 qtcreator (2.7.0-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
   * Add myself to Uploaders.
   * Update Homepage, Vcs-Browser and Vcs-Git in debian/control.
   * Add changes done by Ubuntu:
