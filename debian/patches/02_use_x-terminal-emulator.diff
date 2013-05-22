@@ -7,7 +7,7 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/src/libs/utils/consoleprocess_unix.cpp
 +++ b/src/libs/utils/consoleprocess_unix.cpp
-@@ -283,6 +283,7 @@ struct Terminal {
+@@ -337,6 +337,7 @@ struct Terminal {
  
  static const Terminal knownTerminals[] =
  {
