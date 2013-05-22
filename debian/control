@@ -9,8 +9,8 @@ Uploaders: Adam Majer <adamm@zombino.com>,
 Build-Depends: debhelper (>= 9),
                qtbase5-dev (>= 5.0.2~),
                qtdeclarative5-private-dev,
+               libqt5webkit5-dev,
                libicu-dev,
-               libqtwebkit-dev (>= 2.1.0~2011week13-2),
                libbotan1.10-dev,
                pkg-config
 Standards-Version: 3.9.3
