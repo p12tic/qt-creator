@@ -4,3 +4,6 @@ Use_bzr_branch_instead_of_bzr_clone.patch
 Fix_revno_detection_in_bzr_log.patch
 rpath_nonlinux.diff
 posix_rt_nonlinux.diff
+
+# Debian patches.
+botan_system_lib.diff

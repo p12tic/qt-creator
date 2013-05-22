@@ -11,7 +11,9 @@ Build-Depends: debhelper (>= 9),
                libqt4-dev (>= 4:4.8.1),
                libqt4-private-dev (>= 4:4.8.1),
                libqtwebkit-dev (>= 2.1.0~2011week13-2),
-               qt4-dev-tools (>= 4:4.8.1)
+               qt4-dev-tools (>= 4:4.8.1),
+               libbotan1.10-dev,
+               pkg-config
 Standards-Version: 3.9.3
 Homepage: http://qt.digia.com/Product/Developer-Tools/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
