@@ -13,9 +13,9 @@ Build-Depends: debhelper (>= 9),
                libqtwebkit-dev (>= 2.1.0~2011week13-2),
                qt4-dev-tools (>= 4:4.8.1)
 Standards-Version: 3.9.3
-Homepage: http://qt.nokia.com/products/developer-tools/
-Vcs-Browser: http://git.debian.org/?p=collab-maint/qt-creator.git
-Vcs-Git: git://git.debian.org/collab-maint/qt-creator.git
+Homepage: http://qt.digia.com/Product/Developer-Tools/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
 
 Package: qtcreator
 Architecture: any
