@@ -9,7 +9,7 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 upstream_changes := $(wildcard dist/changes-*)
 
 %:
-	dh $@ --parallel --list-missing --dbg-package=qtcreator-dbg --buildsystem=qmake_qt4
+	dh $@ --parallel --list-missing --dbg-package=qtcreator-dbg --buildsystem=qmake_qt4 --builddirectory=builddir
 
 override_dh_auto_configure:
 	dh_auto_configure -- IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) $(extra_configure_opts)
