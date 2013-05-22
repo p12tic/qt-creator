@@ -12,11 +12,169 @@ It was downloaded from:
 
 Upstream Authors:
 
-    Nokia Corporation and/or its subsidiary(-ies)
+    Digia Plc and/or its subsidiary(-ies)
 
 Copyright:
 
-    © 2008-2010 Nokia Corporation and/or its subsidiary(-ies)
+    Digia Plc and/or its subsidiary(-ies)
+    Research In Motion
+    AudioCodes Ltd
+    Kläralvdalens Datakonsult ABa KDAB Group company
+    Openismus GmbH
+    Apple Computer Inc.
+    BogDan Vatra
+    Brian McGillion
+    Hugues Delorme
+    Konstantin Tokarev
+    Lukas Holecek
+    Vasiliy Sorokin
+    Dmitry Savchenko
+    The Botan Project
+    Scott James Remnant
+    Free Software Foundation
+    Joel Birch
+    David Gouch
+    Fawzi Mohamed
+    Sebastian Vuorinen
+    Stefan Lang
+    Robin Pedersen
+    Miquel Sabate
+    Anders Lund
+    Jan Villat
+    Dominik Haumann
+    Matthew Woehlke
+    Alex Turbov
+
+License:
+
+ Commercial License Usage
+ Licensees holding valid commercial Qt licenses may use this file in
+ accordance with the commercial license agreement provided with the
+ Software or, alternatively, in accordance with the terms contained in
+ a written agreement between you and Digia.  For licensing terms and
+ conditions see http://qt.digia.com/licensing.  For further information
+ use the contact form at http://qt.digia.com/contact-us.
+
+ GNU Lesser General Public License Usage
+ Alternatively, this file may be used under the terms of the GNU Lesser
+ General Public License version 2.1 as published by the Free Software
+ Foundation and appearing in the file LICENSE.LGPL included in the
+ packaging of this file.  Please review the following information to
+ ensure the GNU Lesser General Public License version 2.1 requirements
+ will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+
+ In addition, as a special exception, Digia gives you certain additional
+ rights.  These rights are described in the Digia Qt LGPL Exception
+ version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
+
+On Debian systems, the complete text of the GNU Lesser General
+Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+Digia Qt LGPL Exception version 1.1
+
+As an additional permission to the GNU Lesser General Public License version
+2.1, the object code form of a "work that uses the Library" may incorporate
+material from a header file that is part of the Library.  You may distribute
+such object code under terms of your choice, provided that:
+    (i)   the header files of the Library have not been modified; and
+    (ii)  the incorporated material is limited to numerical parameters, data
+          structure layouts, accessors, macros, inline functions and
+          templates; and
+    (iii) you comply with the terms of Section 6 of the GNU Lesser General
+          Public License version 2.1.
+
+Moreover, you may apply this exception to a modified version of the Library,
+provided that such modification does not involve copying material from the
+Library into the modified Library's header files unless such material is
+limited to (i) numerical parameters; (ii) data structure layouts;
+(iii) accessors; and (iv) small macros, templates and inline functions of
+five lines or less in length.
+
+Furthermore, you are not required to apply this additional permission to a
+modified version of the Library.
+
+
+Copyright for Botan, a C++ crypto library. Version 1.8.8
+
+  Copyright (C) 1999-2004 The Botan Project. All rights reserved.
+  Copyright (C) 1999-2009 Jack Lloyd
+  2001 Peter J Jones
+  2004-2007 Justin Karneges
+  2005 Matthew Gregan
+  2005-2006 Matt Johnston
+  2006 Luca Piccarreta
+  2007 Yves Jerschow
+  2007-2008 FlexSecure GmbH
+  2007-2008 Technische Universitat Darmstadt
+  2007-2008 Falko Strenzke
+  2007-2008 Martin Doering
+  2007 Manuel Hartl
+  2007 Christoph Ludwig
+  2007 Patrick Sona
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1. Redistributions of source code must retain the above copyright notice,
+  this list of conditions, and the following disclaimer.
+
+  2. Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions, and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+  THIS SOFTWARE IS PROVIDED BY THE AUTHOR(S) "AS IS" AND ANY EXPRESS OR IMPLIED
+  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, ARE DISCLAIMED. IN NO
+  EVENT SHALL THE AUTHOR(S) OR CONTRIBUTOR(S) BE LIABLE FOR ANY DIRECT,
+  INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+  The source code of Botan C++ crypto library can be found in
+  QtCreator/src/libs/3rdparty
+
+Copyright for ClassView and ImageViewer plugins
+
+  Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+
+  All rights reserved.
+  Copyright (c) 2013 Denis Mingulov.
+
+  Contact: http://www.qt-project.org/
+
+  This file is part of Qt Creator.
+
+  You may use this file under the terms of the BSD license as follows:
+
+  "Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.
+    * Neither the name of Digia Plc and its Subsidiary(-ies) nor
+      the names of its contributors may be used to endorse or promote
+      products derived from this software without specific prior written
+      permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
 
 Copyright for Open Source front-end for C++, enhanced for use in Qt Creator:
 
@@ -60,30 +218,87 @@ Copyright for Open Source front-end for C++, enhanced for use in Qt Creator:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
 
-License:
+The MIT License also applies to:
 
-    Commercial Usage
+    doc/templates/scripts/jquery.js
+    doc/templates/scripts/superfish.js
+    doc/titlecase/to-title-case.js
+    doc/titlecase/jquery.js
+    tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
+    
+The following files:
 
-    Licensees holding valid Qt Commercial licenses may use this file in
-    accordance with the Qt Commercial License Agreement provided with the
-    Software or, alternatively, in accordance with the terms contained in
-    a written agreement between you and Nokia.
+    src/libs/zeroconf/*
 
-    GNU Lesser General Public License Usage
+Are licensed under BSD-3-clause license:
 
-    Alternatively, this file may be used under the terms of the GNU Lesser
-    General Public License version 2.1 as published by the Free Software
-    Foundation and appearing in the file LICENSE.LGPL included in the
-    packaging of this file.  Please review the following information to
-    ensure the GNU Lesser General Public License version 2.1 requirements
-    will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
 
-    In addition, as a special exception, Nokia gives you certain additional
-    rights. These rights are described in the Nokia Qt LGPL Exception
-    version 1.0, included in the file LGPL_EXCEPTION.txt in this package.
+ 1.  Redistributions of source code must retain the above copyright notice,
+     this list of conditions and the following disclaimer.
+ 2.  Redistributions in binary form must reproduce the above copyright notice,
+     this list of conditions and the following disclaimer in the documentation
+     and/or other materials provided with the distribution.
+ 3.  Neither the name of Apple Computer, Inc. ("Apple") nor the names of its
+     contributors may be used to endorse or promote products derived from this
+     software without specific prior written permission.
 
-On Debian systems, the complete text of the GNU Lesser General
-Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
+ THIS SOFTWARE IS PROVIDED BY APPLE AND ITS CONTRIBUTORS "AS IS" AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL APPLE OR ITS CONTRIBUTORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Copyright for *.qdoc:
+  2013 Digia Plc and/or its subsidiary(-ies).
+
+  GNU Free Documentation License
+
+  Alternatively, this file may be used under the terms of the GNU Free
+  Documentation License version 1.3 as published by the Free Software
+  Foundation and appearing in the file included in the packaging of this
+  file.
+  .
+  On Debian systems, the complete text of the GFDL-1.3 license can be found in
+  `/usr/share/common-licenses/GFDL-1.3`,
+
+Copyright for doc/examples/*
+  Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+
+  You may use this file under the terms of the BSD license as follows:
+
+  "Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.
+    * Neither the name of Digia Plc and its Subsidiary(-ies) nor
+      the names of its contributors may be used to endorse or promote
+      products derived from this software without specific prior written
+      permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+
 
 The Debian packaging is:
 
@@ -91,17 +306,8 @@ The Debian packaging is:
     © 2009-2010, Fathi Boudra <fabo@debian.org>
     © 2009-2010, Jeremy Lainé <jeremy.laine@m4x.org>
     © 2009-2010, Jonathan Riddell <jriddell@ubuntu.com>
+    © 2013, Timo Jyrinki <timo.jyrinki@canonical.com>
 
 and is licensed under the GNU General Public License version 3,
 see `/usr/share/common-licenses/GPL-3'.
 
-Nokia Qt LGPL Exception version 1.0
-
-As a special exception to the GNU Lesser General Public License
-version 2.1, the object code form of a "work that uses the Library"
-may incorporate material from a header file that is part of the
-Library.  You may distribute such object code under terms of your
-choice, provided that the incorporated material (i) does not exceed
-more than 5% of the total size of the Library; and (ii) is limited to
-numerical parameters, data structure layouts, accessors, macros,
-inline functions and templates.

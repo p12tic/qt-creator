@@ -7,6 +7,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Add changes done by Ubuntu:
     Timo Jyrinki:
       - Update debian/watch.
+      - Update debian/copyright.
     Felix Geyer:
       - Compress binary packages with xz.
       - Build qtcreator out-of-source.
