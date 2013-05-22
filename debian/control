@@ -58,7 +58,8 @@ Package: qtcreator-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Suggests: qt4-dev-tools, qt4-doc
+Suggests: qtbase5-dev-tools
+# Missing because os Qt4 to Qt5 transition: qt5 doc.
 Description: documentation for Qt Creator IDE
  Qt Creator is a new, lightweight, cross-platform integrated development
  environment (IDE) designed to make development with the Qt application
