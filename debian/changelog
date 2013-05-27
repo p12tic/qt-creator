@@ -33,6 +33,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Update install files:
     - Fix documentation path.
     - Do not install the private version of libbotan, we are not using it.
+    - Other updates, sorted.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 
