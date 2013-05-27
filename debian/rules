@@ -14,7 +14,7 @@ export QT_SELECT := qt4
 upstream_changes := $(wildcard dist/changes-*)
 
 %:
-	dh $@ --parallel --list-missing --dbg-package=qtcreator-dbg --builddirectory=builddir
+	dh $@ --parallel --dbg-package=qtcreator-dbg --builddirectory=builddir
 
 override_dh_auto_configure:
 	mkdir -p builddir
@@ -35,6 +35,9 @@ override_dh_auto_clean:
 	find . -type d -name '.obj' | xargs rm -rf
 	find . -type d -name '.rcc' | xargs rm -rf
 	find . -type d -name '.uic' | xargs rm -rf
+
+override_dh_install:
+	dh_install --fail-missing
 
 override_dh_installdocs:
 	dh_installdocs -pqtcreator $(upstream_changes)
