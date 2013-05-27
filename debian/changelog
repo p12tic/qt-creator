@@ -1,6 +1,5 @@
-qtcreator (2.7.0-1) UNRELEASED; urgency=low
+qtcreator (2.7.0-1) unstable; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Add myself to Uploaders.
   * Update Homepage, Vcs-Browser and Vcs-Git in debian/control.
@@ -36,7 +35,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
     - Other updates, sorted.
   * Update the Icon field in qtcreator.desktop.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 May 2013 15:31:00 -0300
 
 qtcreator (2.5.0-2) unstable; urgency=medium
 
