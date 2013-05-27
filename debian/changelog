@@ -19,12 +19,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
         Fix_revno_detection_in_bzr_log.patch: merged upstream.
   * Remove posix_rt_nonlinux.diff. It applies against 3rd party botan, but we
     are now using the system botan.
-  * Start using Qt5 to compile. Adapt B-Ds:
-    - Use qtdeclarative5-private-dev, as described in the README.
-    - Use libqt5webkit5-dev, as we need the Qt5 version.
-    - B-Ds that have now been splitted in Qt5:
-      - qtscript5-dev
-  * Export CFLAGS, CXXFLAGS, LDFLAGS for hardening and QT_SELECT to choose qt5.
+  * Export CFLAGS, CXXFLAGS, LDFLAGS for hardening and QT_SELECT to choose qt4.
   * Change Depends and Recommends of packages qtcreator and qtcreator-doc.
   * Update 02_use_x-terminal-emulator.diff. The changes seems to come from
     Ubuntu, but I don't know who did it.

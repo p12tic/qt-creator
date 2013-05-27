@@ -9,11 +9,11 @@ Uploaders: Adam Majer <adamm@zombino.com>,
 Build-Depends: debhelper (>= 9),
                libbotan1.10-dev,
                libicu-dev,
-               libqt5webkit5-dev,
+               libqt4-dev (>=4:4.8.4~),
+               libqt4-private-dev (>= 4:4.8.4~),
+               libqtwebkit-dev (>= 2.1.0~2011week13-2),
                pkg-config,
-               qtbase5-dev (>= 5.0.2~),
-               qtdeclarative5-private-dev,
-               qtscript5-dev (>= 5.0.2~)
+               qt4-dev-tools (>= 4:4.8.4~)
 Standards-Version: 3.9.3
 Homepage: http://qt.digia.com/Product/Developer-Tools/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
@@ -21,15 +21,16 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
 
 Package: qtcreator
 Architecture: any
-Depends: libqt5help5, libqt5sql5-sqlite, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt4-help, libqt4-sql-sqlite, ${misc:Depends}, ${shlibs:Depends}
 Recommends: gdb,
             make,
-            qttools5-dev-tools,
+            qt4-demos,
+            qt4-dev-tools,
+            qt4-doc,
+            qt4-qmlviewer,
             qtcreator-doc,
-            qmlscene
             xterm | x-terminal-emulator,
             qtchooser
-# Missing stuff due to Qt4 to Qt5 transition: qt5 demos, doc.
 Suggests: cmake, g++, git, kdelibs5-data, subversion
 Description: lightweight integrated development environment (IDE) for Qt
  Qt Creator is a new, lightweight, cross-platform integrated development
@@ -61,8 +62,7 @@ Package: qtcreator-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Suggests: qtbase5-dev-tools
-# Missing because os Qt4 to Qt5 transition: qt5 doc.
+Suggests: qt4-dev-tools, qt4-doc
 Description: documentation for Qt Creator IDE
  Qt Creator is a new, lightweight, cross-platform integrated development
  environment (IDE) designed to make development with the Qt application
