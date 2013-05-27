@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=qtcreator %F
-Icon=qtcreator
+Icon=QtProject-qtcreator
 Type=Application
 Terminal=false
 Name=Qt Creator
