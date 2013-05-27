@@ -34,6 +34,7 @@ qtcreator (2.7.0-1) unstable; urgency=low
     - Do not install the private version of libbotan, we are not using it.
     - Other updates, sorted.
   * Update the Icon field in qtcreator.desktop.
+  * Build-depend on libx11-dev, avoiding a FTBFS.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 May 2013 15:31:00 -0300
 

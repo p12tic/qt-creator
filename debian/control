@@ -12,6 +12,7 @@ Build-Depends: debhelper (>= 9),
                libqt4-dev (>= 4:4.8.4+dfsg~),
                libqt4-private-dev (>= 4:4.8.4+dfsg~),
                libqtwebkit-dev (>= 2.1.0~2011week13-2),
+               libx11-dev,
                pkg-config,
                qt4-dev-tools (>= 4:4.8.4+dfsg~)
 Standards-Version: 3.9.3
