@@ -35,6 +35,7 @@ qtcreator (2.7.0-1) unstable; urgency=low
     - Other updates, sorted.
   * Update the Icon field in qtcreator.desktop.
   * Build-depend on libx11-dev, avoiding a FTBFS.
+  * Add a lintian override for qtcreator.sh.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 May 2013 15:31:00 -0300
 

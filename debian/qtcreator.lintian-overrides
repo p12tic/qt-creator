@@ -1,0 +1,2 @@
+# Upstream's code searches for qtcreator.sh, and qtcreator is a binary.
+qtcreator: script-with-language-extension
