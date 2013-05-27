@@ -6,7 +6,6 @@ usr/bin/qtcreator
 usr/bin/qtcreator_process_stub
 usr/bin/qtpromaker
 usr/lib/*/qtcreator/libAggregation.*
-usr/lib/*/qtcreator/libBotan.*
 usr/lib/*/qtcreator/libCPlusPlus.*
 usr/lib/*/qtcreator/libDebuggingHelper.*
 usr/lib/*/qtcreator/libExtensionSystem.*
