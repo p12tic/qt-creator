@@ -30,6 +30,8 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
   * Build the documentation using qmake. Taken from Ubuntu.
   * Override dh_install to pass --fail-missing.
   * Tell git to use dpkg-mergechangelogs on merging changelogs.
+  * Update install files:
+    - Fix documentation path.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 
