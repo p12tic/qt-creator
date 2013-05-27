@@ -9,11 +9,11 @@ Uploaders: Adam Majer <adamm@zombino.com>,
 Build-Depends: debhelper (>= 9),
                libbotan1.10-dev,
                libicu-dev,
-               libqt4-dev (>=4:4.8.4~),
-               libqt4-private-dev (>= 4:4.8.4~),
+               libqt4-dev (>= 4:4.8.4+dfsg~),
+               libqt4-private-dev (>= 4:4.8.4+dfsg~),
                libqtwebkit-dev (>= 2.1.0~2011week13-2),
                pkg-config,
-               qt4-dev-tools (>= 4:4.8.4~)
+               qt4-dev-tools (>= 4:4.8.4+dfsg~)
 Standards-Version: 3.9.3
 Homepage: http://qt.digia.com/Product/Developer-Tools/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
