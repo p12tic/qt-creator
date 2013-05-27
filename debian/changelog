@@ -17,6 +17,8 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
         - Build-depend on libbotan1.10-dev and pkg-config.
       - Drop Use_bzr_branch_instead_of_bzr_clone.patch and
         Fix_revno_detection_in_bzr_log.patch: merged upstream.
+      - Don't call dh_makeshlibs as qtcreator doesn't provide any public shared
+        libraries.
   * Remove posix_rt_nonlinux.diff. It applies against 3rd party botan, but we
     are now using the system botan.
   * Export CFLAGS, CXXFLAGS, LDFLAGS for hardening and QT_SELECT to choose qt4.
