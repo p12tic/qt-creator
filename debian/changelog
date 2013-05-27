@@ -37,7 +37,7 @@ qtcreator (2.7.0-1) unstable; urgency=low
   * Build-depend on libx11-dev, avoiding a FTBFS.
   * Add a lintian override for qtcreator.sh.
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 May 2013 15:31:00 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 May 2013 15:58:32 -0300
 
 qtcreator (2.5.0-2) unstable; urgency=medium
 
