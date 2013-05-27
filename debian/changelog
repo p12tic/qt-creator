@@ -25,6 +25,7 @@ qtcreator (2.7.0-1) UNRELEASED; urgency=low
     Ubuntu, but I don't know who did it.
   * Remove unused patch posix_rt_nonlinux.diff.
   * Make every package that ships a binary managed by qtchooser depend on it.
+  * Build the documentation using qmake. Taken from Ubuntu.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 22 May 2013 15:40:28 -0300
 
