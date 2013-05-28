@@ -5,6 +5,7 @@ qtcreator (2.7.0-2) UNRELEASED; urgency=low
     - Create qtcreator-data.install to ship /usr/share stuff.
     - Remove the above mentioned stuff from qtcreator.install*.
     - Create qtcreator-data, add the appropiate Breaks+Replaces.
+    - Make qtcreator depend on qtcreator-data.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 May 2013 17:39:32 -0300
 
