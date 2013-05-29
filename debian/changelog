@@ -10,6 +10,7 @@ qtcreator (2.7.0-2) UNRELEASED; urgency=low
     - dh_installdocs now uses qtcreator-data.
   * Add lintian overrides:
     - qtcreator ships it's changelogs in qtcreator-data.
+    - The upstream changelog is splited in different files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 May 2013 17:39:32 -0300
 
