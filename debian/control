@@ -22,7 +22,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
 
 Package: qtcreator
 Architecture: any
-Depends: libqt4-help, libqt4-sql-sqlite, qtcreator-data,
+Depends: libqt4-help, libqt4-sql-sqlite, qtcreator-data (= ${binary:Version}),
  ${misc:Depends}, ${shlibs:Depends}
 Recommends: gdb,
             make,
