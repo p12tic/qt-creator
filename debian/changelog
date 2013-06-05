@@ -17,6 +17,7 @@ qtcreator (2.7.0-2) UNRELEASED; urgency=low
   * Remove obsolete gdbmacros symlinks.
   * Override the image-file-in-usr-lib warning, since qtcomponents images
     are expected in the library directory with qt components.
+  * Bump Standards-Version to 3.9.4, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 May 2013 17:39:32 -0300
 

@@ -15,7 +15,7 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                pkg-config,
                qt4-dev-tools (>= 4:4.8.4+dfsg~)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://qt-project.org/wiki/Category:Tools::QtCreator
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
