@@ -1,3 +1,4 @@
+debian/qtcreator.desktop usr/share/applications/
 usr/bin/qmlpuppet
 usr/bin/qtcreator
 usr/bin/qtcreator.sh

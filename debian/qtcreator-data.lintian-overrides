@@ -1,5 +1,2 @@
 # qtcreator's changelog is not the usual one. It's splited in several files.
 qtcreator-data: wrong-name-for-upstream-changelog
-# We ship the .desktop file in qtcreator-data. qtcreator depends on it, so it
-# should be safe.
-qtcreator-data: desktop-command-not-in-package
