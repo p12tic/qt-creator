@@ -20,6 +20,7 @@ qtcreator (2.7.0-2) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.4, no changes required.
   * Remove the manual libqt4-help dependency from qtcreator, as that will be
     added by shlibs.
+  * Raise the qtchooser recommend to a dependency.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 May 2013 17:39:32 -0300
 

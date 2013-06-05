@@ -22,7 +22,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
 
 Package: qtcreator
 Architecture: any
-Depends: libqt4-sql-sqlite, qtcreator-data (= ${source:Version}),
+Depends: libqt4-sql-sqlite, qtchooser, qtcreator-data (= ${source:Version}),
  ${misc:Depends}, ${shlibs:Depends}
 Recommends: gdb,
             make,
@@ -32,7 +32,6 @@ Recommends: gdb,
             qt4-qmlviewer,
             qtcreator-doc,
             xterm | x-terminal-emulator,
-            qtchooser
 Suggests: cmake, g++, git, kdelibs5-data, subversion
 Description: lightweight integrated development environment (IDE) for Qt
  Qt Creator is a new, lightweight, cross-platform integrated development
