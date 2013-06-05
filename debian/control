@@ -53,21 +53,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Breaks: qtcreator (<< 2.7.0-2~)
 Replaces: qtcreator (<< 2.7.0-2~)
-Description: lightweight integrated development environment (IDE) for Qt, application data
+Description: application data for Qt Creator IDE
  Qt Creator is a new, lightweight, cross-platform integrated development
  environment (IDE) designed to make development with the Qt application
  framework even faster and easier.
  .
- It includes:
-  * An advanced C++ code editor
-  * Integrated GUI layout and forms designer
-  * Project and build management tools
-  * Integrated, context-sensitive help system
-  * Visual debugger
-  * Rapid code navigation tools
-  * Supports multiple platforms
- .
- This package ships architecture-independent data.
+ This package contains the architecture-independent data for Qt Creator IDE.
 
 Package: qtcreator-dbg
 Priority: extra
