@@ -14,6 +14,7 @@ qtcreator (2.8.0-1) UNRELEASED; urgency=low
     - The upstream changelog is splited in different files.
   * Update watch file.
   * Refersh patches.
+  * Remove 03_fix_DOCPATH.diff, no longer needed.
 
   [ Pino Toscano ]
   * Switch Homepage to a qt-project.org page.

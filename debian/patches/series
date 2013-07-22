@@ -1,5 +1,4 @@
 02_use_x-terminal-emulator.diff
-03_fix_DOCPATH.diff
 rpath_nonlinux.diff
 
 # Debian patches.
