@@ -1,6 +1,7 @@
-qtcreator (2.7.0-2) UNRELEASED; urgency=low
+qtcreator (2.8.0-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
   * Split qtcreator's arch:all stuff to qtcreator-data:
     - Create qtcreator-data.install to ship /usr/share stuff.
     - Remove the above mentioned stuff from qtcreator.install*.
