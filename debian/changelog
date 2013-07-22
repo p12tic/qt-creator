@@ -11,6 +11,7 @@ qtcreator (2.7.0-2) UNRELEASED; urgency=low
   * Add lintian overrides:
     - qtcreator ships it's changelogs in qtcreator-data.
     - The upstream changelog is splited in different files.
+  * Update watch file.
 
   [ Pino Toscano ]
   * Switch Homepage to a qt-project.org page.
