@@ -13,6 +13,7 @@ qtcreator (2.8.0-1) UNRELEASED; urgency=low
     - qtcreator ships it's changelogs in qtcreator-data.
     - The upstream changelog is splited in different files.
   * Update watch file.
+  * Refersh patches.
 
   [ Pino Toscano ]
   * Switch Homepage to a qt-project.org page.
