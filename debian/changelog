@@ -13,7 +13,7 @@ qtcreator (2.8.0-1) UNRELEASED; urgency=low
     - qtcreator ships it's changelogs in qtcreator-data.
     - The upstream changelog is splited in different files.
   * Update watch file.
-  * Refersh patches.
+  * Refresh patches.
   * Remove 03_fix_DOCPATH.diff, no longer needed.
 
   [ Pino Toscano ]
