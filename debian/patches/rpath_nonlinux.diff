@@ -24,7 +24,7 @@ Forwarded: no
      QMAKE_RPATHDIR += \$\$ORIGIN
 --- a/src/qtcreatorplugin.pri
 +++ b/src/qtcreatorplugin.pri
-@@ -91,7 +91,7 @@ macx {
+@@ -110,7 +110,7 @@ macx {
          QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/$${PROVIDER}/
          QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../../,-rpath,@executable_path/../
      }
@@ -33,9 +33,9 @@ Forwarded: no
      #do the rpath by hand since it's not possible to use ORIGIN in QMAKE_RPATHDIR
      QMAKE_RPATHDIR += \$\$ORIGIN
      QMAKE_RPATHDIR += \$\$ORIGIN/..
-@@ -107,7 +107,7 @@ CONFIG += include_source_dir
- contains(QT_CONFIG, reduce_exports):CONFIG += hide_symbols
+@@ -127,7 +127,7 @@ contains(QT_CONFIG, reduce_exports):CONF
  
+ TEMPLATE = lib
  CONFIG += plugin plugin_with_soname
 -linux*:QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF
 +linux*|glibc-*|hurd-*:QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF

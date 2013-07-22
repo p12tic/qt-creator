@@ -79,7 +79,7 @@ Author: Felix Geyer <debfx@ubuntu.com>
 --- a/src/libs/ssh/sshcryptofacility_p.h
 +++ b/src/libs/ssh/sshcryptofacility_p.h
 @@ -31,9 +31,11 @@
- #define SSHABSTRACTCRYPTOFACILITY_P_H
+ #define SSHCRYPTOFACILITY_P_H
  
  #include <botan/botan.h>
 +#include <botan/hmac.h>
