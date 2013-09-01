@@ -16,6 +16,8 @@ qtcreator (2.8.1-1) UNRELEASED; urgency=low
   * Refresh patches.
   * Remove 03_fix_DOCPATH.diff, no longer needed.
   * Adjust install files.
+  * Manually call qmake in order to avoid a FTBFS due to dh passing -nocache.
+    Upstream uses caches to put default data for building, so we need them.
 
   [ Pino Toscano ]
   * Switch Homepage to a qt-project.org page.

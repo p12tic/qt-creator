@@ -18,7 +18,7 @@ upstream_changes := $(wildcard dist/changes-*)
 
 override_dh_auto_configure:
 	mkdir -p builddir
-	dh_auto_configure -- $(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 USE_SYSTEM_BOTAN=1 $(extra_configure_opts)
+	cd builddir ; qmake $(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 USE_SYSTEM_BOTAN=1 $(extra_configure_opts)
 
 override_dh_auto_install:
 ifneq (,$(filter qtcreator-doc, $(shell dh_listpackages)))
