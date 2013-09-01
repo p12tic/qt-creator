@@ -1,4 +1,4 @@
-qtcreator (2.8.1-1) UNRELEASED; urgency=low
+qtcreator (2.8.1-1) unstable; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -32,7 +32,7 @@ qtcreator (2.8.1-1) UNRELEASED; urgency=low
     added by shlibs.
   * Raise the qtchooser recommend to a dependency.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 May 2013 17:39:32 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 01 Sep 2013 12:09:52 -0300
 
 qtcreator (2.7.0-1) unstable; urgency=low
 
