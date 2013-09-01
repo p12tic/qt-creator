@@ -1,13 +1,11 @@
 debian/qtcreator.desktop usr/share/applications/
 usr/bin/qmlpuppet
 usr/bin/qtcreator
-usr/bin/qtcreator.sh
 usr/bin/qtcreator_process_stub
 usr/bin/qtpromaker
 usr/bin/sdktool
 usr/lib/*/qtcreator/libAggregation.*
 usr/lib/*/qtcreator/libCPlusPlus.*
-usr/lib/*/qtcreator/libDebuggingHelper.*
 usr/lib/*/qtcreator/libExtensionSystem.*
 usr/lib/*/qtcreator/libGLSL.*
 usr/lib/*/qtcreator/libLanguageUtils.*

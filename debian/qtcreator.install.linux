@@ -1,13 +1,11 @@
 debian/qtcreator.desktop usr/share/applications/
 usr/bin/qmlpuppet
 usr/bin/qtcreator
-usr/bin/qtcreator.sh
 usr/bin/qtcreator_process_stub
 usr/bin/qtpromaker
 usr/bin/sdktool
 usr/lib/*/qtcreator/libAggregation.*
 usr/lib/*/qtcreator/libCPlusPlus.*
-usr/lib/*/qtcreator/libDebuggingHelper.*
 usr/lib/*/qtcreator/libExtensionSystem.*
 usr/lib/*/qtcreator/libGLSL.*
 usr/lib/*/qtcreator/libLanguageUtils.*
@@ -18,7 +16,10 @@ usr/lib/*/qtcreator/libQmlJS.*
 usr/lib/*/qtcreator/libQtcSsh.so
 usr/lib/*/qtcreator/libQtcSsh.so.*
 usr/lib/*/qtcreator/libUtils.*
-usr/lib/*/qtcreator/libptracepreload.*
+usr/lib/*/qtcreator/libqbscore.so
+usr/lib/*/qtcreator/libqbscore.so.1
+usr/lib/*/qtcreator/libqbscore.so.1.0
+usr/lib/*/qtcreator/libqbscore.so.1.0.0
 usr/lib/*/qtcreator/libzeroconf.*
 usr/lib/*/qtcreator/plugins/BlackBerry/Qnx.pluginspec
 usr/lib/*/qtcreator/plugins/BlackBerry/libQnx.so
@@ -52,6 +53,8 @@ usr/lib/*/qtcreator/plugins/QtProject/Madde.pluginspec
 usr/lib/*/qtcreator/plugins/QtProject/Mercurial.pluginspec
 usr/lib/*/qtcreator/plugins/QtProject/Perforce.pluginspec
 usr/lib/*/qtcreator/plugins/QtProject/ProjectExplorer.pluginspec
+usr/lib/*/qtcreator/plugins/QtProject/PythonEditor.pluginspec
+usr/lib/*/qtcreator/plugins/QtProject/QbsProjectManager.pluginspec
 usr/lib/*/qtcreator/plugins/QtProject/QmlDesigner.pluginspec
 usr/lib/*/qtcreator/plugins/QtProject/QmlJSEditor.pluginspec
 usr/lib/*/qtcreator/plugins/QtProject/QmlJSTools.pluginspec
@@ -98,6 +101,8 @@ usr/lib/*/qtcreator/plugins/QtProject/libMadde.so
 usr/lib/*/qtcreator/plugins/QtProject/libMercurial.so
 usr/lib/*/qtcreator/plugins/QtProject/libPerforce.so
 usr/lib/*/qtcreator/plugins/QtProject/libProjectExplorer.so
+usr/lib/*/qtcreator/plugins/QtProject/libPythonEditor.so
+usr/lib/*/qtcreator/plugins/QtProject/libQbsProjectManager.so
 usr/lib/*/qtcreator/plugins/QtProject/libQmlDesigner.so
 usr/lib/*/qtcreator/plugins/QtProject/libQmlJSEditor.so
 usr/lib/*/qtcreator/plugins/QtProject/libQmlJSTools.so

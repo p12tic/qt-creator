@@ -15,6 +15,7 @@ qtcreator (2.8.1-1) UNRELEASED; urgency=low
   * Update watch file.
   * Refresh patches.
   * Remove 03_fix_DOCPATH.diff, no longer needed.
+  * Adjust install files.
 
   [ Pino Toscano ]
   * Switch Homepage to a qt-project.org page.
