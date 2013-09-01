@@ -5,7 +5,7 @@ qtcreator (2.8.1-1) UNRELEASED; urgency=low
   * Split qtcreator's arch:all stuff to qtcreator-data:
     - Create qtcreator-data.install to ship /usr/share stuff.
     - Remove the above mentioned stuff from qtcreator.install*.
-    - Create qtcreator-data, add the appropiate Breaks+Replaces.
+    - Create qtcreator-data, add the appropriate Breaks+Replaces.
     - Make qtcreator depend on qtcreator-data.
     - Links in /usr/share/ now belong to qtcreator-data.
     - dh_installdocs now uses qtcreator-data.
