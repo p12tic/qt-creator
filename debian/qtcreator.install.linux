@@ -1,6 +1,7 @@
 debian/qtcreator.desktop usr/share/applications/
 usr/bin/qmlpuppet
 usr/bin/qtcreator
+usr/bin/qtcreator.sh
 usr/bin/qtcreator_process_stub
 usr/bin/qtpromaker
 usr/bin/sdktool
