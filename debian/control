@@ -49,7 +49,7 @@ Description: lightweight integrated development environment (IDE) for Qt
 
 Package: qtcreator-data
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${perl:Depends}
 Breaks: qtcreator (<< 2.8.0-1~)
 Replaces: qtcreator (<< 2.8.0-1~)
 Description: application data for Qt Creator IDE
