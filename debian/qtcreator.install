@@ -18,9 +18,7 @@ usr/lib/*/qtcreator/libQtcSsh.so
 usr/lib/*/qtcreator/libQtcSsh.so.*
 usr/lib/*/qtcreator/libUtils.*
 usr/lib/*/qtcreator/libqbscore.so
-usr/lib/*/qtcreator/libqbscore.so.1
-usr/lib/*/qtcreator/libqbscore.so.1.0
-usr/lib/*/qtcreator/libqbscore.so.1.0.0
+usr/lib/*/qtcreator/libqbscore.so.*
 usr/lib/*/qtcreator/libzeroconf.*
 usr/lib/*/qtcreator/plugins/BlackBerry/Qnx.pluginspec
 usr/lib/*/qtcreator/plugins/BlackBerry/libQnx.so
