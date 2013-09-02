@@ -1,4 +1,4 @@
-qtcreator (2.8.1-2) UNRELEASED; urgency=low
+qtcreator (2.8.1-2) unstable; urgency=low
 
   [ Pino Toscano ]
   * Synchronise qtcreator.install with qtcreator.install.linux.
@@ -8,7 +8,7 @@ qtcreator (2.8.1-2) UNRELEASED; urgency=low
   * Minor simplification in qtcreator.install.
   * Add ${perl:Depends} to qtcreator-data.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 Sep 2013 14:35:57 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 02 Sep 2013 12:43:31 -0300
 
 qtcreator (2.8.1-1) unstable; urgency=low
 
