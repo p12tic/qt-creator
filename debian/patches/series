@@ -3,3 +3,4 @@ rpath_nonlinux.diff
 
 # Debian patches.
 botan_system_lib.diff
+no-Werror.diff

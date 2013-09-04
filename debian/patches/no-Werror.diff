@@ -1,0 +1,18 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Disable -Werror in Debian builds.
+ Having -Werror in CXXFLAGS means that any warning becomes a fatal error;
+ considering new compiler versions may add new warnings and potentially make
+ valid code not compile anymore, just remove -Werror altogether.
+Last-Update: 2013-09-04
+Forwarded: not-needed
+
+--- a/src/shared/qbs/src/lib/lib.pro
++++ b/src/shared/qbs/src/lib/lib.pro
+@@ -23,7 +23,6 @@ contains(QT_CONFIG, reduce_exports):CONF
+ 
+ win32:CONFIG(debug, debug|release):TARGET = $${TARGET}d
+ win32-msvc*|win32-icc:QMAKE_CXXFLAGS += /WX
+-else:*g++*|*clang*|*icc*:QMAKE_CXXFLAGS += -Werror
+ 
+ !disable_rpath {
+     macx:QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/
