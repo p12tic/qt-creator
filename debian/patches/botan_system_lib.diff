@@ -1,5 +1,6 @@
 Description: Use the system botan library instead of the bundled one.
 Author: Felix Geyer <debfx@ubuntu.com>
+Last-Reviewed: 2014-02-20
 
 --- a/src/libs/3rdparty/botan/botan.pri
 +++ b/src/libs/3rdparty/botan/botan.pri
@@ -42,7 +43,7 @@ Author: Felix Geyer <debfx@ubuntu.com>
 -
 -    win32-msvc* {
 -        QMAKE_CXXFLAGS += -wd4251 -wd4290 -wd4250
--        DEFINES += BOTAN_BUILD_COMPILER_IS_MSVC BOTAN_TARGET_OS_HAS_GMTIME_S
+-        DEFINES += BOTAN_BUILD_COMPILER_IS_MSVC BOTAN_TARGET_OS_HAS_GMTIME_S _SCL_SECURE_NO_WARNINGS
 -    } else {
 -        QMAKE_CFLAGS += -fpermissive -finline-functions -Wno-long-long
 -        QMAKE_CXXFLAGS += -fpermissive -finline-functions -Wno-long-long
@@ -57,7 +58,7 @@ Author: Felix Geyer <debfx@ubuntu.com>
 -}
 -
 -linux*|freebsd* {
--    LIBS += -lrt
+-    LIBS += -lrt $$QMAKE_LIBS_DYNLOAD
 -}
 -}
 +CONFIG += link_pkgconfig
@@ -107,7 +108,7 @@ Author: Felix Geyer <debfx@ubuntu.com>
  #include <iostream>
 --- a/src/libs/ssh/sshkeygenerator.cpp
 +++ b/src/libs/ssh/sshkeygenerator.cpp
-@@ -34,6 +34,11 @@
+@@ -35,6 +35,11 @@
  #include "sshpacket_p.h"
  
  #include <botan/botan.h>
