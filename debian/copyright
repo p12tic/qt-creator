@@ -1,5 +1,8 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: http://download.qt-project.org/official_releases/qtcreator/*/*/
+Files-Excluded:
+  tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
+  src/shared/qbs/doc/templates/scripts/jquery.js
 
 Files: *
 Copyright:

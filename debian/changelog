@@ -1,4 +1,4 @@
-qtcreator (3.0.1-1) UNRELEASED; urgency=medium
+qtcreator (3.0.1+dsfg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -12,6 +12,8 @@ qtcreator (3.0.1-1) UNRELEASED; urgency=medium
   * Avoid installing a license file and symlink it to it's common-licenses'
     counterpart.
   * Switch debian/copyright to format 1.0.
+  * Repack source excluding minified javascript files without source.
+    - Use Files-excluded in debian/copyright for this.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Feb 2014 22:24:57 -0300
 
