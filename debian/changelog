@@ -6,6 +6,8 @@ qtcreator (3.0.1-1) UNRELEASED; urgency=medium
   * Refresh rpath_nonlinux.diff.
   * Readapt botan_system_lib.diff.
   * Adjust install files.
+  * Remove rule to compress the packages with xz, it is now the default
+    compression method.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Feb 2014 22:24:57 -0300
 

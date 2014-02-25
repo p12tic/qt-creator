@@ -64,6 +64,3 @@ override_dh_installdocs:
 
 override_dh_makeshlibs:
 	# qtcreator doesn't provide any public libraries
-
-override_dh_builddeb:
-	dh_builddeb -- -Zxz
