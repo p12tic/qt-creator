@@ -51,6 +51,11 @@ override_dh_auto_clean:
 	find . -type d -name '.rcc' | xargs rm -rf
 	find . -type d -name '.uic' | xargs rm -rf
 
+override_dh_auto_install:
+	dh_auto_install
+	# Do not install the file, we better symlink it.
+	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
+
 override_dh_install:
 	# Remove arch-specific files from /usr/share until
 	# https://bugreports.qt-project.org/browse/QTCREATORBUG-10074

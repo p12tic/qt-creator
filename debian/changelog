@@ -9,6 +9,8 @@ qtcreator (3.0.1-1) UNRELEASED; urgency=medium
   * Remove rule to compress the packages with xz, it is now the default
     compression method.
   * Bump Standards-Version to 3.9.5, no changes required.
+  * Avoid installing a license file and symlink it to it's common-licenses'
+    counterpart.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Feb 2014 22:24:57 -0300
 
