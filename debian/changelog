@@ -11,6 +11,7 @@ qtcreator (3.0.1-1) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.5, no changes required.
   * Avoid installing a license file and symlink it to it's common-licenses'
     counterpart.
+  * Switch debian/copyright to format 1.0.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Feb 2014 22:24:57 -0300
 
