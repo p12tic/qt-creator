@@ -14,6 +14,7 @@ qtcreator (3.0.1+dsfg-1) UNRELEASED; urgency=medium
   * Switch debian/copyright to format 1.0.
   * Repack source excluding minified javascript files without source.
     - Use Files-excluded in debian/copyright for this.
+    - Update debian/watch to mangle the dfsg version.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Feb 2014 22:24:57 -0300
 
