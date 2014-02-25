@@ -3,6 +3,8 @@ Source: http://download.qt-project.org/official_releases/qtcreator/*/*/
 Files-Excluded:
   tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
   src/shared/qbs/doc/templates/scripts/jquery.js
+  doc/templates/scripts/jquery.js
+  doc/titlecase/jquery.js
 
 Files: *
 Copyright:
