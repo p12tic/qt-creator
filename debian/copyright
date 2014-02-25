@@ -34,6 +34,10 @@ Copyright:
     2013-2014 Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 License: LGPL-2.1+
 
+Files: src/shared/qbs/doc/templates/scripts/superfish.js
+Copyright: 2008 Joel Birch
+License: Expat and GPL-unspecified-version
+
 Files:
  doc/examples/addressbook-sdk/part1/main.cpp
  doc/examples/addressbook-sdk/part1/addressbook.cpp
@@ -257,3 +261,6 @@ License: BSD-3-clause
  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
  OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: GPL-unspecified-version
+ Just a link to http://www.gnu.org/licenses/gpl.html
