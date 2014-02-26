@@ -59,6 +59,10 @@ override_dh_auto_clean:
 	find . -type d -name '.obj' | xargs rm -rf
 	find . -type d -name '.rcc' | xargs rm -rf
 	find . -type d -name '.uic' | xargs rm -rf
+	rm -vf tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
+	rm -vf src/shared/qbs/doc/templates/scripts/jquery.js
+	rm -vf doc/templates/scripts/jquery.js
+	rm -vf doc/titlecase/jquery.js
 
 override_dh_install:
 	# Remove arch-specific files from /usr/share until
