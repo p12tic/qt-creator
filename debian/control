@@ -9,13 +9,13 @@ Uploaders: Adam Majer <adamm@zombino.com>,
 Build-Depends: debhelper (>= 9),
                libbotan1.10-dev,
                libicu-dev,
+               libjs-jquery,
                libqt4-dev (>= 4:4.8.4+dfsg~),
                libqt4-private-dev (>= 4:4.8.4+dfsg~),
                libqtwebkit-dev (>= 2.1.0~2011week13-2),
                libx11-dev,
                pkg-config,
-               qt4-dev-tools (>= 4:4.8.4+dfsg~),
-               libjs-jquery
+               qt4-dev-tools (>= 4:4.8.4+dfsg~)
 Standards-Version: 3.9.5
 Homepage: http://qt-project.org/wiki/Category:Tools::QtCreator
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtcreator.git
