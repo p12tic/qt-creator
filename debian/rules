@@ -23,6 +23,12 @@ upstream_changes := $(wildcard dist/changes-*)
 	dh $@ --parallel --dbg-package=qtcreator-dbg --builddirectory=builddir
 
 override_dh_auto_configure:
+	# Create some symlinks to jquery stuff.
+	ln -s /usr/share/javascript/jquery/jquery.min.js tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
+	ln -s /usr/share/javascript/jquery/jquery.min.js src/shared/qbs/doc/templates/scripts/jquery.js
+	ln -s /usr/share/javascript/jquery/jquery.min.js doc/templates/scripts/jquery.js
+	ln -s /usr/share/javascript/jquery/jquery.min.js doc/titlecase/jquery.js
+
 	mkdir -p builddir
 	cd builddir ; \
 		qmake QMAKE_CFLAGS_RELEASE="$(QMAKE_CFLAGS_RELEASE)" \
