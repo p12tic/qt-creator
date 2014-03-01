@@ -1,4 +1,9 @@
-qtcreator (3.0.1+dfsg-2) UNRELEASED; urgency=medium
+qtcreator (3.0.1+dfsg+exp-1) UNRELEASED; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Switch to Qt 5 on experimental.
+    - Add +exp to the version of the package to be able to fix stuff in
+      unstable if needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2014 16:00:33 -0300
 
