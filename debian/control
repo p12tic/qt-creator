@@ -12,6 +12,7 @@ Build-Depends: debhelper (>= 9),
                libjs-jquery,
                libqt5webkit5-dev (>= 5.2.1+dfsg~),
                libsqlite3-dev,
+               libx11-dev,
                libxslt1-dev,
                pkg-config,
                qtbase5-dev (>= 5.2.1+dfsg~),
@@ -23,7 +24,6 @@ Build-Depends: debhelper (>= 9),
                qttools5-dev (>= 5.2.1~),
                qttools5-dev-tools (>= 5.2.1~),
                qttools5-private-dev (>= 5.2.1~),
-               libx11-dev,
                qtxmlpatterns5-dev-tools (>= 5.2.1~)
 Standards-Version: 3.9.5
 Homepage: http://qt-project.org/wiki/Category:Tools::QtCreator
@@ -32,18 +32,20 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtcreator.git
 
 Package: qtcreator
 Architecture: any
-Depends: libqt4-sql-sqlite,
+Depends: libqt5sql5-sqlite,
          qtchooser,
          qtcreator-data (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: gdb,
             make,
-            qt4-demos,
-            qt4-dev-tools,
-            qt4-doc,
-            qt4-qmlviewer,
+            qt5-doc,
+            qtbase5-dev-tools,
             qtcreator-doc,
+            qtdeclarative5-dev-tools,
+            qtquick1-5-dev-tools,
+            qttools5-dev-tools,
+            qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
 Suggests: cmake, g++, git, kdelibs5-data, subversion
 Description: lightweight integrated development environment (IDE) for Qt
@@ -88,7 +90,7 @@ Package: qtcreator-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Suggests: qt4-dev-tools, qt4-doc
+Suggests: qt5-doc
 Description: documentation for Qt Creator IDE
  Qt Creator is a new, lightweight, cross-platform integrated development
  environment (IDE) designed to make development with the Qt application

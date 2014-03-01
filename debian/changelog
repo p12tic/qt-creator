@@ -7,6 +7,8 @@ qtcreator (3.0.1+dfsg+exp-1) UNRELEASED; urgency=medium
     - Switch to Qt 5 in debian/rules.
     - Remove Qt 4 build dependencies and add the necessary Qt 5 build
       dependencies.
+    - Change Qt 4 dependencies, recommendations or suggestions to their Qt 5
+      counterparts.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2014 16:00:33 -0300
 
