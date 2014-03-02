@@ -1,6 +1,5 @@
-qtcreator (3.0.1+dfsg+exp-1) UNRELEASED; urgency=medium
+qtcreator (3.0.1+dfsg+exp-1) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Switch to Qt 5 on experimental.
     - Add +exp to the version of the package to be able to fix stuff in
       unstable if needed.
@@ -13,7 +12,7 @@ qtcreator (3.0.1+dfsg+exp-1) UNRELEASED; urgency=medium
       libgstreamer0.10-dev and libqt5opengl5-dev as build dependencies. They
       are required at link time, so maybe it's an effect of #711307.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2014 16:00:33 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 01 Mar 2014 22:50:11 -0300
 
 qtcreator (3.0.1+dfsg-1) unstable; urgency=medium
 
