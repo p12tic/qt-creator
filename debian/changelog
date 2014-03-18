@@ -1,11 +1,10 @@
-qtcreator (3.0.1+dfsg+exp-2) UNRELEASED; urgency=medium
+qtcreator (3.0.1+dfsg+exp-2) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove unnecesary build dependencies added because of a bug in Qt Webkit.
     - Build depend upon libqt5webkit5-dev >= 5.2.1+dfsg-4~ to be sure we don't
       hit the bug.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 18 Mar 2014 11:05:56 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 18 Mar 2014 12:32:01 -0300
 
 qtcreator (3.0.1+dfsg+exp-1) experimental; urgency=medium
 
