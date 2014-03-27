@@ -1,5 +1,8 @@
 qtcreator (3.0.1+dfsg+exp-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add qtdeclarative5-controls-plugin as a dependency, which partially solves
+    #742710.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Mar 2014 18:31:56 -0300
 
