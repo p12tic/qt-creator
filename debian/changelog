@@ -3,6 +3,9 @@ qtcreator (3.0.1+dfsg+exp-4) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add qml-module-qtquick-controls and qml-module-qtquick2 as
     dependencies (Closes: #742710).
+  * Disable parallel builds on arm*. It seems make is currently having problems
+    with parallel builds on arm, so we disable them. It might get fixed with
+    make 4.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Mar 2014 18:31:56 -0300
 
