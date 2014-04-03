@@ -1,6 +1,5 @@
-qtcreator (3.0.1+dfsg+exp-4) UNRELEASED; urgency=medium
+qtcreator (3.0.1+dfsg+exp-4) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add qml-module-qtquick-controls and qml-module-qtquick2 as
     dependencies (Closes: #742710). Tight up the dependencies to the minimum
     required versions.
@@ -8,7 +7,7 @@ qtcreator (3.0.1+dfsg+exp-4) UNRELEASED; urgency=medium
     with parallel builds on arm, so we disable them. It might get fixed with
     make 4.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Mar 2014 18:31:56 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 03 Apr 2014 13:09:31 -0300
 
 qtcreator (3.0.1+dfsg+exp-3) unstable; urgency=medium
 
