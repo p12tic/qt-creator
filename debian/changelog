@@ -1,3 +1,8 @@
+qtcreator (3.0.1+dfsg+exp-5) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
+
 qtcreator (3.0.1+dfsg+exp-4) unstable; urgency=medium
 
   * Add qml-module-qtquick-controls and qml-module-qtquick2 as
