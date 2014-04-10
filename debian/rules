@@ -19,16 +19,8 @@ export QT_SELECT := qt5
 # Upstream changelog
 upstream_changes := $(wildcard dist/changes-*)
 
-# Disable parallel builds on arm*, as make seems to be having problems
-# on arm.
-no_parallel_build := armel armhf arm64
-
 %:
-ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(no_parallel_build)))
-	dh $@ --dbg-package=qtcreator-dbg --builddirectory=builddir
-else
 	dh $@ --parallel --dbg-package=qtcreator-dbg --builddirectory=builddir
-endif
 
 override_dh_auto_configure:
 	# Create some symlinks to jquery stuff.
