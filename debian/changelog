@@ -1,6 +1,7 @@
-qtcreator (3.0.1+dfsg+exp-5) UNRELEASED; urgency=medium
+qtcreator (3.1.0+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
   * Add libqt5x11extras5-dev as build dependency, as the build log warn us of
     it being missing.
   * Re-enable parallel building on arm*. It is not the issue causing the FTBFS.
