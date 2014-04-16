@@ -2,21 +2,15 @@ Author: Pino Toscano <pino@debian.org>
 Description: Enable RPATH also on kFreeBSD and Hurd
  qtcreator's plugins use RPATH to locate the qtcreator libraries, so enable it
  also on kFreeBSD and Hurd.
-Last-Update: 2012-05-19
+Last-Update: 2014-04-16
 Forwarded: no
-
----
- src/qtcreatorplugin.pri                         |    4 ++--
- src/rpath.pri                                   |    2 +-
- src/tools/qtcreatorwidgets/qtcreatorwidgets.pro |    4 ++--
- 3 files changed, 5 insertions(+), 5 deletions(-)
 
 --- a/src/rpath.pri
 +++ b/src/rpath.pri
-@@ -5,7 +5,7 @@ macx {
-         QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/
-         QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
-     }
+@@ -1,7 +1,7 @@
+ macx {
+     QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/
+     QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
 -} else:linux-* {
 +} else:linux-*|glibc-*|hurd-* {
      #do the rpath by hand since it's not possible to use ORIGIN in QMAKE_RPATHDIR
@@ -24,16 +18,16 @@ Forwarded: no
      QMAKE_RPATHDIR += \$\$ORIGIN
 --- a/src/qtcreatorplugin.pri
 +++ b/src/qtcreatorplugin.pri
-@@ -136,7 +136,7 @@ macx {
-         QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/$${PROVIDER}/
-         QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../../,-rpath,@executable_path/../
-     }
+@@ -132,7 +132,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
+ macx {
+     QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/$${PROVIDER}/
+     QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../../,-rpath,@executable_path/../
 -} else:linux-* {
 +} else:linux-*|glibc-*|hurd-* {
      #do the rpath by hand since it's not possible to use ORIGIN in QMAKE_RPATHDIR
      QMAKE_RPATHDIR += \$\$ORIGIN
      QMAKE_RPATHDIR += \$\$ORIGIN/..
-@@ -150,7 +150,7 @@ contains(QT_CONFIG, reduce_exports):CONF
+@@ -146,7 +146,7 @@ contains(QT_CONFIG, reduce_exports):CONF
  
  TEMPLATE = lib
  CONFIG += plugin plugin_with_soname
@@ -58,7 +52,7 @@ Forwarded: no
  }
  
 -linux-*{  
-+linux-*|glibc-*|hurd-*{  
++linux-*|glibc-*|hurd-*{
    QMAKE_RPATHDIR *= $$QTC_LIBS
  }
  

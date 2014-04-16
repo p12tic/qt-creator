@@ -5,7 +5,9 @@ qtcreator (3.1.0+dfsg-1) UNRELEASED; urgency=medium
   * Add libqt5x11extras5-dev as build dependency, as the build log warn us of
     it being missing.
   * Re-enable parallel building on arm*. It is not the issue causing the FTBFS.
-  * Refresh patch 02_use_x-terminal-emulator.diff.
+  * Refresh patches:
+    - 02_use_x-terminal-emulator.diff.
+    - rpath_nonlinux.diff, it needed some work.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
 
