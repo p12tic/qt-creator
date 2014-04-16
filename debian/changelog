@@ -10,6 +10,7 @@ qtcreator (3.1.0+dfsg-1) UNRELEASED; urgency=medium
     - rpath_nonlinux.diff, it needed some work.
     - botan_system_lib.diff.
   * Add debian/quiltrc with the common settings for quilt.
+  * Remove no-Werror.diff, seems no longer needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
 
