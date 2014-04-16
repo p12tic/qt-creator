@@ -65,10 +65,6 @@ override_dh_auto_clean:
 	rm -vf doc/titlecase/jquery.js
 
 override_dh_install:
-	# Remove arch-specific files from /usr/share until
-	# https://bugreports.qt-project.org/browse/QTCREATORBUG-10074
-	# is solved.
-	rm -v debian/tmp/usr/share/qtcreator/qbs/lib/qbs/plugins/libqbs_*.so
 	dh_install --fail-missing
 
 override_dh_installdocs:

@@ -11,6 +11,8 @@ qtcreator (3.1.0+dfsg-1) UNRELEASED; urgency=medium
     - botan_system_lib.diff.
   * Add debian/quiltrc with the common settings for quilt.
   * Remove no-Werror.diff, seems no longer needed.
+  * Do not remove the missplaced qbs plugins, they have been moved to the right
+    place.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
 
