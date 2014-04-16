@@ -2,8 +2,8 @@ Description: use x-terminal-emulator on Debian based distributions
 Author: Fathi Boudra <fabo@debian.org>
 
 ---
- src/libs/utils/consoleprocess_unix.cpp |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ src/libs/utils/consoleprocess_unix.cpp |    1 +
+ 1 file changed, 1 insertion(+)
 
 --- a/src/libs/utils/consoleprocess_unix.cpp
 +++ b/src/libs/utils/consoleprocess_unix.cpp

@@ -5,6 +5,12 @@ Description: Enable RPATH also on kFreeBSD and Hurd
 Last-Update: 2014-04-16
 Forwarded: no
 
+---
+ src/qtcreatorplugin.pri                         |    4 ++--
+ src/rpath.pri                                   |    2 +-
+ src/tools/qtcreatorwidgets/qtcreatorwidgets.pro |    4 ++--
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
 --- a/src/rpath.pri
 +++ b/src/rpath.pri
 @@ -1,7 +1,7 @@
