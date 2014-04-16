@@ -1,10 +1,19 @@
 Description: Use the system botan library instead of the bundled one.
 Author: Felix Geyer <debfx@ubuntu.com>
-Last-Reviewed: 2014-02-20
+Last-Reviewed: 2014-04-16
+
+---
+ src/libs/3rdparty/botan/botan.pri        |   59 +------------------------------
+ src/libs/ssh/sshcryptofacility.cpp       |    5 ++
+ src/libs/ssh/sshcryptofacility_p.h       |    2 +
+ src/libs/ssh/sshkeyexchange.cpp          |    6 +++
+ src/libs/ssh/sshkeygenerator.cpp         |    5 ++
+ src/libs/ssh/sshkeypasswordretriever_p.h |    1 
+ 6 files changed, 21 insertions(+), 57 deletions(-)
 
 --- a/src/libs/3rdparty/botan/botan.pri
 +++ b/src/libs/3rdparty/botan/botan.pri
-@@ -1,56 +1,2 @@
+@@ -1,57 +1,2 @@
 -INCLUDEPATH *= $$PWD/..
 -HEADERS += $$PWD/botan.h
 -
@@ -42,6 +51,7 @@ Last-Reviewed: 2014-02-20
 -        BOTAN_HAS_MUTEX_WIN32
 -
 -    win32-msvc* {
+-        QMAKE_CXXFLAGS_EXCEPTIONS_ON = -EHs
 -        QMAKE_CXXFLAGS += -wd4251 -wd4290 -wd4250
 -        DEFINES += BOTAN_BUILD_COMPILER_IS_MSVC BOTAN_TARGET_OS_HAS_GMTIME_S _SCL_SECURE_NO_WARNINGS
 -    } else {
