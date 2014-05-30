@@ -13,6 +13,7 @@ qtcreator (3.1.1+dfsg-1) UNRELEASED; urgency=medium
   * Remove no-Werror.diff, seems no longer needed.
   * Do not remove the missplaced qbs plugins, they have been moved to the right
     place.
+  * Bump Qt build dependencies to 5.3.0.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
 
