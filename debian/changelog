@@ -16,6 +16,8 @@ qtcreator (3.1.1+dfsg-1) UNRELEASED; urgency=medium
   * Bump Qt build dependencies to 5.3.0.
   * Pass some extra directories to dh_shlibdeps in which to look for
     dependencies. This might be an upstream bug.
+  * Do not override dh_makeshlibs. We do not provide libs, so it shouldn't be a
+    problem.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
 
