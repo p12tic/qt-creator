@@ -1,6 +1,5 @@
-qtcreator (3.1.1+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.1.1+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Add libqt5x11extras5-dev as build dependency, as the build log warn us of
     it being missing.
@@ -20,7 +19,7 @@ qtcreator (3.1.1+dfsg-1) UNRELEASED; urgency=medium
     problem.
   * Fix permissions on qbs files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Apr 2014 17:59:18 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 07 Jun 2014 11:51:23 -0300
 
 qtcreator (3.0.1+dfsg+exp-4) unstable; urgency=medium
 
