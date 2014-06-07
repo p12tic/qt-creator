@@ -51,6 +51,9 @@ endif
 	# Do not install the file, we better symlink it.
 	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
 
+	# Fix wrong permissions
+	chmod -v 664 debian/tmp/usr/share/qtcreator/qbs/share/qbs/modules/nsis/*.qbs
+
 override_dh_auto_clean:
 	dh_auto_clean
 	rm -rf doc/html lib/qmldesigner lib/qtcreator/plugins share/doc
