@@ -1,10 +1,9 @@
-qtcreator (3.1.2+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.1.2+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Bump Qt build dependencies.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jul 2014 13:48:00 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 01 Jul 2014 15:34:16 -0300
 
 qtcreator (3.1.1+dfsg-1) unstable; urgency=medium
 
