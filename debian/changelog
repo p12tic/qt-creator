@@ -1,5 +1,8 @@
 qtcreator (3.1.2+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Adam Majer ]
+  * Add Debian menu entry.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Aug 2014 13:29:22 -0300
 
 qtcreator (3.1.2+dfsg-1) unstable; urgency=medium
