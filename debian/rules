@@ -31,7 +31,7 @@ override_dh_auto_configure:
 
 	mkdir -p builddir
 	cd builddir ; \
-		qmake QMAKE_CFLAGS_RELEASE="$(QMAKE_CFLAGS_RELEASE)" \
+		qmake -recursive QMAKE_CFLAGS_RELEASE="$(QMAKE_CFLAGS_RELEASE)" \
 		QMAKE_CFLAGS_DEBUG="$(QMAKE_CFLAGS_DEBUG)" \
 		QMAKE_CXXFLAGS_RELEASE="$(QMAKE_CXXFLAGS_RELEASE)" \
 		QMAKE_CXXFLAGS_DEBUG="$(QMAKE_CXXFLAGS_DEBUG)" \
@@ -40,6 +40,14 @@ override_dh_auto_configure:
 		QMAKE_STRIP=: \
 		PREFIX=/usr/ \
 		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 USE_SYSTEM_BOTAN=1 $(extra_configure_opts)
+
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), armhf))
+	# Hack over a g++ problem while using -O2 on armhf.
+	# If you don't like this horrible hack please feel free to help me try to
+	# reproduce it in a minimal test case so as to be able to properly fill a
+	# bug against g++.
+	sed -i 's/O2/O1/g' builddir/src/plugins/qmldesigner/Makefile.qmldesignerplugin
+endif
 
 override_dh_auto_install:
 ifneq (,$(filter qtcreator-doc, $(shell dh_listpackages)))
