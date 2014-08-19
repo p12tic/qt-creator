@@ -2,7 +2,7 @@ Author: Pino Toscano <pino@debian.org>
 Description: Enable RPATH also on kFreeBSD and Hurd
  qtcreator's plugins use RPATH to locate the qtcreator libraries, so enable it
  also on kFreeBSD and Hurd.
-Last-Update: 2014-04-16
+Last-Update: 2014-08-19
 Forwarded: no
 
 ---
