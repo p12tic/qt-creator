@@ -1,6 +1,6 @@
 Description: Use the system botan library instead of the bundled one.
 Author: Felix Geyer <debfx@ubuntu.com>
-Last-Reviewed: 2014-04-16
+Last-Reviewed: 2014-08-19
 
 ---
  src/libs/3rdparty/botan/botan.pri        |   59 +------------------------------
@@ -62,8 +62,8 @@ Last-Reviewed: 2014-04-16
 -}
 -
 -unix:*-g++* {
--    QMAKE_CFLAGS += -fPIC -ansi -fpermissive -finline-functions -Wno-long-long
--    QMAKE_CXXFLAGS += -fPIC -ansi -fpermissive -finline-functions -Wno-long-long
+-    QMAKE_CFLAGS += -fPIC -fpermissive -finline-functions -Wno-long-long
+-    QMAKE_CXXFLAGS += -fPIC -fpermissive -finline-functions -Wno-long-long
 -    QMAKE_CXXFLAGS_HIDESYMS -= -fvisibility-inlines-hidden # for ubuntu 7.04
 -}
 -
