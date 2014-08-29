@@ -51,6 +51,7 @@ Recommends: gdb,
             qtdeclarative5-dev-tools,
             qtquick1-5-dev-tools,
             qttools5-dev-tools,
+            qttranslations5-l10n,
             qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
 Suggests: cmake, g++, git, kdelibs5-data, subversion
