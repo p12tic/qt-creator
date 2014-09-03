@@ -1,0 +1,66 @@
+Index: qtcreator/src/plugins/cpptools/cppmodelmanager.cpp
+===================================================================
+--- qtcreator.orig/src/plugins/cpptools/cppmodelmanager.cpp	2014-08-18 02:52:02.000000000 -0500
++++ qtcreator/src/plugins/cpptools/cppmodelmanager.cpp	2014-09-03 12:28:09.844798669 -0500
+@@ -919,6 +919,24 @@
+     return m_indexingSupporter ? m_indexingSupporter : m_internalIndexingSupport;
+ }
+ 
++QStringList CppModelManager::projectFiles()
++{
++    ensureUpdated();
++    return m_projectFiles;
++}
++
++ProjectPart::HeaderPaths CppModelManager::headerPaths()
++{
++    ensureUpdated();
++    return m_headerPaths;
++}
++
++QByteArray CppModelManager::definedMacros()
++{
++    ensureUpdated();
++    return m_definedMacros;
++}
++
+ void CppModelManager::enableGarbageCollector(bool enable)
+ {
+     m_delayedGcTimer->stop();
+Index: qtcreator/src/plugins/cpptools/cppmodelmanager.h
+===================================================================
+--- qtcreator.orig/src/plugins/cpptools/cppmodelmanager.h	2014-08-18 02:52:02.000000000 -0500
++++ qtcreator/src/plugins/cpptools/cppmodelmanager.h	2014-09-03 12:28:28.360799389 -0500
+@@ -122,17 +122,8 @@
+     virtual void setIndexingSupport(CppIndexingSupport *indexingSupport);
+     virtual CppIndexingSupport *indexingSupport();
+ 
+-    QStringList projectFiles()
+-    {
+-        ensureUpdated();
+-        return m_projectFiles;
+-    }
+-
+-    ProjectPart::HeaderPaths headerPaths()
+-    {
+-        ensureUpdated();
+-        return m_headerPaths;
+-    }
++    QStringList projectFiles();
++    ProjectPart::HeaderPaths headerPaths();
+ 
+     // Use this *only* for auto tests
+     void setHeaderPaths(const ProjectPart::HeaderPaths &headerPaths)
+@@ -140,11 +131,7 @@
+         m_headerPaths = headerPaths;
+     }
+ 
+-    QByteArray definedMacros()
+-    {
+-        ensureUpdated();
+-        return m_definedMacros;
+-    }
++    QByteArray definedMacros();
+ 
+     void enableGarbageCollector(bool enable);
+ 

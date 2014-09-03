@@ -3,3 +3,4 @@ rpath_nonlinux.diff
 
 # Debian patches.
 botan_system_lib.diff
+from_header_to_body.diff
