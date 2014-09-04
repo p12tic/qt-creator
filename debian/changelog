@@ -1,4 +1,4 @@
-qtcreator (3.2.0+dfsg-2) UNRELEASED; urgency=medium
+qtcreator (3.2.0+dfsg-2) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Make qtcreator recommend qttranslations5-l10n (Closes: 759685).
@@ -8,7 +8,7 @@ qtcreator (3.2.0+dfsg-2) UNRELEASED; urgency=medium
   * Move some functions bodies from headers to .cpp files. This fixes a
     FTBFS bug with latest GCC (closes: 759862)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 29 Aug 2014 12:15:09 -0300
+ -- Adam Majer <adamm@zombino.com>  Wed, 03 Sep 2014 21:10:34 -0500
 
 qtcreator (3.2.0+dfsg-1) unstable; urgency=medium
 
