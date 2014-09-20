@@ -1,3 +1,9 @@
+qtcreator (3.2.1+dfsg-2) experimental; urgency=medium
+
+  * Add missing build dependency on libxext-dev (QTBUG-41454)
+
+ -- Adam Majer <adamm@zombino.com>  Sat, 20 Sep 2014 19:05:56 -0500
+
 qtcreator (3.2.1+dfsg-1) experimental; urgency=medium
 
   * New upstream release
