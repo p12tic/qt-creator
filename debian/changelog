@@ -3,6 +3,8 @@ qtcreator (3.2.1+dfsg-2) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add +dfsg to the versioned build dependencies that require them. This
     helps backporting packages.
+  * Add a note on Readme.source noting that the JQuery minified libraries
+    where replaced with Debian's unminified ones.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 20 Sep 2014 00:16:05 -0300
 
