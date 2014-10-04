@@ -1,8 +1,11 @@
-Index: qtcreator/src/plugins/cpptools/cppmodelmanager.cpp
-===================================================================
---- qtcreator.orig/src/plugins/cpptools/cppmodelmanager.cpp	2014-08-18 02:52:02.000000000 -0500
-+++ qtcreator/src/plugins/cpptools/cppmodelmanager.cpp	2014-09-03 12:28:09.844798669 -0500
-@@ -919,6 +919,24 @@
+---
+ src/plugins/cpptools/cppmodelmanager.cpp |   18 ++++++++++++++++++
+ src/plugins/cpptools/cppmodelmanager.h   |   19 +++----------------
+ 2 files changed, 21 insertions(+), 16 deletions(-)
+
+--- a/src/plugins/cpptools/cppmodelmanager.cpp
++++ b/src/plugins/cpptools/cppmodelmanager.cpp
+@@ -920,6 +920,24 @@ CppIndexingSupport *CppModelManager::ind
      return m_indexingSupporter ? m_indexingSupporter : m_internalIndexingSupport;
  }
  
@@ -27,11 +30,9 @@ Index: qtcreator/src/plugins/cpptools/cppmodelmanager.cpp
  void CppModelManager::enableGarbageCollector(bool enable)
  {
      m_delayedGcTimer->stop();
-Index: qtcreator/src/plugins/cpptools/cppmodelmanager.h
-===================================================================
---- qtcreator.orig/src/plugins/cpptools/cppmodelmanager.h	2014-08-18 02:52:02.000000000 -0500
-+++ qtcreator/src/plugins/cpptools/cppmodelmanager.h	2014-09-03 12:28:28.360799389 -0500
-@@ -122,17 +122,8 @@
+--- a/src/plugins/cpptools/cppmodelmanager.h
++++ b/src/plugins/cpptools/cppmodelmanager.h
+@@ -122,17 +122,8 @@ public:
      virtual void setIndexingSupport(CppIndexingSupport *indexingSupport);
      virtual CppIndexingSupport *indexingSupport();
  
@@ -51,7 +52,7 @@ Index: qtcreator/src/plugins/cpptools/cppmodelmanager.h
  
      // Use this *only* for auto tests
      void setHeaderPaths(const ProjectPart::HeaderPaths &headerPaths)
-@@ -140,11 +131,7 @@
+@@ -140,11 +131,7 @@ public:
          m_headerPaths = headerPaths;
      }
  
