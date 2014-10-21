@@ -6,9 +6,13 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
    
     Change-Id: I33ae062c3225fb3d7b7d1a62e0e287d326bb4276
  
-diff --git a/src/plugins/qtsupport/qtchooserqtgatherer.cpp b/src/plugins/qtsupport/qtchooserqtgatherer.cpp
-new file mode 100644
-index 0000000..cecc4f2
+---
+ src/plugins/qtsupport/qtchooserqtgatherer.cpp |  117 ++++++++++++++++++++++++++
+ src/plugins/qtsupport/qtchooserqtgatherer.h   |   57 ++++++++++++
+ src/plugins/qtsupport/qtsupport.pro           |    2 
+ src/plugins/qtsupport/qtversionmanager.cpp    |   22 +++-
+ 4 files changed, 192 insertions(+), 6 deletions(-)
+
 --- /dev/null
 +++ b/src/plugins/qtsupport/qtchooserqtgatherer.cpp
 @@ -0,0 +1,117 @@
@@ -129,9 +133,6 @@ index 0000000..cecc4f2
 +}
 +} // namespace Internal
 +} // namespace QtSupport
-diff --git a/src/plugins/qtsupport/qtchooserqtgatherer.h b/src/plugins/qtsupport/qtchooserqtgatherer.h
-new file mode 100644
-index 0000000..ab26602
 --- /dev/null
 +++ b/src/plugins/qtsupport/qtchooserqtgatherer.h
 @@ -0,0 +1,57 @@
@@ -192,65 +193,61 @@ index 0000000..ab26602
 +} // namespace QtSupport
 +
 +#endif // QTCHOOSERQTGATHERER_H
-diff --git a/src/plugins/qtsupport/qtsupport.pro b/src/plugins/qtsupport/qtsupport.pro
-index 94c772e..bebc160 100644
 --- a/src/plugins/qtsupport/qtsupport.pro
 +++ b/src/plugins/qtsupport/qtsupport.pro
-@@ -11,6 +11,7 @@ HEADERS += \
-     codegensettings.h \
-     codegensettingspage.h \
-     gettingstartedwelcomepage.h \
+@@ -7,6 +7,7 @@ DEFINES += QMAKE_LIBRARY
+ include(../../shared/proparser/proparser.pri)
+ 
+ HEADERS += \
 +    qtchooserqtgatherer.h \
      qtsupportplugin.h \
      qtsupport_global.h \
      qtkitconfigwidget.h \
-@@ -43,6 +44,7 @@ SOURCES += \
-     codegensettings.cpp \
-     codegensettingspage.cpp \
-     gettingstartedwelcomepage.cpp \
+@@ -36,6 +37,7 @@ HEADERS += \
+     winceqtversion.h
+ 
+ SOURCES += \
 +    qtchooserqtgatherer.cpp \
      qtsupportplugin.cpp \
      qtkitconfigwidget.cpp \
      qtkitinformation.cpp \
-diff --git a/src/plugins/qtsupport/qtversionmanager.cpp b/src/plugins/qtsupport/qtversionmanager.cpp
-index 59f7f34..92e8039 100644
 --- a/src/plugins/qtsupport/qtversionmanager.cpp
 +++ b/src/plugins/qtsupport/qtversionmanager.cpp
 @@ -34,6 +34,7 @@
- #include "qtversionfactory.h"
  #include "baseqtversion.h"
+ #include "qtfeatureprovider.h"
  #include "qtsupportconstants.h"
 +#include "qtchooserqtgatherer.h"
  
  #include <coreplugin/icore.h>
  #include <coreplugin/helpmanager.h>
-@@ -436,14 +437,24 @@ static void saveQtVersions()
- 
+@@ -437,14 +438,23 @@ static void saveQtVersions()
  static void findSystemQt()
  {
-+    QList<FileName> systemQMakes;
      FileName systemQMakePath = BuildableHelperLibrary::findSystemQt(Environment::systemEnvironment());
 -    if (systemQMakePath.isNull())
 -        return;
 +    if (!systemQMakePath.isNull())
 +        systemQMakes << systemQMakePath;
-+
+ 
+-    BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(systemQMakePath);
+-    if (version) {
+-        version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), systemQMakePath, true));
+-        m_versions.insert(version->uniqueId(), version);
 +    QStringList qmakePathsFromQtChooser = gatherQmakePathsFromQtChooser();
 +    qmakePathsFromQtChooser.removeAll(systemQMakePath.toString());
 +    foreach (const QString &qmakePath, qmakePathsFromQtChooser)  {
 +        FileName qmake = FileName::fromString(qmakePath);
 +        systemQMakes << qmake;
-+    }
- 
--    BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(systemQMakePath);
--    if (version) {
--        version->setUnexpandedDisplayName(BaseQtVersion::defaultUnexpandedDisplayName(systemQMakePath, true));
--        m_versions.insert(version->uniqueId(), version);
+     }
++
 +    foreach (const FileName &qmakePath, systemQMakes) {
 +        BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(qmakePath);
 +        if (version) {
 +            version->setUnexpandedDisplayName(BaseQtVersion::defaultUnexpandedDisplayName(qmakePath, true));
 +            m_versions.insert(version->uniqueId(), version);
 +        }
-     }
++     }
  }
+ 
+ void QtVersionManager::addVersion(BaseQtVersion *version)
