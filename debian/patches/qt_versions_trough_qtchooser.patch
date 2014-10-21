@@ -6,15 +6,10 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
    
     Change-Id: I33ae062c3225fb3d7b7d1a62e0e287d326bb4276
  
----
- src/plugins/qtsupport/qtchooserqtgatherer.cpp |  117 ++++++++++++++++++++++++++
- src/plugins/qtsupport/qtchooserqtgatherer.h   |   57 ++++++++++++
- src/plugins/qtsupport/qtsupport.pro           |    2 
- src/plugins/qtsupport/qtversionmanager.cpp    |   23 +++--
- 4 files changed, 193 insertions(+), 6 deletions(-)
-
---- /dev/null
-+++ b/src/plugins/qtsupport/qtchooserqtgatherer.cpp
+Index: qtcreator.old/src/plugins/qtsupport/qtchooserqtgatherer.cpp
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ qtcreator.old/src/plugins/qtsupport/qtchooserqtgatherer.cpp	2014-10-21 15:00:51.934849796 -0500
 @@ -0,0 +1,117 @@
 +/****************************************************************************
 + * *
@@ -133,8 +128,10 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
 +}
 +} // namespace Internal
 +} // namespace QtSupport
---- /dev/null
-+++ b/src/plugins/qtsupport/qtchooserqtgatherer.h
+Index: qtcreator.old/src/plugins/qtsupport/qtchooserqtgatherer.h
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ qtcreator.old/src/plugins/qtsupport/qtchooserqtgatherer.h	2014-10-21 15:00:51.938849796 -0500
 @@ -0,0 +1,57 @@
 +/****************************************************************************
 + * *
@@ -193,9 +190,11 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
 +} // namespace QtSupport
 +
 +#endif // QTCHOOSERQTGATHERER_H
---- a/src/plugins/qtsupport/qtsupport.pro
-+++ b/src/plugins/qtsupport/qtsupport.pro
-@@ -7,6 +7,7 @@ DEFINES += QMAKE_LIBRARY
+Index: qtcreator.old/src/plugins/qtsupport/qtsupport.pro
+===================================================================
+--- qtcreator.old.orig/src/plugins/qtsupport/qtsupport.pro	2014-10-21 15:00:51.938849796 -0500
++++ qtcreator.old/src/plugins/qtsupport/qtsupport.pro	2014-10-21 15:06:26.318840747 -0500
+@@ -7,6 +7,7 @@
  include(../../shared/proparser/proparser.pri)
  
  HEADERS += \
@@ -203,7 +202,7 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
      qtsupportplugin.h \
      qtsupport_global.h \
      qtkitconfigwidget.h \
-@@ -36,6 +37,7 @@ HEADERS += \
+@@ -36,6 +37,7 @@
      winceqtversion.h
  
  SOURCES += \
@@ -211,8 +210,10 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
      qtsupportplugin.cpp \
      qtkitconfigwidget.cpp \
      qtkitinformation.cpp \
---- a/src/plugins/qtsupport/qtversionmanager.cpp
-+++ b/src/plugins/qtsupport/qtversionmanager.cpp
+Index: qtcreator.old/src/plugins/qtsupport/qtversionmanager.cpp
+===================================================================
+--- qtcreator.old.orig/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-21 15:00:51.938849796 -0500
++++ qtcreator.old/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-21 15:04:55.582843202 -0500
 @@ -34,6 +34,7 @@
  #include "baseqtversion.h"
  #include "qtfeatureprovider.h"
@@ -221,7 +222,7 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
  
  #include <coreplugin/icore.h>
  #include <coreplugin/helpmanager.h>
-@@ -436,15 +437,25 @@ static void saveQtVersions()
+@@ -436,14 +437,25 @@
  
  static void findSystemQt()
  {
@@ -229,27 +230,27 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
      FileName systemQMakePath = BuildableHelperLibrary::findSystemQt(Environment::systemEnvironment());
 -    if (systemQMakePath.isNull())
 -        return;
-+    if (!systemQMakePath.isNull())
-+        systemQMakes << systemQMakePath;
  
 -    BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(systemQMakePath);
 -    if (version) {
 -        version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), systemQMakePath, true));
 -        m_versions.insert(version->uniqueId(), version);
++    if (!systemQMakePath.isNull())
++        systemQMakes << systemQMakePath;
++
 +    QStringList qmakePathsFromQtChooser = gatherQmakePathsFromQtChooser();
 +    qmakePathsFromQtChooser.removeAll(systemQMakePath.toString());
-+    foreach (const QString &qmakePath, qmakePathsFromQtChooser)  {
++    foreach (const QString &qmakePath, qmakePathsFromQtChooser) {
 +        FileName qmake = FileName::fromString(qmakePath);
 +        systemQMakes << qmake;
-     }
++    }
 +
 +    foreach (const FileName &qmakePath, systemQMakes) {
 +        BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(qmakePath);
 +        if (version) {
-+            version->setUnexpandedDisplayName(BaseQtVersion::defaultUnexpandedDisplayName(qmakePath, true));
-+            m_versions.insert(version->uniqueId(), version);
++             version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), qmakePath, true));
++             m_versions.insert(version->uniqueId(), version);
 +        }
-+     }
+     }
  }
  
- void QtVersionManager::addVersion(BaseQtVersion *version)
