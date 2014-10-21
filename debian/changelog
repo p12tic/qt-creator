@@ -4,6 +4,7 @@ qtcreator (3.2.1+dfsg-4) UNRELEASED; urgency=medium
   * Refresh from_header_to_body.diff.
   * Add qt_versions_trough_qtchooser.patch to detect available Qt versions
     using qtchooser.
+  * Update Standards-Version to 3.9.6, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 04 Oct 2014 10:40:52 -0300
 
