@@ -1,5 +1,6 @@
 02_use_x-terminal-emulator.diff
 rpath_nonlinux.diff
+qt_versions_trough_qtchooser.patch
 
 # Debian patches.
 botan_system_lib.diff
