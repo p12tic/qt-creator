@@ -1,0 +1,42 @@
+Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
+===================================================================
+--- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-22 21:36:36.474107687 -0500
++++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-22 21:39:50.470102437 -0500
+@@ -168,14 +168,11 @@
+     disconnect(ProjectExplorer::ToolChainManager::instance(), SIGNAL(toolChainsLoaded()),
+                this, SLOT(triggerQtVersionRestore()));
+ 
+-    bool success = restoreQtVersions();
++    restoreQtVersions();
+     m_instance->updateFromInstaller(false);
+-    if (!success) {
+-        // We did neither restore our settings or upgraded
+-        // in that case figure out if there's a qt in path
+-        // and add it to the Qt versions
+-        findSystemQt();
+-    }
++
++    // add system Qt
++    findSystemQt();
+ 
+     emit m_instance->qtVersionsLoaded();
+     emit m_instance->qtVersionsChanged(m_versions.keys(), QList<int>(), QList<int>());
+@@ -424,6 +421,9 @@
+ 
+     int count = 0;
+     foreach (BaseQtVersion *qtv, m_versions) {
++        if (qtv->isAutodetected())
++            continue;
++
+         QVariantMap tmp = qtv->toMap();
+         if (tmp.isEmpty())
+             continue;
+@@ -451,7 +451,7 @@
+     }
+ 
+     foreach (const FileName &qmakePath, systemQMakes) {
+-        BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(qmakePath);
++        BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(qmakePath, true);
+         if (version) {
+              version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), qmakePath, true));
+              m_versions.insert(version->uniqueId(), version);

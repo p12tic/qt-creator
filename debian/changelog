@@ -1,3 +1,10 @@
+qtcreator (3.2.1+dfsg-5) unstable; urgency=medium
+
+  * Modify Qt autodetection to always have up-to-date-list of installed Qt
+    versions
+
+ -- Adam Majer <adamm@zombino.com>  Wed, 22 Oct 2014 12:30:00 -0500
+
 qtcreator (3.2.1+dfsg-4) unstable; urgency=medium
 
   * Refresh from_header_to_body.diff.
