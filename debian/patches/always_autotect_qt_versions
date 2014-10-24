@@ -1,7 +1,16 @@
 Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 ===================================================================
 --- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-22 21:36:36.474107687 -0500
-+++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-22 21:39:50.470102437 -0500
++++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-23 23:35:56.154526332 -0500
+@@ -139,7 +139,7 @@
+ static BaseQtVersion::QmakeBuildConfigs qmakeBuildConfigFromCmdArgs(QList<QMakeAssignment> *assignments,
+                                                                     BaseQtVersion::QmakeBuildConfigs defaultBuildConfig);
+ static bool restoreQtVersions();
+-static void findSystemQt();
++static void updateSystemQt();
+ static void saveQtVersions();
+ static void updateDocumentation();
+ 
 @@ -168,14 +168,11 @@
      disconnect(ProjectExplorer::ToolChainManager::instance(), SIGNAL(toolChainsLoaded()),
                 this, SLOT(triggerQtVersionRestore()));
@@ -17,26 +26,77 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 -    }
 +
 +    // add system Qt
-+    findSystemQt();
++    updateSystemQt();
  
      emit m_instance->qtVersionsLoaded();
      emit m_instance->qtVersionsChanged(m_versions.keys(), QList<int>(), QList<int>());
-@@ -424,6 +421,9 @@
+@@ -435,27 +432,54 @@
+     m_writer->save(data, Core::ICore::mainWindow());
+ }
  
-     int count = 0;
-     foreach (BaseQtVersion *qtv, m_versions) {
-+        if (qtv->isAutodetected())
-+            continue;
+-static void findSystemQt()
++static void addSystemVersion(FileName qmake_fn)
+ {
+-    QList<FileName> systemQMakes;
+-    FileName systemQMakePath = BuildableHelperLibrary::findSystemQt(Environment::systemEnvironment());
+-
+-    if (!systemQMakePath.isNull())
+-        systemQMakes << systemQMakePath;
++    BaseQtVersion *v = QtVersionFactory::createQtVersionFromQMakePath(qmake_fn, true);
++    m_versions.insert(v->uniqueId(), v);
++}
+ 
++static void updateSystemQt()
++{
++    QString systemQMakePath = BuildableHelperLibrary::findSystemQt(Environment::systemEnvironment()).toString();
+     QStringList qmakePathsFromQtChooser = gatherQmakePathsFromQtChooser();
+-    qmakePathsFromQtChooser.removeAll(systemQMakePath.toString());
+-    foreach (const QString &qmakePath, qmakePathsFromQtChooser) {
+-        FileName qmake = FileName::fromString(qmakePath);
+-        systemQMakes << qmake;
++    if (!qmakePathsFromQtChooser.contains(systemQMakePath))
++        qmakePathsFromQtChooser << systemQMakePath;
++    qmakePathsFromQtChooser.sort();
 +
-         QVariantMap tmp = qtv->toMap();
-         if (tmp.isEmpty())
-             continue;
-@@ -451,7 +451,7 @@
++    QMap<QString,int> currentAutoVersions;
++    for (QMap<int, BaseQtVersion*>::const_iterator i = m_versions.begin(); i != m_versions.end(); ++i) {
++        if (i.value()->isAutodetected()) {
++            currentAutoVersions.insert(i.value()->qmakeCommand().toString(), i.key());
++        }
      }
  
-     foreach (const FileName &qmakePath, systemQMakes) {
+-    foreach (const FileName &qmakePath, systemQMakes) {
 -        BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(qmakePath);
-+        BaseQtVersion *version = QtVersionFactory::createQtVersionFromQMakePath(qmakePath, true);
-         if (version) {
-              version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), qmakePath, true));
-              m_versions.insert(version->uniqueId(), version);
+-        if (version) {
+-             version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), qmakePath, true));
+-             m_versions.insert(version->uniqueId(), version);
++    QMap<QString,int>::const_iterator av = currentAutoVersions.begin();
++    QStringList::const_iterator dv = qmakePathsFromQtChooser.begin();
++    while (av != currentAutoVersions.end() && dv != qmakePathsFromQtChooser.end()) {
++        if (av.key() == *dv) {
++            ++av;
++            ++dv;
+         }
++        else if (av.key() < *dv) {
++            // currently saved automatic version has been removed
++            m_versions.remove(*av);
++            ++av;
++        }
++        else { // av.key() > *dv
++            // detected version is missing, add it
++            addSystemVersion(FileName::fromString(*dv));
++            ++dv;
++        }
++    }
++
++    while (av != currentAutoVersions.end()) {
++        m_versions.remove(*av);
++        ++av;
++    }
++
++    while (dv != qmakePathsFromQtChooser.end()) {
++        addSystemVersion(FileName::fromString(*dv));
++        ++dv;
+     }
+ }
+ 
