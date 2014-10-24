@@ -1,7 +1,7 @@
 Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 ===================================================================
 --- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-22 21:36:36.474107687 -0500
-+++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-23 23:35:56.154526332 -0500
++++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2014-10-24 18:25:44.855836576 -0500
 @@ -139,7 +139,7 @@
  static BaseQtVersion::QmakeBuildConfigs qmakeBuildConfigFromCmdArgs(QList<QMakeAssignment> *assignments,
                                                                      BaseQtVersion::QmakeBuildConfigs defaultBuildConfig);
@@ -35,7 +35,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
  }
  
 -static void findSystemQt()
-+static void addSystemVersion(FileName qmake_fn)
++static void addSystemQtVersion(FileName qmake_fn)
  {
 -    QList<FileName> systemQMakes;
 -    FileName systemQMakePath = BuildableHelperLibrary::findSystemQt(Environment::systemEnvironment());
@@ -58,8 +58,8 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 +        qmakePathsFromQtChooser << systemQMakePath;
 +    qmakePathsFromQtChooser.sort();
 +
-+    QMap<QString,int> currentAutoVersions;
-+    for (QMap<int, BaseQtVersion*>::const_iterator i = m_versions.begin(); i != m_versions.end(); ++i) {
++    QMap<QString, int> currentAutoVersions;
++    for (QMap<int, BaseQtVersion *>::const_iterator i = m_versions.begin(); i != m_versions.end(); ++i) {
 +        if (i.value()->isAutodetected()) {
 +            currentAutoVersions.insert(i.value()->qmakeCommand().toString(), i.key());
 +        }
@@ -70,7 +70,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 -        if (version) {
 -             version->setDisplayName(BaseQtVersion::defaultDisplayName(version->qtVersionString(), qmakePath, true));
 -             m_versions.insert(version->uniqueId(), version);
-+    QMap<QString,int>::const_iterator av = currentAutoVersions.begin();
++    QMap<QString, int>::const_iterator av = currentAutoVersions.begin();
 +    QStringList::const_iterator dv = qmakePathsFromQtChooser.begin();
 +    while (av != currentAutoVersions.end() && dv != qmakePathsFromQtChooser.end()) {
 +        if (av.key() == *dv) {
@@ -84,7 +84,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 +        }
 +        else { // av.key() > *dv
 +            // detected version is missing, add it
-+            addSystemVersion(FileName::fromString(*dv));
++            addSystemQtVersion(FileName::fromString(*dv));
 +            ++dv;
 +        }
 +    }
@@ -95,7 +95,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 +    }
 +
 +    while (dv != qmakePathsFromQtChooser.end()) {
-+        addSystemVersion(FileName::fromString(*dv));
++        addSystemQtVersion(FileName::fromString(*dv));
 +        ++dv;
      }
  }

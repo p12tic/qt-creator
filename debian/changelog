@@ -1,9 +1,9 @@
-qtcreator (3.2.1+dfsg-6) UNRELEASED; urgency=medium
+qtcreator (3.2.1+dfsg-6) unstable; urgency=medium
 
   * Fix previous patch so autodetected Qt versions can be used and saved
     in "kits"
 
- -- Adam Majer <adamm@zombino.com>  Thu, 23 Oct 2014 23:44:13 -0500
+ -- Adam Majer <adamm@zombino.com>  Fri, 24 Oct 2014 18:28:22 -0500
 
 qtcreator (3.2.1+dfsg-5) unstable; urgency=medium
 
