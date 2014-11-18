@@ -1,3 +1,10 @@
+qtcreator (3.2.1+dfsg-7) unstable; urgency=medium
+
+  * Adds a missing check for a partially installed Qt version that is
+    reported in qtchooser but is lacking qmake. (closes: #770007)
+
+ -- Adam Majer <adamm@zombino.com>  Tue, 18 Nov 2014 09:55:32 -0600
+
 qtcreator (3.2.1+dfsg-6) unstable; urgency=medium
 
   * Fix previous patch so autodetected Qt versions can be used and saved
