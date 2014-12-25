@@ -11,29 +11,23 @@ Forwarded: no
  src/tools/qtcreatorwidgets/qtcreatorwidgets.pro |    4 ++--
  3 files changed, 5 insertions(+), 5 deletions(-)
 
---- a/src/rpath.pri
-+++ b/src/rpath.pri
-@@ -1,7 +1,7 @@
+Index: qtcreator/src/rpath.pri
+===================================================================
+--- qtcreator.orig/src/rpath.pri	2014-12-25 01:53:23.534706324 -0600
++++ qtcreator/src/rpath.pri	2014-12-25 01:54:23.126708641 -0600
+@@ -1,6 +1,6 @@
  macx {
-     QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/
      QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
 -} else:linux-* {
 +} else:linux-*|glibc-*|hurd-* {
      #do the rpath by hand since it's not possible to use ORIGIN in QMAKE_RPATHDIR
      # this expands to $ORIGIN (after qmake and make), it does NOT read a qmake var
      QMAKE_RPATHDIR += \$\$ORIGIN
---- a/src/qtcreatorplugin.pri
-+++ b/src/qtcreatorplugin.pri
-@@ -126,7 +126,7 @@ greaterThan(QT_MAJOR_VERSION, 4) {
- macx {
-     QMAKE_LFLAGS_SONAME = -Wl,-install_name,@rpath/PlugIns/
-     QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
--} else:linux-* {
-+} else:linux-*|glibc-*|hurd-* {
-     #do the rpath by hand since it's not possible to use ORIGIN in QMAKE_RPATHDIR
-     QMAKE_RPATHDIR += \$\$ORIGIN
-     QMAKE_RPATHDIR += \$\$ORIGIN/..
-@@ -139,7 +139,7 @@ contains(QT_CONFIG, reduce_exports):CONF
+Index: qtcreator/src/qtcreatorplugin.pri
+===================================================================
+--- qtcreator.orig/src/qtcreatorplugin.pri	2014-12-25 01:53:23.534706324 -0600
++++ qtcreator/src/qtcreatorplugin.pri	2014-12-25 01:53:23.530706324 -0600
+@@ -96,7 +96,7 @@
  
  TEMPLATE = lib
  CONFIG += plugin plugin_with_soname
@@ -42,9 +36,11 @@ Forwarded: no
  
  !macx {
      target.path = $$QTC_PREFIX/$$IDE_LIBRARY_BASENAME/qtcreator/plugins
---- a/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
-+++ b/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
-@@ -13,7 +13,7 @@ isEmpty(IDE_LIBRARY_BASENAME) {
+Index: qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
+===================================================================
+--- qtcreator.orig/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro	2014-12-25 01:53:23.534706324 -0600
++++ qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro	2014-12-25 01:53:23.530706324 -0600
+@@ -13,7 +13,7 @@
      IDE_LIBRARY_BASENAME = lib
  }
  
@@ -53,7 +49,7 @@ Forwarded: no
    # form abs path to qtcreator lib dir
    QTC_LIBS=$$dirname(OUT_PWD)
    QTC_LIBS=$$dirname(QTC_LIBS)
-@@ -21,7 +21,7 @@ linux-*||win32 {
+@@ -21,7 +21,7 @@
    QTC_LIBS=$$QTC_LIBS/$$IDE_LIBRARY_BASENAME/qtcreator
  }
  

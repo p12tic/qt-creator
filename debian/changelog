@@ -1,3 +1,11 @@
+qtcreator (3.3.0+dfsg-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+    + Replace minified jquery instances in upstream tarball with editing
+    friendly version from Debian.
+
+ -- Adam Majer <adamm@zombino.com>  Thu, 25 Dec 2014 01:25:13 -0600
+
 qtcreator (3.2.1+dfsg-7) unstable; urgency=medium
 
   * Adds a missing check for a partially installed Qt version that is
