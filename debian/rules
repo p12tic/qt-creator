@@ -27,7 +27,6 @@ override_dh_auto_configure:
 	ln -s /usr/share/javascript/jquery/jquery.min.js tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
 	mkdir -p src/shared/qbs/doc/templates/scripts
 	ln -s /usr/share/javascript/jquery/jquery.min.js src/shared/qbs/doc/templates/scripts/jquery.js
-	ln -s /usr/share/javascript/jquery/jquery.min.js doc/templates/scripts/jquery.js
 	ln -s /usr/share/javascript/jquery/jquery.min.js doc/titlecase/jquery.js
 
 	mkdir -p builddir
@@ -73,7 +72,6 @@ override_dh_auto_clean:
 	find . -type d -name '.uic' | xargs rm -rf
 	rm -vf tests/manual/appwizards/htmlimportscenario_01/jquery-1.5.min.js
 	rm -vf src/shared/qbs/doc/templates/scripts/jquery.js
-	rm -vf doc/templates/scripts/jquery.js
 	rm -vf doc/titlecase/jquery.js
 
 override_dh_install:
