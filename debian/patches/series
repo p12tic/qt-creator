@@ -5,3 +5,4 @@ qt_versions_trough_qtchooser.patch
 # Debian patches.
 botan_system_lib.diff
 always_autotect_qt_versions
+missing_header.diff
