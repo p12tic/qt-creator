@@ -1,10 +1,14 @@
-qtcreator (3.3.0+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.3.0+dfsg-1) experimental; urgency=medium
 
   * New upstream release
     + Replace minified jquery instances in upstream tarball with editing
     friendly version from Debian.
+  * Use debian packaged qbs instead of bundled version (closes: #763388)
+  * Update uscan to reference qt.io instead of qt-project.org
+  * Switch homepage to qt.io
+  * Look for documentation in the correct directory (closes: #740126)
 
- -- Adam Majer <adamm@zombino.com>  Thu, 25 Dec 2014 01:25:13 -0600
+ -- Adam Majer <adamm@zombino.com>  Thu, 01 Jan 2015 18:59:21 -0600
 
 qtcreator (3.2.1+dfsg-7) unstable; urgency=medium
 

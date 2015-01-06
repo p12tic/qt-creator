@@ -38,6 +38,7 @@ override_dh_auto_configure:
 		QMAKE_LFLAGS_RELEASE="$(QMAKE_LFLAGS_RELEASE)" \
 		QMAKE_LFLAGS_DEBUG="$(QMAKE_LFLAGS_DEBUG)" \
 		QMAKE_STRIP=: \
+		QBS_INSTALL_DIR=/usr \
 		PREFIX=/usr/ \
 		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 USE_SYSTEM_BOTAN=1 $(extra_configure_opts)
 
@@ -58,9 +59,6 @@ endif
 
 	# Do not install the file, we better symlink it.
 	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
-
-	# Fix wrong permissions
-	chmod -v 664 debian/tmp/usr/share/qtcreator/qbs/share/qbs/modules/nsis/*.qbs
 
 override_dh_auto_clean:
 	dh_auto_clean
