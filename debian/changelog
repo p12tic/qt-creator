@@ -1,10 +1,10 @@
-qtcreator (3.3.1+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.3.1+dfsg-1) experimental; urgency=medium
 
   * New upstream release
   * Update lists of jquery files updated from original tarball in
     README.source
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 24 Feb 2015 12:59:50 -0600
+ -- Adam Majer <adamm@zombino.com>  Tue, 24 Feb 2015 14:31:52 -0600
 
 qtcreator (3.3.0+dfsg-1) experimental; urgency=medium
 
