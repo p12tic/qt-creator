@@ -1,3 +1,10 @@
+qtcreator (3.4.0+dfsg~b1-1) experimental; urgency=medium
+
+  * New upstream release
+    + Added support for autocompletion of Qt5 style connect
+
+ -- Adam Majer <adamm@zombino.com>  Sat, 07 Mar 2015 16:06:47 -0600
+
 qtcreator (3.3.1+dfsg-1) experimental; urgency=medium
 
   * New upstream release
