@@ -6,6 +6,7 @@ qtcreator (3.4.1+dfsg-1) UNRELEASED; urgency=medium
 
   [ Adam Majer ]
   * New upstream release
+    + Refresh patches - only positional changes
 
  -- Adam Majer <adamm@zombino.com>  Wed, 24 Jun 2015 23:01:01 -0500
 

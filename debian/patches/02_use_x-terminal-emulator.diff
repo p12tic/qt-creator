@@ -7,9 +7,9 @@ Author: Fathi Boudra <fabo@debian.org>
 
 Index: qtcreator/src/libs/utils/consoleprocess_unix.cpp
 ===================================================================
---- qtcreator.orig/src/libs/utils/consoleprocess_unix.cpp	2014-12-25 01:52:54.142705181 -0600
-+++ qtcreator/src/libs/utils/consoleprocess_unix.cpp	2014-12-25 01:52:54.138705181 -0600
-@@ -352,6 +352,7 @@
+--- qtcreator.orig/src/libs/utils/consoleprocess_unix.cpp	2015-06-24 23:59:30.295412547 -0500
++++ qtcreator/src/libs/utils/consoleprocess_unix.cpp	2015-06-24 23:59:30.295412547 -0500
+@@ -353,6 +353,7 @@
  
  static const Terminal knownTerminals[] =
  {

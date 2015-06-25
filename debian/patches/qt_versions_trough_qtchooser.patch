@@ -9,7 +9,7 @@ Date:   Thu Oct 16 13:52:28 2014 +0200
 Index: qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.cpp
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.cpp	2014-12-25 01:59:14.818719981 -0600
++++ qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.cpp	2015-06-25 01:18:51.731947228 -0500
 @@ -0,0 +1,117 @@
 +/****************************************************************************
 + * *
@@ -131,7 +131,7 @@ Index: qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.cpp
 Index: qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.h
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.h	2014-12-25 01:59:14.818719981 -0600
++++ qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.h	2015-06-25 01:18:51.731947228 -0500
 @@ -0,0 +1,57 @@
 +/****************************************************************************
 + * *
@@ -192,8 +192,8 @@ Index: qtcreator/src/plugins/qtsupport/qtchooserqtgatherer.h
 +#endif // QTCHOOSERQTGATHERER_H
 Index: qtcreator/src/plugins/qtsupport/qtsupport.pro
 ===================================================================
---- qtcreator.orig/src/plugins/qtsupport/qtsupport.pro	2014-12-25 01:59:14.822719982 -0600
-+++ qtcreator/src/plugins/qtsupport/qtsupport.pro	2014-12-25 11:27:16.928737915 -0600
+--- qtcreator.orig/src/plugins/qtsupport/qtsupport.pro	2015-06-25 01:18:51.735947174 -0500
++++ qtcreator/src/plugins/qtsupport/qtsupport.pro	2015-06-25 01:18:51.731947228 -0500
 @@ -7,6 +7,7 @@
  include(../../shared/proparser/proparser.pri)
  
@@ -212,8 +212,8 @@ Index: qtcreator/src/plugins/qtsupport/qtsupport.pro
      codegensettingspage.cpp \
 Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 ===================================================================
---- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp	2014-12-25 01:59:14.822719982 -0600
-+++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2014-12-25 11:27:56.452739452 -0600
+--- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp	2015-06-25 01:18:51.735947174 -0500
++++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2015-06-25 01:18:51.731947228 -0500
 @@ -34,6 +34,7 @@
  #include "qtversionfactory.h"
  #include "baseqtversion.h"
@@ -222,7 +222,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
  
  #include <coreplugin/icore.h>
  #include <coreplugin/helpmanager.h>
-@@ -436,15 +437,26 @@
+@@ -399,15 +400,26 @@
  
  static void findSystemQt()
  {

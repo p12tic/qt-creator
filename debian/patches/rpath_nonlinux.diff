@@ -13,8 +13,8 @@ Forwarded: no
 
 Index: qtcreator/src/rpath.pri
 ===================================================================
---- qtcreator.orig/src/rpath.pri	2014-12-25 01:53:23.534706324 -0600
-+++ qtcreator/src/rpath.pri	2014-12-25 01:54:23.126708641 -0600
+--- qtcreator.orig/src/rpath.pri	2015-06-25 01:14:15.299679763 -0500
++++ qtcreator/src/rpath.pri	2015-06-25 01:14:15.291679873 -0500
 @@ -1,6 +1,6 @@
  macx {
      QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
@@ -25,9 +25,9 @@ Index: qtcreator/src/rpath.pri
      QMAKE_RPATHDIR += \$\$ORIGIN
 Index: qtcreator/src/qtcreatorplugin.pri
 ===================================================================
---- qtcreator.orig/src/qtcreatorplugin.pri	2014-12-25 01:53:23.534706324 -0600
-+++ qtcreator/src/qtcreatorplugin.pri	2014-12-25 01:53:23.530706324 -0600
-@@ -96,7 +96,7 @@
+--- qtcreator.orig/src/qtcreatorplugin.pri	2015-06-25 01:14:15.299679763 -0500
++++ qtcreator/src/qtcreatorplugin.pri	2015-06-25 01:14:15.295679819 -0500
+@@ -91,7 +91,7 @@
  
  TEMPLATE = lib
  CONFIG += plugin plugin_with_soname
@@ -38,8 +38,8 @@ Index: qtcreator/src/qtcreatorplugin.pri
      target.path = $$QTC_PREFIX/$$IDE_LIBRARY_BASENAME/qtcreator/plugins
 Index: qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
 ===================================================================
---- qtcreator.orig/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro	2014-12-25 01:53:23.534706324 -0600
-+++ qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro	2014-12-25 01:53:23.530706324 -0600
+--- qtcreator.orig/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro	2015-06-25 01:14:15.299679763 -0500
++++ qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro	2015-06-25 01:14:15.295679819 -0500
 @@ -13,7 +13,7 @@
      IDE_LIBRARY_BASENAME = lib
  }
