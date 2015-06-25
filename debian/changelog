@@ -1,8 +1,5 @@
 qtcreator (3.4.1+dfsg-1) UNRELEASED; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Switch LDFLAGS to LFLAGS in debian/rules, as this should be the right flag
-    to use.
 
   [ Adam Majer ]
   * New upstream release
