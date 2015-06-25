@@ -91,7 +91,7 @@ License: GPL-2 or MIT
 Files: src/libs/3rdparty/cplusplus/*
 Copyright:
     2008 Roberto Raggi <roberto.raggi@gmail.com>
-License: Expat
+License: BSD-3-clause
 
 Files: src/libs/zeroconf/*
 Copyright: 1997-2004, Apple Computer, Inc.
@@ -125,7 +125,7 @@ Copyright:
     http://pivotallabs.com/users/scoward/blog
     Eloy Duran, Fingertips <eloy@fngtps.com>
     Fawzi Mohamed, digia <fawzi.mohamed@digia.com>
-License: BSD
+License: BSD-3-clause
 Comment: some entries as described in src/tools/3rdparty/iossim/IOSSIM_LICENSE
 
 License: LGPL-2.1+

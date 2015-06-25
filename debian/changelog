@@ -1,4 +1,4 @@
-qtcreator (3.4.1+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.4.1+dfsg-1) unstable; urgency=medium
 
   * New upstream release
     + Refresh patches - only positional changes
@@ -7,7 +7,7 @@ qtcreator (3.4.1+dfsg-1) UNRELEASED; urgency=medium
     + consolidate 3-clause BSD licenses
     + consolidate MIT and Expat - they are the same licenses.
 
- -- Adam Majer <adamm@zombino.com>  Wed, 24 Jun 2015 23:01:01 -0500
+ -- Adam Majer <adamm@zombino.com>  Thu, 25 Jun 2015 15:46:23 -0500
 
 qtcreator (3.4.0+dfsg~b1-1) experimental; urgency=medium
 
