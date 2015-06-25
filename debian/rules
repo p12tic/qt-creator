@@ -7,13 +7,13 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
-export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export LFLAGS := $(shell dpkg-buildflags --get LFLAGS) -Wl,--as-needed
 export QMAKE_CFLAGS_RELEASE := $(CFLAGS)
 export QMAKE_CFLAGS_DEBUG := $(CFLAGS)
 export QMAKE_CXXFLAGS_RELEASE := $(CXXFLAGS)
 export QMAKE_CXXFLAGS_DEBUG := $(CXXFLAGS)
-export QMAKE_LFLAGS_RELEASE := $(LDFLAGS)
-export QMAKE_LFLAGS_DEBUG := $(LDFLAGS)
+export QMAKE_LFLAGS_RELEASE := $(LFLAGS)
+export QMAKE_LFLAGS_DEBUG := $(LFLAGS)
 export QT_SELECT := qt5
 
 # Upstream changelog
