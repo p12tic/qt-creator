@@ -1,7 +1,7 @@
 qtcreator (3.4.1+dfsg-2) UNRELEASED; urgency=medium
 
-  *
-
+  [ Adam Majer ]
+  * Re-enable QBS plugin and bump its requirements (closes: #792035)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 25 Jul 2015 22:45:14 -0500
 
