@@ -1,8 +1,8 @@
-Index: qtcreator-3.4.0+dfsg~b1/src/plugins/coreplugin/icore.cpp
+Index: qtcreator/src/plugins/coreplugin/icore.cpp
 ===================================================================
---- qtcreator-3.4.0+dfsg~b1.orig/src/plugins/coreplugin/icore.cpp	2015-03-07 17:33:01.497454249 -0600
-+++ qtcreator-3.4.0+dfsg~b1/src/plugins/coreplugin/icore.cpp	2015-03-07 17:33:01.493454250 -0600
-@@ -411,7 +411,7 @@
+--- qtcreator.orig/src/plugins/coreplugin/icore.cpp	2015-08-19 17:12:58.478729450 -0500
++++ qtcreator/src/plugins/coreplugin/icore.cpp	2015-08-19 17:12:58.474729501 -0500
+@@ -426,7 +426,7 @@
  QString ICore::documentationPath()
  {
      const QString docPath = QLatin1String(Utils::HostOsInfo::isMacHost()

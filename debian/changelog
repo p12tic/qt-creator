@@ -7,6 +7,9 @@ qtcreator (3.5.0+dfsg-1) UNRELEASED; urgency=medium
   * debian/control:
     + Bump build dependency to minumum of Qt 5.4, as per upstream.
     + Remove conflict resolution statements related to Wheezy (oldstable)
+  * debian/patches:
+    + drop qt_versions_trough_qtchooser.patch - incorporated upstream
+    + update always_autotect_qt_versions
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2015 15:58:02 -0500
 
