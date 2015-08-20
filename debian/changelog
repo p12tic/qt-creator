@@ -1,6 +1,5 @@
-qtcreator (3.5.0+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.5.0+dfsg-1) experimental; urgency=medium
 
-  [ Adam Majer ]
   * New upstream release
     + Added highlights to editor's vertical scrollbar, ala eclipse-style
     + Removed Qt Quick 1 support from Qt Quick Designer
@@ -11,7 +10,7 @@ qtcreator (3.5.0+dfsg-1) UNRELEASED; urgency=medium
     + drop qt_versions_trough_qtchooser.patch - incorporated upstream
     + update always_autotect_qt_versions
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2015 15:58:02 -0500
+ -- Adam Majer <adamm@zombino.com>  Thu, 20 Aug 2015 12:44:17 -0500
 
 qtcreator (3.4.1+dfsg-2) unstable; urgency=medium
 
