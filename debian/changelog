@@ -3,6 +3,7 @@ qtcreator (3.5.0+dfsg-2) UNRELEASED; urgency=medium
   [ Adam Majer ]
   * Remove QtQuick1 build dependencies.
   * Enable ClangCodeModel plugin (closes: #791348)
+     + Disable rpath via debian/patches/disable_llvm_rpath.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 25 Aug 2015 22:26:25 -0500
 
