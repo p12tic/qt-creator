@@ -1,5 +1,8 @@
 qtcreator (3.5.0+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Adam Majer ]
+  * Allow building of ClangCodeModel using either LLVM 3.7 or 3.6
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 22 Oct 2015 16:46:57 -0300
 
 qtcreator (3.5.0+dfsg-2) unstable; urgency=medium
