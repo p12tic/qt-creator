@@ -1,10 +1,9 @@
-qtcreator (3.5.1+dfsg-2) UNRELEASED; urgency=medium
+qtcreator (3.5.1+dfsg-2) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Use only LLVM 3.6 to avoid a FTBFS in 3.7 that doesn't
     allows us to migrate.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 27 Oct 2015 13:35:24 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 27 Oct 2015 13:41:39 -0300
 
 qtcreator (3.5.1+dfsg-1) unstable; urgency=medium
 
