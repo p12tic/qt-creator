@@ -1,7 +1,9 @@
-qtcreator (3.6.0+dfsg-1) UNRELEASED; urgency=medium
+qtcreator (3.6.0-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
+  * No longer ship a +dfsg version: the only remaining javascript file is not
+    minified nor used, as we don't build qbs' documentation.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 29 Dec 2015 14:10:05 -0300
 
