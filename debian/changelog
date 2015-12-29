@@ -5,6 +5,8 @@ qtcreator (3.6.0-1) UNRELEASED; urgency=medium
   * No longer ship a +dfsg version: the only remaining javascript file is not
     minified nor used, as we don't build qbs' documentation.
     - Adjust README.source and debian/watch to this new situation.
+  * Remove disable_llvm_rpath.diff. It doesn't applies and there seems to be
+    no more rpath issues anymore.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 29 Dec 2015 14:10:05 -0300
 
