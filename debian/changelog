@@ -1,4 +1,7 @@
-qtcreator (3.5.1+dfsg-3) UNRELEASED; urgency=medium
+qtcreator (3.6.0+dfsg-1) UNRELEASED; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 29 Dec 2015 14:10:05 -0300
 
