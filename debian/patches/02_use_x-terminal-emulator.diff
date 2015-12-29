@@ -5,11 +5,9 @@ Author: Fathi Boudra <fabo@debian.org>
  src/libs/utils/consoleprocess_unix.cpp |    1 +
  1 file changed, 1 insertion(+)
 
-Index: qtcreator/src/libs/utils/consoleprocess_unix.cpp
-===================================================================
---- qtcreator.orig/src/libs/utils/consoleprocess_unix.cpp	2015-08-19 16:22:42.044473322 -0500
-+++ qtcreator/src/libs/utils/consoleprocess_unix.cpp	2015-08-19 16:22:42.040473369 -0500
-@@ -353,6 +353,7 @@
+--- a/src/libs/utils/consoleprocess_unix.cpp
++++ b/src/libs/utils/consoleprocess_unix.cpp
+@@ -349,6 +349,7 @@ struct Terminal {
  
  static const Terminal knownTerminals[] =
  {

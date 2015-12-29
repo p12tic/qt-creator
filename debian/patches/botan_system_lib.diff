@@ -3,18 +3,15 @@ Author: Felix Geyer <debfx@ubuntu.com>
 Last-Reviewed: 2014-08-19
 
 ---
- src/libs/3rdparty/botan/botan.pri        |   59 +------------------------------
- src/libs/ssh/sshcryptofacility.cpp       |    5 ++
- src/libs/ssh/sshcryptofacility_p.h       |    2 +
- src/libs/ssh/sshkeyexchange.cpp          |    6 +++
- src/libs/ssh/sshkeygenerator.cpp         |    5 ++
- src/libs/ssh/sshkeypasswordretriever_p.h |    1 
- 6 files changed, 21 insertions(+), 57 deletions(-)
+ src/libs/ssh/sshcryptofacility.cpp       |    5 +++++
+ src/libs/ssh/sshcryptofacility_p.h       |    2 ++
+ src/libs/ssh/sshkeyexchange.cpp          |    6 ++++++
+ src/libs/ssh/sshkeygenerator.cpp         |    5 +++++
+ src/libs/ssh/sshkeypasswordretriever_p.h |    1 +
+ 5 files changed, 19 insertions(+)
 
-Index: qtcreator/src/libs/ssh/sshcryptofacility.cpp
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshcryptofacility.cpp	2015-08-19 16:29:56.815550479 -0500
-+++ qtcreator/src/libs/ssh/sshcryptofacility.cpp	2015-08-19 16:29:56.807550569 -0500
+--- a/src/libs/ssh/sshcryptofacility.cpp
++++ b/src/libs/ssh/sshcryptofacility.cpp
 @@ -38,6 +38,11 @@
  #include "sshpacket_p.h"
  
@@ -27,10 +24,8 @@ Index: qtcreator/src/libs/ssh/sshcryptofacility.cpp
  
  #include <QDebug>
  #include <QList>
-Index: qtcreator/src/libs/ssh/sshcryptofacility_p.h
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshcryptofacility_p.h	2015-08-19 16:29:56.815550479 -0500
-+++ qtcreator/src/libs/ssh/sshcryptofacility_p.h	2015-08-19 16:29:56.807550569 -0500
+--- a/src/libs/ssh/sshcryptofacility_p.h
++++ b/src/libs/ssh/sshcryptofacility_p.h
 @@ -32,9 +32,11 @@
  #define SSHCRYPTOFACILITY_P_H
  
@@ -43,10 +38,8 @@ Index: qtcreator/src/libs/ssh/sshcryptofacility_p.h
  
  namespace QSsh {
  namespace Internal {
-Index: qtcreator/src/libs/ssh/sshkeyexchange.cpp
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshkeyexchange.cpp	2015-08-19 16:29:56.815550479 -0500
-+++ qtcreator/src/libs/ssh/sshkeyexchange.cpp	2015-08-19 16:29:56.807550569 -0500
+--- a/src/libs/ssh/sshkeyexchange.cpp
++++ b/src/libs/ssh/sshkeyexchange.cpp
 @@ -38,6 +38,12 @@
  #include "sshincomingpacket_p.h"
  
@@ -60,11 +53,9 @@ Index: qtcreator/src/libs/ssh/sshkeyexchange.cpp
  
  #ifdef CREATOR_SSH_DEBUG
  #include <iostream>
-Index: qtcreator/src/libs/ssh/sshkeygenerator.cpp
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshkeygenerator.cpp	2015-08-19 16:29:56.815550479 -0500
-+++ qtcreator/src/libs/ssh/sshkeygenerator.cpp	2015-08-19 16:29:56.807550569 -0500
-@@ -36,6 +36,11 @@
+--- a/src/libs/ssh/sshkeygenerator.cpp
++++ b/src/libs/ssh/sshkeygenerator.cpp
+@@ -37,6 +37,11 @@
  #include "sshpacket_p.h"
  
  #include <botan/botan.h>
@@ -76,10 +67,8 @@ Index: qtcreator/src/libs/ssh/sshkeygenerator.cpp
  
  #include <QDateTime>
  #include <QInputDialog>
-Index: qtcreator/src/libs/ssh/sshkeypasswordretriever_p.h
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshkeypasswordretriever_p.h	2015-08-19 16:29:56.815550479 -0500
-+++ qtcreator/src/libs/ssh/sshkeypasswordretriever_p.h	2015-08-19 16:29:56.811550523 -0500
+--- a/src/libs/ssh/sshkeypasswordretriever_p.h
++++ b/src/libs/ssh/sshkeypasswordretriever_p.h
 @@ -31,6 +31,7 @@
  #define KEYPASSWORDRETRIEVER_H
  

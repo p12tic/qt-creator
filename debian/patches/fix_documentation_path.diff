@@ -1,8 +1,10 @@
-Index: qtcreator/src/plugins/coreplugin/icore.cpp
-===================================================================
---- qtcreator.orig/src/plugins/coreplugin/icore.cpp	2015-08-19 17:12:58.478729450 -0500
-+++ qtcreator/src/plugins/coreplugin/icore.cpp	2015-08-19 17:12:58.474729501 -0500
-@@ -426,7 +426,7 @@
+---
+ src/plugins/coreplugin/icore.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/src/plugins/coreplugin/icore.cpp
++++ b/src/plugins/coreplugin/icore.cpp
+@@ -425,7 +425,7 @@ QString ICore::userResourcePath()
  QString ICore::documentationPath()
  {
      const QString docPath = QLatin1String(Utils::HostOsInfo::isMacHost()
