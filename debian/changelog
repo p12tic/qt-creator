@@ -1,6 +1,7 @@
 qtcreator (3.6.0-2) UNRELEASED; urgency=medium
 
-  * 
+  [ Adam Majer ]
+  * Move libexec executables out from under /usr/bin to under /usr/lib
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 Jan 2016 15:03:51 -0600
 
