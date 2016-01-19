@@ -1,4 +1,4 @@
-qtcreator (3.6.0-1) UNRELEASED; urgency=medium
+qtcreator (3.6.0-1) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -13,7 +13,7 @@ qtcreator (3.6.0-1) UNRELEASED; urgency=medium
   * No longer distribute qtcreator menu file. We are already distributing a
     .desktop file.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 29 Dec 2015 14:10:05 -0300
+ -- Adam Majer <adamm@zombino.com>  Tue, 19 Jan 2016 11:44:53 -0600
 
 qtcreator (3.5.1+dfsg-2) unstable; urgency=medium
 
