@@ -1,0 +1,26 @@
+Index: qtcreator/qtcreator.pri
+===================================================================
+--- qtcreator.orig/qtcreator.pri	2015-12-11 06:45:01.000000000 -0600
++++ qtcreator/qtcreator.pri	2016-01-19 02:21:48.124393948 -0600
+@@ -105,10 +105,7 @@
+     IDE_DATA_PATH    = $$IDE_OUTPUT_PATH/share/qtcreator
+     IDE_DOC_PATH     = $$IDE_OUTPUT_PATH/share/doc/qtcreator
+     IDE_BIN_PATH     = $$IDE_OUTPUT_PATH/bin
+-    win32: \
+         IDE_LIBEXEC_PATH = $$IDE_OUTPUT_PATH/bin
+-    else: \
+-        IDE_LIBEXEC_PATH = $$IDE_OUTPUT_PATH/libexec/qtcreator
+     !isEqual(IDE_SOURCE_TREE, $$IDE_OUTPUT_PATH):copydata = 1
+ 
+     LINK_LIBRARY_PATH = $$IDE_BUILD_TREE/$$IDE_LIBRARY_BASENAME/qtcreator
+@@ -116,10 +113,7 @@
+ 
+     INSTALL_LIBRARY_PATH = $$QTC_PREFIX/$$IDE_LIBRARY_BASENAME/qtcreator
+     INSTALL_PLUGIN_PATH  = $$INSTALL_LIBRARY_PATH/plugins
+-    win32: \
+         INSTALL_LIBEXEC_PATH = $$QTC_PREFIX/bin
+-    else: \
+-        INSTALL_LIBEXEC_PATH = $$QTC_PREFIX/libexec/qtcreator
+     INSTALL_DATA_PATH    = $$QTC_PREFIX/share/qtcreator
+     INSTALL_DOC_PATH     = $$QTC_PREFIX/share/doc/qtcreator
+     INSTALL_BIN_PATH     = $$QTC_PREFIX/bin

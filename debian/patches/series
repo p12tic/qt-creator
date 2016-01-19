@@ -7,3 +7,4 @@ botan_system_lib.diff
 always_autotect_qt_versions
 missing_header.diff
 fix_documentation_path.diff
+remove_libexec.diff

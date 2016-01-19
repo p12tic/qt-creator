@@ -9,6 +9,7 @@ qtcreator (3.6.0-1) UNRELEASED; urgency=medium
 
   [ Adam Majer ]
   * Refreshed disable_llvm_rpath.diff - still needed for clangbackend binary.
+  * Move libexec executables back to standard bin path
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 29 Dec 2015 14:10:05 -0300
 
