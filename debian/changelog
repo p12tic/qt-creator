@@ -1,6 +1,5 @@
-qtcreator (3.6.0-2) UNRELEASED; urgency=medium
+qtcreator (3.6.0-2) unstable; urgency=medium
 
-  [ Adam Majer ]
   * Move libexec executables out from under /usr/bin to under /usr/lib and
     point QtCreator's internal libexec path to the new location. This
     allows plugins like Clangbackend to function once more. (closes: #812531)
@@ -16,7 +15,7 @@ qtcreator (3.6.0-2) UNRELEASED; urgency=medium
         previosuly saved. Add a patch by Benjamin Zeller to fix this issue.
         Thanks to Timo Jyrinki for report (closes: #803937)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 Jan 2016 15:03:51 -0600
+ -- Adam Majer <adamm@zombino.com>  Tue, 26 Jan 2016 16:03:52 -0600
 
 qtcreator (3.6.0-1) unstable; urgency=medium
 
