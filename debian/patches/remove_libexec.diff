@@ -1,7 +1,7 @@
 Index: qtcreator/qtcreator.pri
 ===================================================================
---- qtcreator.orig/qtcreator.pri	2016-01-19 15:05:12.463608574 -0600
-+++ qtcreator/qtcreator.pri	2016-01-19 15:09:06.793906678 -0600
+--- qtcreator.orig/qtcreator.pri	2016-01-26 13:43:49.027802433 -0600
++++ qtcreator/qtcreator.pri	2016-01-26 13:43:49.023802475 -0600
 @@ -108,7 +108,7 @@
      win32: \
          IDE_LIBEXEC_PATH = $$IDE_OUTPUT_PATH/bin
@@ -20,3 +20,17 @@ Index: qtcreator/qtcreator.pri
      INSTALL_DATA_PATH    = $$QTC_PREFIX/share/qtcreator
      INSTALL_DOC_PATH     = $$QTC_PREFIX/share/doc/qtcreator
      INSTALL_BIN_PATH     = $$QTC_PREFIX/bin
+Index: qtcreator/src/plugins/coreplugin/icore.cpp
+===================================================================
+--- qtcreator.orig/src/plugins/coreplugin/icore.cpp	2016-01-26 13:43:49.027802433 -0600
++++ qtcreator/src/plugins/coreplugin/icore.cpp	2016-01-26 13:45:30.390560142 -0600
+@@ -446,7 +446,8 @@
+     case Utils::OsTypeLinux:
+     case Utils::OsTypeOtherUnix:
+     case Utils::OsTypeOther:
+-        path = QCoreApplication::applicationDirPath() + QLatin1String("/../libexec/qtcreator");
++        path = QCoreApplication::applicationDirPath()
++             + QLatin1String("/../" IDE_LIBRARY_BASENAME "/qtcreator/libexec");
+         break;
+     }
+     return QDir::cleanPath(path);
