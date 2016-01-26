@@ -57,15 +57,6 @@ endif
 	# Do not install the file, we better symlink it.
 	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
 
-override_dh_auto_clean:
-	dh_auto_clean
-	rm -rf doc/html lib/qmldesigner lib/qtcreator/plugins share/doc
-	rm -f bin/qtcreator_* lib/qtcreator/lib* lib/qtcreator/qtcomponents/plugin/lib* share/qtcreator/translations/qtcreator_*.qm
-	find . -type d -name '.moc' | xargs rm -rf
-	find . -type d -name '.obj' | xargs rm -rf
-	find . -type d -name '.rcc' | xargs rm -rf
-	find . -type d -name '.uic' | xargs rm -rf
-
 override_dh_install:
 	dh_install --fail-missing
 
