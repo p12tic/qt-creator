@@ -10,6 +10,11 @@ qtcreator (3.6.0-2) UNRELEASED; urgency=medium
       + remove unnecessary dh_auto_clean_override
   * debian/qtcreator.install:
       + no longer install unnecessary qtcreator.sh
+  * debian/patches/fix_qt_version_autodetection.diff
+      + in certain situations it was possible for a Qt version to be
+        autodetected as a new installation even it was already found and
+        previosuly saved. Add a patch by Benjamin Zeller to fix this issue.
+        Thanks to Timo Jyrinki for report (closes: #803937)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 Jan 2016 15:03:51 -0600
 
