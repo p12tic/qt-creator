@@ -57,6 +57,9 @@ endif
 	# Do not install the file, we better symlink it.
 	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
 
+	# Not needed
+	rm debian/tmp/usr/bin/qtcreator.sh
+
 override_dh_install:
 	dh_install --fail-missing
 
