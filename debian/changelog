@@ -8,6 +8,8 @@ qtcreator (3.6.0-2) UNRELEASED; urgency=medium
       + remove obsolete jQuery-related link and cleanup, since we no longer
         ship +fdsg version.
       + remove unnecessary dh_auto_clean_override
+  * debian/qtcreator.install:
+      + no longer install unnecessary qtcreator.sh
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 Jan 2016 15:03:51 -0600
 
