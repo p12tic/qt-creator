@@ -1,3 +1,9 @@
+qtcreator (3.6.0-3) UNRELEASED; urgency=medium
+
+  *
+
+ -- Adam Majer <adamm@zombino.com>  Wed, 27 Jan 2016 14:30:20 -0600
+
 qtcreator (3.6.0-2) unstable; urgency=medium
 
   * Move libexec executables out from under /usr/bin to under /usr/lib and
