@@ -1,6 +1,8 @@
 qtcreator (3.6.1-1) UNRELEASED; urgency=medium
 
   * New upstream version
+  * debian/patches:
+      + remove disable_llvm_rpath.diff - upstreamed
 
  -- Adam Majer <adamm@zombino.com>  Wed, 27 Jan 2016 14:30:20 -0600
 
