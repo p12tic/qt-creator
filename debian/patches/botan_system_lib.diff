@@ -12,7 +12,7 @@ Last-Reviewed: 2014-08-19
 
 --- a/src/libs/ssh/sshcryptofacility.cpp
 +++ b/src/libs/ssh/sshcryptofacility.cpp
-@@ -38,6 +38,11 @@
+@@ -34,6 +34,11 @@
  #include "sshpacket_p.h"
  
  #include <botan/botan.h>
@@ -26,7 +26,7 @@ Last-Reviewed: 2014-08-19
  #include <QList>
 --- a/src/libs/ssh/sshcryptofacility_p.h
 +++ b/src/libs/ssh/sshcryptofacility_p.h
-@@ -32,9 +32,11 @@
+@@ -27,9 +27,11 @@
  #define SSHCRYPTOFACILITY_P_H
  
  #include <botan/botan.h>
@@ -40,7 +40,7 @@ Last-Reviewed: 2014-08-19
  namespace Internal {
 --- a/src/libs/ssh/sshkeyexchange.cpp
 +++ b/src/libs/ssh/sshkeyexchange.cpp
-@@ -38,6 +38,12 @@
+@@ -34,6 +34,12 @@
  #include "sshincomingpacket_p.h"
  
  #include <botan/botan.h>
@@ -51,11 +51,11 @@ Last-Reviewed: 2014-08-19
 +#include <botan/pubkey.h>
 +#include <botan/rsa.h>
  
- #ifdef CREATOR_SSH_DEBUG
- #include <iostream>
+ #include <string>
+ 
 --- a/src/libs/ssh/sshkeygenerator.cpp
 +++ b/src/libs/ssh/sshkeygenerator.cpp
-@@ -37,6 +37,11 @@
+@@ -32,6 +32,11 @@
  #include "sshpacket_p.h"
  
  #include <botan/botan.h>
@@ -69,7 +69,7 @@ Last-Reviewed: 2014-08-19
  #include <QInputDialog>
 --- a/src/libs/ssh/sshkeypasswordretriever_p.h
 +++ b/src/libs/ssh/sshkeypasswordretriever_p.h
-@@ -31,6 +31,7 @@
+@@ -27,6 +27,7 @@
  #define KEYPASSWORDRETRIEVER_H
  
  #include <botan/botan.h>
