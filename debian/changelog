@@ -2,6 +2,7 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
+    - Bump qbs-dev to 1.5.0.
   * Instruct uscan to repack the original source with xz compression.
   * Remove 02_use_x-terminal-emulator.diff, already present upstream.
   * Refresh botan_system_lib.diff.
