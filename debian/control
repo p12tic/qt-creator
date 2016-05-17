@@ -40,6 +40,7 @@ Architecture: any
 Depends: libqt5sql5-sqlite,
          qml-module-qtquick-controls (>= 5.4.0~),
          qml-module-qtquick2 (>= 5.4.0~),
+         qmlscene,
          qtchooser,
          qtcreator-data (= ${source:Version}),
          ${misc:Depends},
