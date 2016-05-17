@@ -6,8 +6,7 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
   * Instruct uscan to repack the original source with xz compression.
   * Remove 02_use_x-terminal-emulator.diff, already present upstream.
   * Refresh botan_system_lib.diff.
-  * Add qmlscene as a qtcreator dependency, for what I understand of the source
-    code it seems to be required.
+  * Add qmlscene as a qtcreator recommendation.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 11 May 2016 14:59:38 -0300
 
