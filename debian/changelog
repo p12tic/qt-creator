@@ -11,6 +11,7 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * Update Homepage and Vcs-* fields to use secure URLs.
   * Update Standards-Version to 3.9.8, no changes required.
+  * Update install files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 11 May 2016 14:59:38 -0300
 
