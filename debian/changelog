@@ -8,6 +8,7 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
   * Refresh botan_system_lib.diff.
   * Add qmlscene and qt5-qmltooling-plugins as a qtcreator recommendations
     (Closes: #824334).
+  * Update debian/copyright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 11 May 2016 14:59:38 -0300
 
