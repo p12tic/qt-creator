@@ -1,4 +1,4 @@
-qtcreator (4.0.0-1) UNRELEASED; urgency=medium
+qtcreator (4.0.0-1) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -23,7 +23,7 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
     + fix_documentation_path.diff
     + remove_libexec.diff
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 11 May 2016 14:59:38 -0300
+ -- Adam Majer <adamm@zombino.com>  Sun, 29 May 2016 23:03:30 +0200
 
 qtcreator (3.6.1-1) unstable; urgency=medium
 
