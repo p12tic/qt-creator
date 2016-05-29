@@ -2,7 +2,7 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-    - Bump qbs-dev to 1.5.0.
+    + Bump qbs-dev to 1.5.0.
   * Instruct uscan to repack the original source with xz compression.
   * Remove 02_use_x-terminal-emulator.diff, already present upstream.
   * Refresh botan_system_lib.diff.
@@ -14,6 +14,14 @@ qtcreator (4.0.0-1) UNRELEASED; urgency=medium
   * Update install files.
   * Make qtcreator recommend clang, as it has added quite interesting tools
     that use it.
+
+  [ Adam Majer ]
+  * Refresh patches:
+    + always_autotect_qt_versions
+    + fix_qt_version_autodetection.diff
+    + missing_header.diff
+    + fix_documentation_path.diff
+    + remove_libexec.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 11 May 2016 14:59:38 -0300
 

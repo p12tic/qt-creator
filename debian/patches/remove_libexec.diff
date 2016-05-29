@@ -1,8 +1,8 @@
 Index: qtcreator/qtcreator.pri
 ===================================================================
---- qtcreator.orig/qtcreator.pri	2016-01-26 13:43:49.027802433 -0600
-+++ qtcreator/qtcreator.pri	2016-01-26 13:43:49.023802475 -0600
-@@ -108,7 +108,7 @@
+--- qtcreator.orig/qtcreator.pri
++++ qtcreator/qtcreator.pri
+@@ -108,7 +108,7 @@ osx {
      win32: \
          IDE_LIBEXEC_PATH = $$IDE_OUTPUT_PATH/bin
      else: \
@@ -11,7 +11,7 @@ Index: qtcreator/qtcreator.pri
      !isEqual(IDE_SOURCE_TREE, $$IDE_OUTPUT_PATH):copydata = 1
  
      LINK_LIBRARY_PATH = $$IDE_BUILD_TREE/$$IDE_LIBRARY_BASENAME/qtcreator
-@@ -119,7 +119,7 @@
+@@ -119,7 +119,7 @@ osx {
      win32: \
          INSTALL_LIBEXEC_PATH = $$QTC_PREFIX/bin
      else: \
@@ -22,9 +22,9 @@ Index: qtcreator/qtcreator.pri
      INSTALL_BIN_PATH     = $$QTC_PREFIX/bin
 Index: qtcreator/src/plugins/coreplugin/icore.cpp
 ===================================================================
---- qtcreator.orig/src/plugins/coreplugin/icore.cpp	2016-01-26 13:43:49.027802433 -0600
-+++ qtcreator/src/plugins/coreplugin/icore.cpp	2016-01-26 13:45:30.390560142 -0600
-@@ -446,7 +446,8 @@
+--- qtcreator.orig/src/plugins/coreplugin/icore.cpp
++++ qtcreator/src/plugins/coreplugin/icore.cpp
+@@ -441,7 +441,8 @@ QString ICore::libexecPath()
      case Utils::OsTypeLinux:
      case Utils::OsTypeOtherUnix:
      case Utils::OsTypeOther:

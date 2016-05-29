@@ -1,8 +1,8 @@
 Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 ===================================================================
---- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp	2015-08-19 17:05:40.292526401 -0500
-+++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp	2015-08-19 18:00:11.391353950 -0500
-@@ -102,7 +102,7 @@
+--- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp
++++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
+@@ -97,7 +97,7 @@ bool qtVersionNumberCompare(BaseQtVersio
      return a->qtVersion() > b->qtVersion() || (a->qtVersion() == b->qtVersion() && a->uniqueId() < b->uniqueId());
  }
  static bool restoreQtVersions();
@@ -11,7 +11,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
  static void saveQtVersions();
  static void updateDocumentation();
  
-@@ -131,14 +131,11 @@
+@@ -126,14 +126,11 @@ void QtVersionManager::triggerQtVersionR
      disconnect(ProjectExplorer::ToolChainManager::instance(), SIGNAL(toolChainsLoaded()),
                 this, SLOT(triggerQtVersionRestore()));
  
@@ -30,7 +30,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
  
      emit m_instance->qtVersionsLoaded();
      emit m_instance->qtVersionsChanged(m_versions.keys(), QList<int>(), QList<int>());
-@@ -442,23 +439,57 @@
+@@ -433,22 +430,57 @@ static FileNameList gatherQmakePathsFrom
      return foundQMakes.toList();
  }
  
@@ -56,7 +56,6 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 +    std::sort(qmakePathsFromQtChooser.begin(), qmakePathsFromQtChooser.end());
  
 -    systemQMakes.append(gatherQmakePathsFromQtChooser());
--    systemQMakes.removeDuplicates();
 +    QMap<QString, int> currentAutoVersions;
 +    for (QMap<int, BaseQtVersion *>::const_iterator i = m_versions.begin(); i != m_versions.end(); ++i) {
 +        if (i.value()->isAutodetected()) {
@@ -64,7 +63,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 +        }
 +    }
  
--    foreach (const FileName &qmakePath, systemQMakes) {
+-    foreach (const FileName &qmakePath, Utils::filteredUnique(systemQMakes)) {
 -        BaseQtVersion *version
 -                = QtVersionFactory::createQtVersionFromQMakePath(qmakePath, false, QLatin1String("PATH"));
 -        if (version) {
