@@ -4,6 +4,8 @@ qtcreator (4.0.1-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Add a lintian override for qbs' sources, as we don't build it nor use it.
   * Fix mistyped license in debian/copyright.
+  * Backport a patch to fix a FTBFS in PowerPC. Thanks Thiago Macieira for the
+    quick reply :)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 13 Jun 2016 11:34:29 -0300
 

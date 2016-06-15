@@ -1,6 +1,8 @@
-rpath_nonlinux.diff
+# Upstream patches
+fix_build_on_ppc.patch
 
 # Debian patches.
+rpath_nonlinux.diff
 botan_system_lib.diff
 always_autotect_qt_versions
 fix_qt_version_autodetection.diff
