@@ -1,8 +1,9 @@
-qtcreator (4.0.2) UNRELEASED; urgency=medium
+qtcreator (4.0.2-1) unstable; urgency=medium
 
   * New upstream release.
+    + Fix bug debugging an application that has pdb files larger than 1 GB
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Jul 2016 23:10:35 +0200
+ -- Adam Majer <adamm@tinyvm.internal>  Sun, 03 Jul 2016 23:40:20 +0200
 
 qtcreator (4.0.1-1) unstable; urgency=medium
 
