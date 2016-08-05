@@ -1,4 +1,4 @@
-qtcreator (4.0.3-1) UNRELEASED; urgency=medium
+qtcreator (4.0.3-1) unstable; urgency=medium
 
   [ Adam Majer ]
   * New upstream version
@@ -9,7 +9,7 @@ qtcreator (4.0.3-1) UNRELEASED; urgency=medium
     + Depend on qbs 1.5.2
   * Update Qt build requirements to 5.5.x
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Aug 2016 00:55:14 +0200
+ -- Adam Majer <adamm@zombino.com>  Sat, 06 Aug 2016 01:56:51 +0200
 
 qtcreator (4.0.2-1) unstable; urgency=medium
 
