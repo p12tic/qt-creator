@@ -1,6 +1,11 @@
 qtcreator (4.0.3-1) UNRELEASED; urgency=medium
 
-  *
+  [ Adam Majer ]
+  * New upstream version
+    + cmake: resolve symlinks when comparing source directories
+    + Clang: Fix dot-arrow-correction for zero results
+    + Clang: Fix dot-arrow-correction for not-yet-parsed unsaved content
+    + ProjectExplorer: Fix comparison with default-constructed Runnables
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Aug 2016 00:55:14 +0200
 
