@@ -1,4 +1,18 @@
-qtcreator (4.0.3-2) UNRELEASED; urgency=medium
+qtcreator (4.1.0~rc1-1) UNRELEASED; urgency=medium
+
+  [ Adam Majer ]
+  * New upstream version
+    + added the Flat Dark and Flat Light themes
+      (Environment > Interface > Theme settings)
+    + editted files are now loaded on visibility instead of all on
+      session resumption
+    + improved overall performance of Qt Quick designer
+    + improved performance of QML Profiler
+    + option to turn off automatic running of CMake per configured tool
+    + experimental support for the Nim programming language (in plugins)
+    + c++: added separate highlighting for function declarations and usages
+    + c++: added highlighting option for global variables
+    + added support for TCP/IP forward tunneling with SSH
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Aug 2016 14:08:28 +0200
 
