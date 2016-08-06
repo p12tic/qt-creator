@@ -1,5 +1,4 @@
 # Upstream patches
-fix_build_on_ppc.patch
 
 # Debian patches.
 rpath_nonlinux.diff

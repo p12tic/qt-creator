@@ -9,7 +9,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 ===================================================================
 --- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp
 +++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
-@@ -449,7 +449,7 @@ static void updateSystemQt()
+@@ -445,7 +445,7 @@ static void updateSystemQt()
  
      QMap<QString, int> currentAutoVersions;
      for (QMap<int, BaseQtVersion *>::const_iterator i = m_versions.begin(); i != m_versions.end(); ++i) {
@@ -22,7 +22,7 @@ Index: qtcreator/src/libs/utils/buildablehelperlibrary.cpp
 ===================================================================
 --- qtcreator.orig/src/libs/utils/buildablehelperlibrary.cpp
 +++ qtcreator/src/libs/utils/buildablehelperlibrary.cpp
-@@ -83,8 +83,15 @@ FileName BuildableHelperLibrary::findSys
+@@ -81,8 +81,15 @@ FileName BuildableHelperLibrary::findSys
  
          if (dir.exists(qmake)) {
              const QString qmakePath = dir.absoluteFilePath(qmake);

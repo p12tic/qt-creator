@@ -11,8 +11,10 @@ Forwarded: no
  src/tools/qtcreatorwidgets/qtcreatorwidgets.pro |    4 ++--
  3 files changed, 4 insertions(+), 4 deletions(-)
 
---- a/src/rpath.pri
-+++ b/src/rpath.pri
+Index: qtcreator/src/rpath.pri
+===================================================================
+--- qtcreator.orig/src/rpath.pri
++++ qtcreator/src/rpath.pri
 @@ -1,6 +1,6 @@
  macx {
      QMAKE_LFLAGS += -Wl,-rpath,@loader_path/../,-rpath,@executable_path/../
@@ -21,19 +23,23 @@ Forwarded: no
      #do the rpath by hand since it's not possible to use ORIGIN in QMAKE_RPATHDIR
      # this expands to $ORIGIN (after qmake and make), it does NOT read a qmake var
      QMAKE_RPATHDIR += \$\$ORIGIN
---- a/src/qtcreatorplugin.pri
-+++ b/src/qtcreatorplugin.pri
-@@ -91,7 +91,7 @@ contains(QT_CONFIG, reduce_exports):CONF
+Index: qtcreator/src/qtcreatorplugin.pri
+===================================================================
+--- qtcreator.orig/src/qtcreatorplugin.pri
++++ qtcreator/src/qtcreatorplugin.pri
+@@ -94,7 +94,7 @@ contains(QT_CONFIG, reduce_exports):CONF
  
  TEMPLATE = lib
  CONFIG += plugin plugin_with_soname
 -linux*:QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF
 +linux*|glibc-*|hurd-*:QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF
  
- !macx {
-     target.path = $$INSTALL_PLUGIN_PATH
---- a/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
-+++ b/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
+ target.path = $$INSTALL_PLUGIN_PATH
+ INSTALLS += target
+Index: qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
+===================================================================
+--- qtcreator.orig/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
++++ qtcreator/src/tools/qtcreatorwidgets/qtcreatorwidgets.pro
 @@ -13,7 +13,7 @@ isEmpty(IDE_LIBRARY_BASENAME) {
      IDE_LIBRARY_BASENAME = lib
  }
