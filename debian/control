@@ -58,10 +58,10 @@ Recommends: clang,
             qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
 Suggests: cmake, g++, git, kdelibs5-data, subversion
-Description: lightweight integrated development environment (IDE) for Qt
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
+Description: integrated development environment (IDE) for Qt
+ Qt Creator is a cross-platform integrated development environment (IDE)
+ designed to make development with the Qt application framework faster
+ and easier.
  .
  It includes:
   * An advanced C++ code editor
@@ -71,16 +71,13 @@ Description: lightweight integrated development environment (IDE) for Qt
   * Visual debugger
   * Rapid code navigation tools
   * Supports multiple platforms
+  * Qt Quick Designer
 
 Package: qtcreator-data
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}
 Description: application data for Qt Creator IDE
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
- .
- This package contains the architecture-independent data for Qt Creator IDE.
+ This package contains architecture-independent data for Qt Creator IDE.
 
 Package: qtcreator-doc
 Architecture: all
@@ -88,8 +85,4 @@ Section: doc
 Depends: ${misc:Depends}
 Suggests: qt5-doc
 Description: documentation for Qt Creator IDE
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
- .
- This package contains the documentation for Qt Creator IDE.
+ This package contains documentation for Qt Creator IDE.
