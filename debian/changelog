@@ -14,12 +14,7 @@ qtcreator (4.1.0~rc1-1) UNRELEASED; urgency=medium
     + c++: added highlighting option for global variables
     + added support for TCP/IP forward tunneling with SSH
   * fix_build_on_ppc.patch removed, upstreamed
-  * refreshed patches:
-    + rpath_nonlinux.diff
-    + botan_system_lib.diff
-    + always_autotect_qt_versions
-    + fix_qt_version_autodetection.diff
-    + remove_libexec.diff
+  * Refreshed patches
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Aug 2016 14:08:28 +0200
 
