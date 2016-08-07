@@ -1,4 +1,4 @@
-qtcreator (4.1.0~rc1-1) UNRELEASED; urgency=medium
+qtcreator (4.1.0~rc1-1) experimental; urgency=medium
 
   [ Adam Majer ]
   * New upstream version
@@ -18,7 +18,7 @@ qtcreator (4.1.0~rc1-1) UNRELEASED; urgency=medium
   * Bump Clang dependency to 3.8
   * Temporarily disable QBS
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Aug 2016 14:08:28 +0200
+ -- Adam Majer <adamm@zombino.com>  Mon, 08 Aug 2016 00:47:25 +0200
 
 qtcreator (4.0.3-1) unstable; urgency=medium
 
