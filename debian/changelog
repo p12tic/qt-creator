@@ -15,6 +15,7 @@ qtcreator (4.1.0~rc1-1) UNRELEASED; urgency=medium
     + added support for TCP/IP forward tunneling with SSH
   * fix_build_on_ppc.patch removed, upstreamed
   * Refreshed patches
+  * Bump Clang dependency to 3.8
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Aug 2016 14:08:28 +0200
 
