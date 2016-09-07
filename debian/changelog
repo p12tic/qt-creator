@@ -1,6 +1,7 @@
 qtcreator (4.1.0-1) UNRELEASED; urgency=medium
 
-  * 
+  [ Adam Majer ]
+  * New upstream version
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 07 Sep 2016 19:40:45 +0200
 
