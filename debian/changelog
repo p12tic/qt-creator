@@ -1,3 +1,9 @@
+qtcreator (4.1.0-1) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 07 Sep 2016 19:40:45 +0200
+
 qtcreator (4.1.0~rc1-1) experimental; urgency=medium
 
   [ Adam Majer ]
