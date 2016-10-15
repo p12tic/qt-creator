@@ -8,7 +8,7 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Build-Depends: debhelper (>= 9),
                libbotan1.10-dev,
-               libclang-3.6-dev,
+               libclang-3.6-dev [!armel],
                libicu-dev,
                libjs-jquery,
                libqt5opengl5-dev (>= 5.5.0~),
