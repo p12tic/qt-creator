@@ -1,9 +1,5 @@
 qtcreator (4.0.3-2) UNRELEASED; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Disable builds with LLVM on armel, as LLVM 3.8 is not present there
-    (Closes: #839791). Thanks Emilio for the bug!
-
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 15 Oct 2016 10:19:12 -0300
 
 qtcreator (4.0.3-1) unstable; urgency=medium
