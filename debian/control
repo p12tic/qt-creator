@@ -8,7 +8,7 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Build-Depends: debhelper (>= 9),
                libbotan1.10-dev,
-               libclang-3.6-dev,
+               libclang-3.8-dev | libclang-3.9-dev,
                libicu-dev,
                libjs-jquery,
                libqt5opengl5-dev (>= 5.5.0~),
@@ -18,7 +18,6 @@ Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxext-dev,
                pkg-config,
-               qbs-dev (>= 1.5.2+dfsg~),
                qml-module-qtquick2 (>= 5.5.0~),
                qtbase5-dev (>= 5.5.0~),
                qtbase5-private-dev (>= 5.5.0~),
@@ -58,10 +57,10 @@ Recommends: clang,
             qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
 Suggests: cmake, g++, git, kdelibs5-data, subversion
-Description: lightweight integrated development environment (IDE) for Qt
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
+Description: integrated development environment (IDE) for Qt
+ Qt Creator is a cross-platform integrated development environment (IDE)
+ designed to make development with the Qt application framework faster
+ and easier.
  .
  It includes:
   * An advanced C++ code editor
@@ -71,28 +70,13 @@ Description: lightweight integrated development environment (IDE) for Qt
   * Visual debugger
   * Rapid code navigation tools
   * Supports multiple platforms
+  * Qt Quick Designer
 
 Package: qtcreator-data
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends}
 Description: application data for Qt Creator IDE
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
- .
- This package contains the architecture-independent data for Qt Creator IDE.
-
-Package: qtcreator-dbg
-Priority: extra
-Architecture: any
-Section: debug
-Depends: qtcreator (= ${binary:Version}), ${misc:Depends}
-Description: debugging symbols for Qt Creator IDE
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
- .
- This package contains the debugging symbols for Qt Creator IDE.
+ This package contains architecture-independent data for Qt Creator IDE.
 
 Package: qtcreator-doc
 Architecture: all
@@ -100,8 +84,4 @@ Section: doc
 Depends: ${misc:Depends}
 Suggests: qt5-doc
 Description: documentation for Qt Creator IDE
- Qt Creator is a new, lightweight, cross-platform integrated development
- environment (IDE) designed to make development with the Qt application
- framework even faster and easier.
- .
- This package contains the documentation for Qt Creator IDE.
+ This package contains documentation for Qt Creator IDE.

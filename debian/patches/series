@@ -1,5 +1,4 @@
 # Upstream patches
-fix_build_on_ppc.patch
 
 # Debian patches.
 rpath_nonlinux.diff
@@ -9,3 +8,4 @@ fix_qt_version_autodetection.diff
 missing_header.diff
 fix_documentation_path.diff
 remove_libexec.diff
+disable_qbs.diff

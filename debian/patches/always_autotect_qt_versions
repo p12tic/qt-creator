@@ -2,7 +2,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
 ===================================================================
 --- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp
 +++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
-@@ -97,7 +97,7 @@ bool qtVersionNumberCompare(BaseQtVersio
+@@ -96,7 +96,7 @@ bool qtVersionNumberCompare(BaseQtVersio
      return a->qtVersion() > b->qtVersion() || (a->qtVersion() == b->qtVersion() && a->uniqueId() < b->uniqueId());
  }
  static bool restoreQtVersions();
@@ -11,9 +11,9 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
  static void saveQtVersions();
  static void updateDocumentation();
  
-@@ -126,14 +126,11 @@ void QtVersionManager::triggerQtVersionR
-     disconnect(ProjectExplorer::ToolChainManager::instance(), SIGNAL(toolChainsLoaded()),
-                this, SLOT(triggerQtVersionRestore()));
+@@ -125,14 +125,11 @@ void QtVersionManager::triggerQtVersionR
+     disconnect(ProjectExplorer::ToolChainManager::instance(), &ProjectExplorer::ToolChainManager::toolChainsLoaded,
+                this, &QtVersionManager::triggerQtVersionRestore);
  
 -    bool success = restoreQtVersions();
 +    restoreQtVersions();
@@ -30,7 +30,7 @@ Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
  
      emit m_instance->qtVersionsLoaded();
      emit m_instance->qtVersionsChanged(m_versions.keys(), QList<int>(), QList<int>());
-@@ -433,22 +430,57 @@ static FileNameList gatherQmakePathsFrom
+@@ -429,22 +426,57 @@ static FileNameList gatherQmakePathsFrom
      return foundQMakes.toList();
  }
  
