@@ -1,3 +1,7 @@
+qtcreator (4.1.0-4) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Nov 2016 10:21:34 -0300
+
 qtcreator (4.1.0-3) unstable; urgency=medium
 
   * Do not require clang support on archs that do not have it.
