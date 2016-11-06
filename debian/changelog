@@ -1,5 +1,9 @@
 qtcreator (4.1.0-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make qtcreator depend upon qml-module-qtqml-models2 (Closes: #843395).
+    Thanks Oswald Buddenhagen for the bug report!
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Nov 2016 10:21:34 -0300
 
 qtcreator (4.1.0-3) unstable; urgency=medium

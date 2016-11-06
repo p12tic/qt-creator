@@ -38,6 +38,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtcreator.git
 Package: qtcreator
 Architecture: any
 Depends: libqt5sql5-sqlite,
+         qml-module-qtqml-models2,
          qml-module-qtquick-controls (>= 5.5.0~),
          qml-module-qtquick2 (>= 5.5.0~),
          qtchooser,
