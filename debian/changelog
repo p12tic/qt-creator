@@ -1,3 +1,26 @@
+qtcreator (4.1.0-4) unstable; urgency=medium
+
+  * Make qtcreator depend upon qml-module-qtqml-models2 (Closes: #843395).
+    Thanks Oswald Buddenhagen for the bug report!
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 18 Nov 2016 16:10:07 -0300
+
+qtcreator (4.1.0-3) unstable; urgency=medium
+
+  * Do not require clang support on archs that do not have it.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 23 Oct 2016 10:15:19 -0300
+
+qtcreator (4.1.0-2) unstable; urgency=medium
+
+  * Do not build clang support on armel (Closes: #839791). Thanks Emilio for
+    the bug!
+  * Switch to libclang-dev, which currently depends on libclang-3.8-dev.
+    Listing both versions of libclang-3.*-dev is futile as buildds will
+    only consider the first one.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 19 Oct 2016 11:23:57 -0300
+
 qtcreator (4.1.0-1) unstable; urgency=medium
 
   [ Adam Majer ]

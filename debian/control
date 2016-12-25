@@ -8,7 +8,7 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Build-Depends: debhelper (>= 9),
                libbotan1.10-dev,
-               libclang-3.8-dev | libclang-3.9-dev,
+               libclang-dev [!armel !alpha !hppa !hurd-i386 !kfreebsd-any !m68k !powerpcspe !sh4 !sparc64 !x32],
                libicu-dev,
                libjs-jquery,
                libqt5opengl5-dev (>= 5.5.0~),
@@ -38,6 +38,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtcreator.git
 Package: qtcreator
 Architecture: any
 Depends: libqt5sql5-sqlite,
+         qml-module-qtqml-models2,
          qml-module-qtquick-controls (>= 5.5.0~),
          qml-module-qtquick2 (>= 5.5.0~),
          qtchooser,
