@@ -1,3 +1,19 @@
+qtcreator (4.2.0-1) UNRELEASED; urgency=medium
+
+  * New upstream version
+    + Added experimental editor for Qt SCXML
+    + Added pattern substitution for variable expansion
+    + Added option to hide the central widget in Debug mode
+    + Fixed highlighting of Markdown files
+    + Added option to skip big C++ files when indexing
+    + Improved responsiveness of completion and highlighting
+      when using clang code model
+    + Made display of maps more compact under debugger
+    + Added pretty printing of `QRegExp` captures, `QStaticStringData`,
+      `QStandardItem`, and `std::pair` udner debugger
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Dec 2016 16:27:08 +0100
+
 qtcreator (4.1.0-4) unstable; urgency=medium
 
   * Make qtcreator depend upon qml-module-qtqml-models2 (Closes: #843395).
