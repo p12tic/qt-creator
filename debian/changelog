@@ -1,5 +1,6 @@
 qtcreator (4.2.0-1) UNRELEASED; urgency=medium
 
+  [ Adam Majer ]
   * New upstream version
     + Added experimental editor for Qt SCXML
     + Added pattern substitution for variable expansion
@@ -11,6 +12,8 @@ qtcreator (4.2.0-1) UNRELEASED; urgency=medium
     + Made display of maps more compact under debugger
     + Added pretty printing of `QRegExp` captures, `QStaticStringData`,
       `QStandardItem`, and `std::pair` udner debugger
+  * Bump min Qt dependencies to 5.6.0 and QBS to 1.7.0
+  * debian/watch: update downloaded files to XZ compressed
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Dec 2016 16:27:08 +0100
 
