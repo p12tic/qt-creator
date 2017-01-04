@@ -1,6 +1,5 @@
-qtcreator (4.2.0-1) UNRELEASED; urgency=medium
+qtcreator (4.2.0-1) unstable; urgency=medium
 
-  [ Adam Majer ]
   * New upstream version
     + Added experimental editor for Qt SCXML
     + Added pattern substitution for variable expansion
@@ -19,7 +18,7 @@ qtcreator (4.2.0-1) UNRELEASED; urgency=medium
   * debian/watch: update downloaded files to XZ compressed
   * debian/control: add missing build dependency on llvm
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Dec 2016 16:27:08 +0100
+ -- Adam Majer <adamm@zombino.com>  Thu, 05 Jan 2017 00:19:09 +0100
 
 qtcreator (4.1.0-4) unstable; urgency=medium
 
