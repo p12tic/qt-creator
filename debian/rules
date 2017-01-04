@@ -15,7 +15,7 @@ export QMAKE_CXXFLAGS_DEBUG := $(CXXFLAGS)
 export QMAKE_LFLAGS_RELEASE := $(LDFLAGS)
 export QMAKE_LFLAGS_DEBUG := $(LDFLAGS)
 export QT_SELECT := qt5
-export LLVM_INSTALL_DIR := $(shell if [ -d /usr/lib/llvm-3.9 ]; then echo /usr/lib/llvm-3.9; else echo /usr/lib/llvm-3.8; fi)
+export LLVM_INSTALL_DIR := $(shell if [ -d /usr/lib/llvm-3.9 ]; then echo /usr/lib/llvm-3.9; fi)
 
 # Upstream changelog
 upstream_changes := $(wildcard dist/changes-*)

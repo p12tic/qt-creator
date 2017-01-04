@@ -12,8 +12,12 @@ qtcreator (4.2.0-1) UNRELEASED; urgency=medium
     + Made display of maps more compact under debugger
     + Added pretty printing of `QRegExp` captures, `QStaticStringData`,
       `QStandardItem`, and `std::pair` udner debugger
-  * Bump min Qt dependencies to 5.6.0 and QBS to 1.7.0
+  * Bump min build dependencies:
+    + Qt 5.6.0
+    + QBS 1.7.0
+    + clang/llvm 3.9.0, only build clangplugin on amd64
   * debian/watch: update downloaded files to XZ compressed
+  * debian/control: add missing build dependency on llvm
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Dec 2016 16:27:08 +0100
 
