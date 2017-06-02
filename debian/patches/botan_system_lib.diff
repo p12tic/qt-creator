@@ -10,10 +10,8 @@ Last-Reviewed: 2014-08-19
  src/libs/ssh/sshkeypasswordretriever_p.h |    1 +
  5 files changed, 19 insertions(+)
 
-Index: qtcreator/src/libs/ssh/sshcryptofacility.cpp
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshcryptofacility.cpp
-+++ qtcreator/src/libs/ssh/sshcryptofacility.cpp
+--- a/src/libs/ssh/sshcryptofacility.cpp
++++ b/src/libs/ssh/sshcryptofacility.cpp
 @@ -34,6 +34,11 @@
  #include "sshpacket_p.h"
  
@@ -26,10 +24,8 @@ Index: qtcreator/src/libs/ssh/sshcryptofacility.cpp
  
  #include <QDebug>
  #include <QList>
-Index: qtcreator/src/libs/ssh/sshcryptofacility_p.h
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshcryptofacility_p.h
-+++ qtcreator/src/libs/ssh/sshcryptofacility_p.h
+--- a/src/libs/ssh/sshcryptofacility_p.h
++++ b/src/libs/ssh/sshcryptofacility_p.h
 @@ -26,9 +26,11 @@
  #pragma once
  
@@ -42,10 +38,8 @@ Index: qtcreator/src/libs/ssh/sshcryptofacility_p.h
  
  namespace QSsh {
  namespace Internal {
-Index: qtcreator/src/libs/ssh/sshkeyexchange.cpp
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshkeyexchange.cpp
-+++ qtcreator/src/libs/ssh/sshkeyexchange.cpp
+--- a/src/libs/ssh/sshkeyexchange.cpp
++++ b/src/libs/ssh/sshkeyexchange.cpp
 @@ -34,6 +34,12 @@
  #include "sshincomingpacket_p.h"
  
@@ -59,10 +53,8 @@ Index: qtcreator/src/libs/ssh/sshkeyexchange.cpp
  
  #include <string>
  
-Index: qtcreator/src/libs/ssh/sshkeygenerator.cpp
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshkeygenerator.cpp
-+++ qtcreator/src/libs/ssh/sshkeygenerator.cpp
+--- a/src/libs/ssh/sshkeygenerator.cpp
++++ b/src/libs/ssh/sshkeygenerator.cpp
 @@ -32,6 +32,11 @@
  #include "sshpacket_p.h"
  
@@ -75,10 +67,8 @@ Index: qtcreator/src/libs/ssh/sshkeygenerator.cpp
  
  #include <QDateTime>
  #include <QInputDialog>
-Index: qtcreator/src/libs/ssh/sshkeypasswordretriever_p.h
-===================================================================
---- qtcreator.orig/src/libs/ssh/sshkeypasswordretriever_p.h
-+++ qtcreator/src/libs/ssh/sshkeypasswordretriever_p.h
+--- a/src/libs/ssh/sshkeypasswordretriever_p.h
++++ b/src/libs/ssh/sshkeypasswordretriever_p.h
 @@ -26,6 +26,7 @@
  #pragma once
  

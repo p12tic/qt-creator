@@ -1,7 +1,5 @@
-Index: qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
-===================================================================
---- qtcreator.orig/src/plugins/qtsupport/qtversionmanager.cpp
-+++ qtcreator/src/plugins/qtsupport/qtversionmanager.cpp
+--- a/src/plugins/qtsupport/qtversionmanager.cpp
++++ b/src/plugins/qtsupport/qtversionmanager.cpp
 @@ -96,7 +96,7 @@ bool qtVersionNumberCompare(BaseQtVersio
      return a->qtVersion() > b->qtVersion() || (a->qtVersion() == b->qtVersion() && a->uniqueId() < b->uniqueId());
  }
