@@ -1,3 +1,10 @@
+qtcreator (4.3.0-1) UNRELEASED; urgency=medium
+
+  [ Simon Quigley ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 Jun 2017 20:41:24 -0500
+
 qtcreator (4.2.0-1) unstable; urgency=medium
 
   * New upstream version
