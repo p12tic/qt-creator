@@ -1,0 +1,34 @@
+Author: Adam Majer <adamm@zombino.com>
+Date: Thu Jul  6 01:04:24 CEST 2017
+Summary: Compilation fails with Qt 4.7.1 otherwise
+
+--- a/src/plugins/qbsprojectmanager/qbsnodetreebuilder.cpp
++++ b/src/plugins/qbsprojectmanager/qbsnodetreebuilder.cpp
+@@ -189,11 +189,11 @@ QStringList unreferencedBuildSystemFiles
+ {
+     QStringList result;
+     if (!p.isValid())
+         return result;
+ 
+-    const std::set<QString> &available = p.buildSystemFiles();
++    const QSet<QString> &available = p.buildSystemFiles();
+     QList<QString> referenced = referencedBuildSystemFiles(p.projectData()).toList();
+     Utils::sort(referenced);
+     std::set_difference(available.begin(), available.end(), referenced.begin(), referenced.end(),
+                         std::back_inserter(result));
+     return result;
+--- a/src/plugins/qbsprojectmanager/qbsproject.cpp
++++ b/src/plugins/qbsprojectmanager/qbsproject.cpp
+@@ -408,11 +408,11 @@ bool QbsProject::checkCancelStatus()
+     m_qbsProjectParser = 0;
+     parseCurrentBuildConfiguration();
+     return true;
+ }
+ 
+-static QSet<QString> toQStringSet(const std::set<QString> &src)
++static QSet<QString> toQStringSet(const QSet<QString> &src)
+ {
+     QSet<QString> result;
+     result.reserve(int(src.size()));
+     std::copy(src.begin(), src.end(), Utils::inserter(result));
+     return result;

@@ -1,6 +1,8 @@
 --- a/qtcreator.pri
 +++ b/qtcreator.pri
-@@ -138,7 +138,7 @@ osx {
+@@ -136,22 +136,22 @@ osx {
+     IDE_DOC_PATH     = $$IDE_OUTPUT_PATH/share/doc/qtcreator
+     IDE_BIN_PATH     = $$IDE_OUTPUT_PATH/bin
      win32: \
          IDE_LIBEXEC_PATH = $$IDE_OUTPUT_PATH/bin
      else: \
@@ -9,7 +11,10 @@
      !isEqual(IDE_SOURCE_TREE, $$IDE_OUTPUT_PATH):copydata = 1
  
      LINK_LIBRARY_PATH = $$IDE_BUILD_TREE/$$IDE_LIBRARY_BASENAME/qtcreator
-@@ -149,7 +149,7 @@ osx {
+     LINK_PLUGIN_PATH  = $$LINK_LIBRARY_PATH/plugins
+ 
+     INSTALL_LIBRARY_PATH = $$QTC_PREFIX/$$IDE_LIBRARY_BASENAME/qtcreator
+     INSTALL_PLUGIN_PATH  = $$INSTALL_LIBRARY_PATH/plugins
      win32: \
          INSTALL_LIBEXEC_PATH = $$QTC_PREFIX/bin
      else: \
@@ -18,3 +23,5 @@
      INSTALL_DATA_PATH    = $$QTC_PREFIX/share/qtcreator
      INSTALL_DOC_PATH     = $$QTC_PREFIX/share/doc/qtcreator
      INSTALL_BIN_PATH     = $$QTC_PREFIX/bin
+     INSTALL_APP_PATH     = $$QTC_PREFIX/bin
+ }
