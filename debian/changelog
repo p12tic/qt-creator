@@ -5,6 +5,7 @@ qtcreator (4.3.1-1) UNRELEASED; urgency=medium
     + Fix wizards not to overwrite existing files
     + Fix memory leak in code completion
     + Fix crash when requesting refactoring on invalid C++ code
+  * Remove qtscript5-private-dev as a BuildDepend
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 Jun 2017 20:41:24 -0500
 
