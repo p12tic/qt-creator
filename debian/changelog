@@ -6,8 +6,8 @@ qtcreator (4.3.1-1) UNRELEASED; urgency=medium
     + Fix memory leak in code completion
     + Fix crash when requesting refactoring on invalid C++ code
   * Remove qtscript5-private-dev as a BuildDepend
+  * Bump QBS dependency to 1.8.1
   * remove_libexec.diff: refreshed
-  * qbs_set.diff: fix compilation with Qt 4.7.1
   * fix_documentation_path.diff: re-add. We are putting compiled
     documentation in compiled directory instead of human readable
     documentation directory
