@@ -11,6 +11,8 @@ qtcreator (4.3.1-1) UNRELEASED; urgency=medium
   * fix_documentation_path.diff: re-add. We are putting compiled
     documentation in compiled directory instead of human readable
     documentation directory
+  * Install HTML version of the documentation for both QtCreator
+    end user and the plugin developer.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 Jun 2017 20:41:24 -0500
 
