@@ -1,7 +1,6 @@
-qtcreator (4.3.1-1) UNRELEASED; urgency=medium
+qtcreator (4.3.1-1) unstable; urgency=medium
 
-  [ Adam Majer ]
-  * New upstream version
+  * New upstream version (closes: #866846)
     + Fix wizards not to overwrite existing files
     + Fix memory leak in code completion
     + Fix crash when requesting refactoring on invalid C++ code
@@ -16,7 +15,7 @@ qtcreator (4.3.1-1) UNRELEASED; urgency=medium
   * Remove qtcreator.desktop in favour of upstream version
   * Use dh_missing instead of deprecated dh_install --fail-missing
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 01 Jun 2017 20:41:24 -0500
+ -- Adam Majer <adamm@zombino.com>  Tue, 11 Jul 2017 20:16:42 +0200
 
 qtcreator (4.3.0-1) UNRELEASED; urgency=medium
 
