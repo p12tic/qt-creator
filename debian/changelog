@@ -6,6 +6,7 @@ qtcreator (4.4.1-1) UNRELEASED; urgency=medium
 
   [ Adam Majer ]
   * New upstream version 4.4.1 (closes: #875863)
+  * Enable clang code plugin on i386 (closes: #877814)
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 18:05:23 +0100
 
