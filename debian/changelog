@@ -6,8 +6,7 @@ qtcreator (4.4.1-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-  * Remove libllvm-3.9-dev and libclang-3.9-dev because it is going to be
-    removed from the archive and qtcreator does not supports newer versions
+  * Switch to unversioned llvm-dev and see if we can keep it like that
     (Closes: #873414).
   * Switch to compat 10 which uses parallel building by default.
     - Depend on debhelper >= 10.
