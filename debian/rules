@@ -21,7 +21,7 @@ export LLVM_INSTALL_DIR := $(shell if [ -d /usr/lib/llvm-3.9 ]; then echo /usr/l
 upstream_changes := $(wildcard dist/changes-*)
 
 %:
-	dh $@ --parallel --builddirectory=builddir
+	dh $@ --builddirectory=builddir
 
 override_dh_auto_configure:
 	mkdir -p builddir
