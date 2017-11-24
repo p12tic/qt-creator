@@ -6,6 +6,8 @@ qtcreator (4.4.1-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
+  * Switch to unversioned llvm-dev and see if we can keep it like that
+    (Closes: #873414).
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 18:05:23 +0100
 
