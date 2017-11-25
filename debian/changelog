@@ -6,8 +6,8 @@ qtcreator (4.4.1-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-  * Switch to unversioned llvm-dev and see if we can keep it like that
-    (Closes: #873414).
+  * Switch to unversioned llvm-dev and libclang-dev, see if we can keep this
+    dependencies this way (Closes: #873414).
   * Switch to compat 10 which uses parallel building by default.
     - Depend on debhelper >= 10.
 
