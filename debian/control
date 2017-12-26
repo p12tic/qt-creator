@@ -5,17 +5,17 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Adam Majer <adamm@zombino.com>,
            Jeremy Lainé <jeremy.laine@m4x.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
-           Simon Quigley <tsimonq2@ubuntu.com>,
-Build-Depends: debhelper (>= 9),
+           Simon Quigley <tsimonq2@ubuntu.com>
+Build-Depends: debhelper (>= 10),
                libbotan1.10-dev,
-               libclang-3.9-dev [amd64 i386],
-               llvm-3.9-dev [amd64 i386],
+               libclang-dev [amd64 i386],
                libicu-dev,
                libjs-jquery,
                libqt5opengl5-dev (>= 5.6.0~),
                libqt5sql5-sqlite (>= 5.6.0~),
                libqt5webkit5-dev (>= 5.6.0~),
                libqt5x11extras5-dev (>= 5.6.0~),
+               llvm-dev [amd64 i386],
                pkg-config,
                qbs-dev (>= 1.8.1~),
                qml-module-qtquick2 (>= 5.6.0~),
@@ -28,7 +28,7 @@ Build-Depends: debhelper (>= 9),
                qttools5-dev-tools (>= 5.6.0~),
                qttools5-private-dev (>= 5.6.0~),
                qtxmlpatterns5-dev-tools (>= 5.6.0~)
-Standards-Version: 4.0.0
+Standards-Version: 4.1.1
 Homepage: https://doc.qt.io/qt-5/topics-app-development.html
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qtcreator.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtcreator.git
