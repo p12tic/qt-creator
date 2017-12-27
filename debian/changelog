@@ -1,5 +1,7 @@
 qtcreator (4.5.0-1) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 27 Dec 2017 11:12:55 -0300
 
