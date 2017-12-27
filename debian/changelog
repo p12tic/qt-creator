@@ -1,4 +1,4 @@
-qtcreator (4.5.0-1) UNRELEASED; urgency=medium
+qtcreator (4.5.0-1) unstable; urgency=medium
 
   [ Adam Majer ]
   * Enable clang code plugin on i386 (closes: #877814)
@@ -7,7 +7,7 @@ qtcreator (4.5.0-1) UNRELEASED; urgency=medium
   * New upstream release. (closes: #875863)
   * Bump QBS build dependency to >= 1.10, required by the source.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 27 Dec 2017 11:12:55 -0300
+ -- Adam Majer <adamm@zombino.com>  Thu, 28 Dec 2017 00:41:30 +0100
 
 qtcreator (4.3.1-2) unstable; urgency=medium
 
