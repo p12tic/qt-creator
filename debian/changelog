@@ -1,3 +1,17 @@
+qtcreator (4.5.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fix FTBFS on armhf. (Closes: #886820)
+    - Remove hack to build some files with -O1.
+      Thanks to Adrian Bunk for testing.
+  * Build-depend on qml-module-qtquick-controls to satisfy the check in
+    src/plugins/plugins.pro.
+    - Thanks to Dmitry Shachnev.
+  * Build-depend libclang and llvm 3.9 instead of the metapackage.
+    - qtcreator only works with version 3.9.
+
+ -- Felix Geyer <fgeyer@debian.org>  Mon, 29 Jan 2018 22:54:46 +0100
+
 qtcreator (4.5.0-1) unstable; urgency=medium
 
   [ Adam Majer ]
