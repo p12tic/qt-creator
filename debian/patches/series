@@ -2,9 +2,11 @@
 
 # Debian patches.
 rpath_nonlinux.diff
-botan_system_lib.diff
 always_autotect_qt_versions
 fix_qt_version_autodetection.diff
 missing_header.diff
 remove_libexec.diff
 fix_documentation_path.diff
+
+# Unused until creator switches to botan 2.
+#botan_system_lib.diff
