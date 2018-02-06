@@ -1,13 +1,12 @@
-qtcreator (4.5.0-3) UNRELEASED; urgency=medium
+qtcreator (4.5.0-3) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Switch back to using the embedded botan's code. Version 1.10 will get
     removed from the archive. QTCREATORBUG-19745 was filed against upstream
     to improve this situation (Closes: #889558).
     - Remove botan build dependency.
   * Refresh patches.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 05 Feb 2018 17:15:51 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 06 Feb 2018 15:41:41 -0300
 
 qtcreator (4.5.0-2) unstable; urgency=medium
 
