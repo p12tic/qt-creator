@@ -7,7 +7,6 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Simon Quigley <tsimonq2@ubuntu.com>
 Build-Depends: debhelper (>= 10),
-               libbotan1.10-dev,
                libclang-3.9-dev [amd64 i386],
                libicu-dev,
                libjs-jquery,
