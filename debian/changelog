@@ -3,7 +3,7 @@ qtcreator (4.5.0-3) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Switch back to using the embedded botan's code. Version 1.10 will get
     removed from the archive. QTCREATORBUG-19745 was filed against upstream
-    to improve this situation.
+    to improve this situation (Closes: #889558).
     - Remove botan build dependency.
   * Refresh patches.
 
