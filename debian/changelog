@@ -1,9 +1,14 @@
 qtcreator (4.5.1-1) UNRELEASED; urgency=medium
 
+  [ Simon Quigley ]
   * New upstream release.
   * Bump debhelper compat to 11, no changes needed.
   * Bump Standards-version to 4.1.3, no changes needed.
   * Fix insecure-copyright-format-uri.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Remove botan patches. We can now use USE_SYSTEM_BOTAN as soon as botan2
+    hits the archive. Thanks Christian Kandeler for the pointer!
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 10 Mar 2018 22:49:31 -0600
 
