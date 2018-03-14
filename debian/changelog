@@ -15,6 +15,9 @@ qtcreator (4.5.1-1) UNRELEASED; urgency=medium
     this method doesn't work with libclang-3.9-dev and llvm-3.9-dev
     build dependencies.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Switch Vcs-[Git Browser] to salsa.debian.org.
+
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 10 Mar 2018 22:49:31 -0600
 
 qtcreator (4.5.0-3) unstable; urgency=medium
