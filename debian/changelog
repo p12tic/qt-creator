@@ -17,7 +17,7 @@ qtcreator (4.5.2-1) UNRELEASED; urgency=medium
     build dependencies.
 
   [ Adam Majer ]
-  * Enable USE_SYSTEM_BOTAN again.
+  * Enable USE_SYSTEM_BOTAN again. (botan2.wip.patch, botan2.debian.patch)
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 10 Mar 2018 22:49:31 -0600
 
