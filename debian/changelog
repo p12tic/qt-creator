@@ -9,14 +9,15 @@ qtcreator (4.5.2-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove botan patches. We can now use USE_SYSTEM_BOTAN as soon as botan2
     hits the archive. Thanks Christian Kandeler for the pointer!
+  * Switch Vcs-[Git Browser] to salsa.debian.org.
 
   [ Alexander Volkov ]
   * Revert "Export LLVM_INSTALL_DIR without harcoding the version." since
     this method doesn't work with libclang-3.9-dev and llvm-3.9-dev
     build dependencies.
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Switch Vcs-[Git Browser] to salsa.debian.org.
+  [ Adam Majer ]
+  * Enable USE_SYSTEM_BOTAN again.
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 10 Mar 2018 22:49:31 -0600
 

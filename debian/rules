@@ -36,6 +36,7 @@ override_dh_auto_configure:
 		QBS_INSTALL_DIR=/usr \
 		PREFIX=/usr/ \
 		LLVM_INSTALL_DIR="$(LLVM_INSTALL_DIR)" \
+		USE_SYSTEM_BOTAN=1 \
 		CONFIG+=disable_external_rpath \
 		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 $(extra_configure_opts)
 
