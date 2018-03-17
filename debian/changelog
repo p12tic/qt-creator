@@ -18,6 +18,7 @@ qtcreator (4.5.2-1) UNRELEASED; urgency=medium
 
   [ Adam Majer ]
   * Enable USE_SYSTEM_BOTAN again. (botan2.wip.patch, botan2.debian.patch)
+  * Update Qt minimum version dependency to 5.6.2
 
  -- Simon Quigley <tsimonq2@ubuntu.com>  Sat, 10 Mar 2018 22:49:31 -0600
 
