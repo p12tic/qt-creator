@@ -1,7 +1,7 @@
 qtcreator (4.5.2-1) UNRELEASED; urgency=medium
 
   [ Simon Quigley ]
-  * New upstream release.
+  * New upstream release. (closes: #893207)
   * Bump debhelper compat to 11, no changes needed.
   * Bump Standards-version to 4.1.3, no changes needed.
   * Fix insecure-copyright-format-uri.
@@ -14,7 +14,7 @@ qtcreator (4.5.2-1) UNRELEASED; urgency=medium
   [ Alexander Volkov ]
   * Revert "Export LLVM_INSTALL_DIR without harcoding the version." since
     this method doesn't work with libclang-3.9-dev and llvm-3.9-dev
-    build dependencies.
+    build dependencies. (closes: #889984, #888895)
 
   [ Adam Majer ]
   * Enable USE_SYSTEM_BOTAN again. (botan2.wip.patch, botan2.debian.patch)
