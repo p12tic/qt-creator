@@ -1,8 +1,8 @@
-qtcreator (4.5.2-3) UNRELEASED; urgency=medium
+qtcreator (4.5.2-3) unstable; urgency=medium
 
   * Update libclang dependency to 6.0 (closes: #893402)
 
- -- Adam Majer <adamm@zombino.com>  Sun, 18 Mar 2018 19:03:32 +0100
+ -- Adam Majer <adamm@zombino.com>  Sun, 18 Mar 2018 19:10:54 +0100
 
 qtcreator (4.5.2-2) unstable; urgency=medium
 
