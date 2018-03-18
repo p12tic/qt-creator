@@ -8,6 +8,8 @@ qtcreator (4.5.2-2) UNRELEASED; urgency=medium
   * Move desktop file, and appdata file from qtcreator-data to qtcreator, as
     they must be together with the executable they refer to
     - add proper breaks/replaces
+  * Add the zlib1g-dev build dependency: apparently LLVM/Clang 3.9 exposes -lz
+    as dependency for its libraries, and the -dev packages do not depend on it.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Mar 2018 08:59:23 +0100
 
