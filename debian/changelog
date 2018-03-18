@@ -1,3 +1,8 @@
+qtcreator (4.5.2-2) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Mar 2018 08:59:23 +0100
+
 qtcreator (4.5.2-1) unstable; urgency=medium
 
   [ Simon Quigley ]
