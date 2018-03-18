@@ -57,7 +57,7 @@ Recommends: clang,
             qttranslations5-l10n,
             qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
-Suggests: cmake, g++, git, kdelibs5-data, subversion
+Suggests: cmake, g++, git, kate-data, subversion
 Description: integrated development environment (IDE) for Qt
  Qt Creator is a cross-platform integrated development environment (IDE)
  designed to make development with the Qt application framework faster

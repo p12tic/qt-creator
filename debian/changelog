@@ -1,5 +1,9 @@
 qtcreator (4.5.2-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Switch the kdelibs5-data suggest to kate-data, since the latter is where
+    the kate syntax definitions are; unfortunately they are the kde4 versions,
+    as the KF5 syntax-highlighting embeds its own as Qt resources.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Mar 2018 08:59:23 +0100
 
