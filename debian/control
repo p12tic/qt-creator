@@ -78,7 +78,7 @@ Description: integrated development environment (IDE) for Qt
 
 Package: qtcreator-data
 Architecture: all
-Depends: ${misc:Depends}, ${perl:Depends}
+Depends: ${misc:Depends}
 Description: application data for Qt Creator IDE
  This package contains architecture-independent data for Qt Creator IDE.
 
