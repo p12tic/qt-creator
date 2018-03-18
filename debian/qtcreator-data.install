@@ -1,5 +1,3 @@
 debian/Nokia-QtCreator.xml usr/share/mime/packages/
-usr/share/applications/org.qt-project.qtcreator.desktop
 usr/share/icons/hicolor/*
-usr/share/metainfo/org.qt-project.qtcreator.appdata.xml
 usr/share/qtcreator/*
