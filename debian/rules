@@ -5,15 +5,6 @@
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
-export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
-export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
-export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
-export QMAKE_CFLAGS_RELEASE := $(CFLAGS)
-export QMAKE_CFLAGS_DEBUG := $(CFLAGS)
-export QMAKE_CXXFLAGS_RELEASE := $(CXXFLAGS)
-export QMAKE_CXXFLAGS_DEBUG := $(CXXFLAGS)
-export QMAKE_LFLAGS_RELEASE := $(LDFLAGS)
-export QMAKE_LFLAGS_DEBUG := $(LDFLAGS)
 export QT_SELECT := qt5
 export LLVM_INSTALL_DIR := "/usr/lib/llvm-6.0"
 
@@ -24,17 +15,9 @@ upstream_changes := $(wildcard dist/changes-*)
 	dh $@ --builddirectory=builddir
 
 override_dh_auto_configure:
-	mkdir -p builddir
-	cd builddir ; \
-		qmake -recursive QMAKE_CFLAGS_RELEASE="$(QMAKE_CFLAGS_RELEASE)" \
-		QMAKE_CFLAGS_DEBUG="$(QMAKE_CFLAGS_DEBUG)" \
-		QMAKE_CXXFLAGS_RELEASE="$(QMAKE_CXXFLAGS_RELEASE)" \
-		QMAKE_CXXFLAGS_DEBUG="$(QMAKE_CXXFLAGS_DEBUG)" \
-		QMAKE_LFLAGS_RELEASE="$(QMAKE_LFLAGS_RELEASE)" \
-		QMAKE_LFLAGS_DEBUG="$(QMAKE_LFLAGS_DEBUG)" \
-		QMAKE_STRIP=: \
+	dh_auto_configure -- \
+		-recursive \
 		QBS_INSTALL_DIR=/usr \
-		PREFIX=/usr/ \
 		LLVM_INSTALL_DIR="$(LLVM_INSTALL_DIR)" \
 		USE_SYSTEM_BOTAN=1 \
 		CONFIG+=disable_external_rpath \
