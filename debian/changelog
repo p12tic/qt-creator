@@ -7,6 +7,8 @@ qtcreator (4.6.0-1) UNRELEASED; urgency=medium
   [ Simon Quigley ]
   * New upstream release.
   * Run wrap-and-sort.
+  * Confirm the multi-arch hinter's pointers and make qtcreator-data and
+    qtcreator-doc Multi-Arch: foreign.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Mar 2018 14:38:41 -0300
 

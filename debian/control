@@ -78,12 +78,14 @@ Description: integrated development environment (IDE) for Qt
 
 Package: qtcreator-data
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: application data for Qt Creator IDE
  This package contains architecture-independent data for Qt Creator IDE.
 
 Package: qtcreator-doc
 Architecture: all
+Multi-Arch: foreign
 Section: doc
 Depends: ${misc:Depends}
 Suggests: qt5-doc
