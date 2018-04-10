@@ -1,4 +1,4 @@
-qtcreator (4.6.0-1) UNRELEASED; urgency=medium
+qtcreator (4.6.0-1) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Use Helmut Grohne's patch to simplify debian/rules and allow qtcreator to
@@ -14,7 +14,7 @@ qtcreator (4.6.0-1) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Bump qbs build dependency to 1.11, required by this release.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Mar 2018 14:38:41 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 10 Apr 2018 10:28:29 -0300
 
 qtcreator (4.5.2-3) unstable; urgency=medium
 
