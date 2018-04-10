@@ -11,6 +11,9 @@ qtcreator (4.6.0-1) UNRELEASED; urgency=medium
     qtcreator-doc Multi-Arch: foreign.
   * Bump Standards-version to 4.1.4, no changes needed.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Bump qbs build dependency to 1.11, required by this release.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Mar 2018 14:38:41 -0300
 
 qtcreator (4.5.2-3) unstable; urgency=medium
