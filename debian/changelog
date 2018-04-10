@@ -1,5 +1,9 @@
 qtcreator (4.6.0-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Qt Creator now has a better heuristic for detecting LLVM, so it's not
+    needed to explicitely tell it where is it installed.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 10 Apr 2018 20:05:11 -0300
 
 qtcreator (4.6.0-1) unstable; urgency=medium

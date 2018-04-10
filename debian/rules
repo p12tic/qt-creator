@@ -6,7 +6,6 @@
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 export QT_SELECT := qt5
-export LLVM_INSTALL_DIR := "/usr/lib/llvm-6.0"
 
 # Upstream changelog
 upstream_changes := $(wildcard dist/changes-*)
@@ -18,7 +17,6 @@ override_dh_auto_configure:
 	dh_auto_configure -- \
 		-recursive \
 		QBS_INSTALL_DIR=/usr \
-		LLVM_INSTALL_DIR="$(LLVM_INSTALL_DIR)" \
 		USE_SYSTEM_BOTAN=1 \
 		CONFIG+=disable_external_rpath \
 		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 $(extra_configure_opts)
