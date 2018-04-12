@@ -1,3 +1,7 @@
+qtcreator (4.6.0-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Apr 2018 09:49:19 -0300
+
 qtcreator (4.6.0-2) unstable; urgency=medium
 
   * Qt Creator now has a better heuristic for detecting LLVM, so it's not
