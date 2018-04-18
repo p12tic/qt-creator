@@ -1,5 +1,9 @@
 qtcreator (4.6.0-3) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Fix clang model plugin build:
+    - Build depend upon llvm-6.0-dev on all archs.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Apr 2018 09:49:19 -0300
 
 qtcreator (4.6.0-2) unstable; urgency=medium
