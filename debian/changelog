@@ -1,7 +1,7 @@
 qtcreator (4.6.0-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Fix clang model plugin build:
+  * Fix clang model plugin build (Closes: 895677):
     - Build depend upon llvm-6.0-dev on all archs.
     - Once again pass LLVM_INSTALL_DIR to the config script. In Debian
       llvm-config is suffixed by the LLVM version, so the correct path
