@@ -1,3 +1,7 @@
+qtcreator (4.6.0-4) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 May 2018 11:16:32 -0300
+
 qtcreator (4.6.0-3) unstable; urgency=medium
 
   * Fix clang model plugin build (Closes: 895677):
