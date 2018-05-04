@@ -58,7 +58,7 @@ Recommends: clang,
             qttranslations5-l10n,
             qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
-Suggests: cmake, g++, git, kate-data, subversion
+Suggests: cmake, g++, git, kate-data, subversion, valgrind
 Breaks: qtcreator-data (<< 4.5.2-2~)
 Replaces: qtcreator-data (<< 4.5.2-2~)
 Description: integrated development environment (IDE) for Qt
