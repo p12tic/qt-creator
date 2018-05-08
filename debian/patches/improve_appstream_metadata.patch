@@ -1,0 +1,43 @@
+From ca537013f75f6af7f4a16b50b1f9391f725c6901 Mon Sep 17 00:00:00 2001
+From: Aleix Pol <aleixpol@kde.org>
+Date: Mon, 7 May 2018 16:11:24 +0200
+Subject: [PATCH] Improve AppStream metadata
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Solves the issues mentioned in the bug report by adding missing fields
+and fixing broken URLs.
+
+Task-number: QTCREATORBUG-20374
+Change-Id: Iddea835d27ab914283b6b846a4a4379cbb0b546a
+Reviewed-by: Lisandro Damián Nicanor Pérez Meyer <perezmeyer@gmail.com>
+Reviewed-by: Eike Ziller <eike.ziller@qt.io>
+---
+ dist/org.qt-project.qtcreator.appdata.xml | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/dist/org.qt-project.qtcreator.appdata.xml b/dist/org.qt-project.qtcreator.appdata.xml
+index ef8663f657..4706e69b22 100644
+--- a/dist/org.qt-project.qtcreator.appdata.xml
++++ b/dist/org.qt-project.qtcreator.appdata.xml
+@@ -2,6 +2,8 @@
+ <!-- Copyright (C) 2016 The Qt Company Ltd. Contact: https://www.qt.io/licensing/ -->
+ <component type="desktop">
+  <id>org.qt-project.qtcreator.desktop</id>
++ <name>Qt Creator</name>
++ <summary>Provides a cross-platform, complete integrated development environment (IDE) for application developers to create applications for multiple platforms and devices</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <description>
+@@ -22,6 +24,6 @@
+   </p>
+  </description>
+ 
+- <url type="homepage">https://qt.io/ide/</url>
++ <url type="homepage">https://www.qt.io/ide/</url>
+  <project_group>Qt</project_group>
+ </component>
+-- 
+2.17.0
+
