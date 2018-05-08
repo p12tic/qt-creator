@@ -5,6 +5,8 @@ qtcreator (4.6.1-1) UNRELEASED; urgency=medium
   * Make qtcreator suggest valgrind (Closes: #881542).
   * Backport upstream patch to improve AppStrem metadata (Closes: 897901).
   * Refresh patches.
+  * Create arch_support_refactor.patch backporting various commits that
+    improve arch/OS support, adding for example the xtensa-esp32 arch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 May 2018 11:16:32 -0300
 

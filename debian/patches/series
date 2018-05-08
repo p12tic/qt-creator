@@ -1,6 +1,7 @@
 # Upstream patches
 botan2.wip.patch
 improve_appstream_metadata.patch
+arch_support_refactor.patch
 
 # Debian patches.
 rpath_nonlinux.diff
