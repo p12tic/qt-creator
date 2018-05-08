@@ -4,6 +4,7 @@ qtcreator (4.6.1-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Make qtcreator suggest valgrind (Closes: #881542).
   * Backport upstream patch to improve AppStrem metadata (Closes: 897901).
+  * Refresh patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 May 2018 11:16:32 -0300
 

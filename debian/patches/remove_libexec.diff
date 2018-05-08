@@ -4,7 +4,7 @@
 
 --- a/qtcreator.pri
 +++ b/qtcreator.pri
-@@ -139,7 +139,7 @@ osx {
+@@ -145,7 +145,7 @@ osx {
      win32: \
          IDE_LIBEXEC_PATH = $$IDE_OUTPUT_PATH/bin
      else: \
@@ -13,7 +13,7 @@
      !isEqual(IDE_SOURCE_TREE, $$IDE_OUTPUT_PATH):copydata = 1
  
      LINK_LIBRARY_PATH = $$IDE_BUILD_TREE/$$IDE_LIBRARY_BASENAME/qtcreator
-@@ -150,7 +150,7 @@ osx {
+@@ -156,7 +156,7 @@ osx {
      win32: \
          INSTALL_LIBEXEC_PATH = $$QTC_PREFIX/bin
      else: \

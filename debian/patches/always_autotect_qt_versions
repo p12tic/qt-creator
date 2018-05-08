@@ -1,6 +1,10 @@
+---
+ src/plugins/qtsupport/qtversionmanager.cpp |   70 +++++++++++++++++++++--------
+ 1 file changed, 51 insertions(+), 19 deletions(-)
+
 --- a/src/plugins/qtsupport/qtversionmanager.cpp
 +++ b/src/plugins/qtsupport/qtversionmanager.cpp
-@@ -96,7 +96,7 @@ bool qtVersionNumberCompare(BaseQtVersio
+@@ -92,7 +92,7 @@ bool qtVersionNumberCompare(BaseQtVersio
      return a->qtVersion() > b->qtVersion() || (a->qtVersion() == b->qtVersion() && a->uniqueId() < b->uniqueId());
  }
  static bool restoreQtVersions();
@@ -9,7 +13,7 @@
  static void saveQtVersions();
  static void updateDocumentation();
  
-@@ -125,14 +125,11 @@ void QtVersionManager::triggerQtVersionR
+@@ -121,14 +121,11 @@ void QtVersionManager::triggerQtVersionR
      disconnect(ProjectExplorer::ToolChainManager::instance(), &ProjectExplorer::ToolChainManager::toolChainsLoaded,
                 this, &QtVersionManager::triggerQtVersionRestore);
  
@@ -28,7 +32,7 @@
  
      emit m_instance->qtVersionsLoaded();
      emit m_instance->qtVersionsChanged(m_versions.keys(), QList<int>(), QList<int>());
-@@ -429,22 +426,57 @@ static FileNameList gatherQmakePathsFrom
+@@ -425,22 +422,57 @@ static FileNameList gatherQmakePathsFrom
      return foundQMakes.toList();
  }
  

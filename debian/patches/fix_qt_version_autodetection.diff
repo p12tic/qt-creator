@@ -5,9 +5,14 @@ Description: Fix piling up of Qt configurations.
 Last-Update: 2015-11-02
 Forwarded: no
 
+---
+ src/libs/utils/buildablehelperlibrary.cpp  |    9 ++++++++-
+ src/plugins/qtsupport/qtversionmanager.cpp |    2 +-
+ 2 files changed, 9 insertions(+), 2 deletions(-)
+
 --- a/src/plugins/qtsupport/qtversionmanager.cpp
 +++ b/src/plugins/qtsupport/qtversionmanager.cpp
-@@ -445,7 +445,7 @@ static void updateSystemQt()
+@@ -441,7 +441,7 @@ static void updateSystemQt()
  
      QMap<QString, int> currentAutoVersions;
      for (QMap<int, BaseQtVersion *>::const_iterator i = m_versions.begin(); i != m_versions.end(); ++i) {
@@ -18,7 +23,7 @@ Forwarded: no
      }
 --- a/src/libs/utils/buildablehelperlibrary.cpp
 +++ b/src/libs/utils/buildablehelperlibrary.cpp
-@@ -82,8 +82,15 @@ FileName BuildableHelperLibrary::findSys
+@@ -83,8 +83,15 @@ FileName BuildableHelperLibrary::findSys
  
          if (dir.exists(qmake)) {
              const QString qmakePath = dir.absoluteFilePath(qmake);

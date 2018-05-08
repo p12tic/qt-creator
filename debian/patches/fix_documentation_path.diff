@@ -4,7 +4,7 @@
 
 --- a/qtcreator.pri
 +++ b/qtcreator.pri
-@@ -134,7 +134,7 @@ osx {
+@@ -140,7 +140,7 @@ osx {
      IDE_LIBRARY_PATH = $$IDE_OUTPUT_PATH/$$IDE_LIBRARY_BASENAME/qtcreator
      IDE_PLUGIN_PATH  = $$IDE_LIBRARY_PATH/plugins
      IDE_DATA_PATH    = $$IDE_OUTPUT_PATH/share/qtcreator
