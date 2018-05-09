@@ -7,6 +7,7 @@ qtcreator (4.6.1-1) UNRELEASED; urgency=medium
   * Refresh patches.
   * Create arch_support_refactor.patch backporting various commits that
     improve arch/OS support, adding for example the xtensa-esp32 arch.
+  * Remove empty from_header_to_body.diff file.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 May 2018 11:16:32 -0300
 
