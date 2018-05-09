@@ -1,6 +1,5 @@
-qtcreator (4.6.1-1) UNRELEASED; urgency=medium
+qtcreator (4.6.1-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Make qtcreator suggest valgrind (Closes: #881542).
   * Backport upstream patch to improve AppStrem metadata (Closes: 897901).
@@ -10,7 +9,7 @@ qtcreator (4.6.1-1) UNRELEASED; urgency=medium
   * Remove empty from_header_to_body.diff file.
   * Fix typo in debian/copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 May 2018 11:16:32 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 09 May 2018 14:28:47 -0300
 
 qtcreator (4.6.0-3) unstable; urgency=medium
 
