@@ -8,6 +8,10 @@ qtcreator (4.7.1-1) UNRELEASED; urgency=medium
     - botan2.debian.patch (not needed anymore).
   * Bump qbs build dependency to 1.12, required by this release.
   * Build with system botan.
+  * Add load_clanglazy.patch: analyze tool is running clang which
+    either should be built with clazy support or passed an option
+    to load ClangLazy library. Vanilla clang doesn't has built-in
+    clazy support, so pass the option to it.
 
  -- Alexander Volkov <support@rusbitech.ru>  Wed, 10 Oct 2018 13:53:30 +0300
 

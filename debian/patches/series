@@ -4,3 +4,4 @@ always_autotect_qt_versions
 fix_qt_version_autodetection.diff
 remove_libexec.diff
 fix_documentation_path.diff
+load_clanglazy.patch
