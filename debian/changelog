@@ -7,6 +7,7 @@ qtcreator (4.7.1-1) UNRELEASED; urgency=medium
     - arch_support_refactor.patch.
     - botan2.debian.patch (not needed anymore).
   * Bump qbs build dependency to 1.12, required by this release.
+  * Build with system botan.
 
  -- Alexander Volkov <support@rusbitech.ru>  Wed, 10 Oct 2018 13:53:30 +0300
 
