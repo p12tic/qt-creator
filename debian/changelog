@@ -1,5 +1,8 @@
-qtcreator (4.7.2-1) UNRELEASED; urgency=medium
+qtcreator (4.7.2-1) unstable; urgency=medium
 
+  * Team upload.
+
+  [ Alexander Volkov ]
   * New upstream release (closes: #904672).
   * Drop patches merged upstream:
     - botan2.wip.patch.
@@ -13,7 +16,7 @@ qtcreator (4.7.2-1) UNRELEASED; urgency=medium
     to load ClangLazy library. Vanilla clang doesn't has built-in
     clazy support, so pass the option to it.
 
- -- Alexander Volkov <support@rusbitech.ru>  Wed, 10 Oct 2018 13:53:30 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Wed, 31 Oct 2018 14:50:44 +0300
 
 qtcreator (4.6.2-1) unstable; urgency=medium
 
