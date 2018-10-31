@@ -1,6 +1,6 @@
-qtcreator (4.7.1-1) UNRELEASED; urgency=medium
+qtcreator (4.7.2-1) UNRELEASED; urgency=medium
 
-  * New upstream release.
+  * New upstream release (closes: #904672).
   * Drop patches merged upstream:
     - botan2.wip.patch.
     - improve_appstream_metadata.patch.
