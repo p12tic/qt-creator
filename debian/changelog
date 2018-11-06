@@ -1,9 +1,8 @@
-qtcreator (4.7.2-2) UNRELEASED; urgency=medium
+qtcreator (4.7.2-2) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Switch to LLVM 7 (Closes: #912794).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 05 Nov 2018 14:05:23 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 06 Nov 2018 13:30:30 -0300
 
 qtcreator (4.7.2-1) unstable; urgency=medium
 
