@@ -1,5 +1,8 @@
 qtcreator (4.7.2-3) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make qtcreator suggest Clazy.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Nov 2018 13:55:21 -0300
 
 qtcreator (4.7.2-2) unstable; urgency=medium
