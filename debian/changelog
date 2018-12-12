@@ -4,6 +4,8 @@ qtcreator (4.8.0-1) UNRELEASED; urgency=medium
   * Make qtcreator suggest Clazy.
   * New upstream release.
   * Add libqt5serialport5-dev to enable building the SerialTerminal plugin.
+  * Enable Clang libtooling in order to build the clang refactoring and the pch
+    manager plugins.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Nov 2018 13:55:21 -0300
 
