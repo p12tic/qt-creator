@@ -7,6 +7,9 @@ qtcreator (4.8.0-1) UNRELEASED; urgency=medium
   * Enable Clang libtooling in order to build the clang refactoring and the pch
     manager plugins.
 
+  [ Simon Quigley ]
+  * Change my email to tsimonq2@debian.org now that I am a Debian Developer.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Nov 2018 13:55:21 -0300
 
 qtcreator (4.7.2-2) unstable; urgency=medium

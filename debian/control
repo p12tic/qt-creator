@@ -5,7 +5,7 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Adam Majer <adamm@zombino.com>,
            Jeremy Lainé <jeremy.laine@m4x.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
-           Simon Quigley <tsimonq2@ubuntu.com>
+           Simon Quigley <tsimonq2@debian.org>
 Build-Depends: debhelper (>= 11),
                libbotan-2-dev,
                libclang-7-dev,
