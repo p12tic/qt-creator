@@ -9,6 +9,7 @@ qtcreator (4.8.0-1) UNRELEASED; urgency=medium
 
   [ Simon Quigley ]
   * Change my email to tsimonq2@debian.org now that I am a Debian Developer.
+  * Bump Standards-version to 4.3.0, no changes needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Nov 2018 13:55:21 -0300
 
