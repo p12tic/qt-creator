@@ -7,7 +7,6 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 export QT_SELECT := qt5
 export LLVM_INSTALL_DIR := "/usr/lib/llvm-7"
-export QTC_ENABLE_CLANG_LIBTOOLING := 1
 
 # Upstream changelog
 upstream_changes := $(wildcard dist/changes-*)
