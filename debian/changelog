@@ -1,11 +1,10 @@
-qtcreator (4.8.1-1) UNRELEASED; urgency=medium
+qtcreator (4.8.1-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Do not enable Clang libtolling yet, it's still experimental
     (Closes: #918853).
   * New upstream release.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 18 Jan 2019 14:46:19 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 18 Jan 2019 21:56:56 -0300
 
 qtcreator (4.8.0-1) unstable; urgency=medium
 
