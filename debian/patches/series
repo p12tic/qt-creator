@@ -5,3 +5,4 @@ fix_qt_version_autodetection.diff
 remove_libexec.diff
 fix_documentation_path.diff
 load_clanglazy.patch
+clazy_plugin_name.patch
