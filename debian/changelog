@@ -1,10 +1,10 @@
-qtcreator (4.8.1-2) UNRELEASED; urgency=medium
+qtcreator (4.8.1-2) unstable; urgency=medium
 
   [ Alexander Volkov ]
   * Update load_clanglazy.patch for clazy 1.5, ClangLazy.so was renamed to
     ClazyPlugin.so.
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 17 Feb 2019 16:42:11 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 17 Feb 2019 16:47:56 -0300
 
 qtcreator (4.8.1-1) unstable; urgency=medium
 
