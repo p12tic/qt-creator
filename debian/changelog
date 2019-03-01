@@ -2,6 +2,7 @@ qtcreator (4.8.2-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream bugfix release.
+  * Refresh patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 Mar 2019 12:28:15 -0300
 

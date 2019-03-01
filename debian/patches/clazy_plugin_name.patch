@@ -1,9 +1,13 @@
 Author: Alexander Volkov <a.volkov@rusbitech.ru>
 Description: Fix clazy plugin name for clazy 1.5.
 Forwarded: no
+---
+ src/plugins/clangtools/clangtidyclazyrunner.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/src/plugins/clangtools/clangtidyclazyrunner.cpp
 +++ b/src/plugins/clangtools/clangtidyclazyrunner.cpp
-@@ -93,7 +93,7 @@
+@@ -94,7 +94,7 @@ QStringList ClangTidyClazyRunner::constr
      const QString clazyChecks = m_diagnosticConfig.clazyChecks();
      if (!clazyChecks.isEmpty()) {
          addXclangArg(arguments, QString("-load"), QString("ClazyPlugin.so"));
