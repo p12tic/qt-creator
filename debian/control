@@ -91,4 +91,8 @@ Section: doc
 Depends: ${misc:Depends}
 Suggests: qt5-doc
 Description: documentation for Qt Creator IDE
+ Qt Creator is a cross-platform integrated development environment (IDE)
+ designed to make development with the Qt application framework faster
+ and easier.
+ .
  This package contains documentation for Qt Creator IDE.
