@@ -3,6 +3,7 @@ qtcreator (4.9.2-1) UNRELEASED; urgency=medium
   * New changelog entry.
   * Refresh patches dealing with the clazy plugin.
   * Bump debhelper compatibility to 12.
+  * Remove now useless lintian overrides.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 24 Aug 2019 19:43:09 -0300
 
