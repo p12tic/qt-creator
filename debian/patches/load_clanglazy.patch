@@ -18,11 +18,11 @@ Last-Update: 2019-08-24
      const QString clazyChecks = m_diagnosticConfig.clazyChecks();
      if (!clazyChecks.isEmpty()) {
 -        arguments << XclangArgs({"-add-plugin",
--                                 "clang-lazy",
+-                                 "clazy",
 +        arguments << XclangArgs({"-load",
-+		                 "ClazyPlugin.so",
-+			         "-add-plugin",
++                                 "ClazyPlugin.so",
++                                 "-add-plugin",
 +                                 "clazy",
-                                  "-plugin-arg-clang-lazy",
+                                  "-plugin-arg-clazy",
                                   "enable-all-fixits",
-                                  "-plugin-arg-clang-lazy",
+                                  "-plugin-arg-clazy",
