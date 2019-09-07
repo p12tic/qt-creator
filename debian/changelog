@@ -12,6 +12,7 @@ qtcreator (4.10.0-1) UNRELEASED; urgency=medium
   * Switch to LLVM/Clang 8, as required by the source.
   * Force using qmake as build system. We now also hace CMake support. We
     should switch to it as soon as it's considered stable enough.
+  * Refresh debian/copyright.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 24 Aug 2019 19:43:09 -0300
 
