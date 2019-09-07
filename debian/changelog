@@ -7,6 +7,8 @@ qtcreator (4.10.0-1) UNRELEASED; urgency=medium
   * Remove now useless lintian overrides.
   * Extend qtcreator-doc long description.
   * Bump Standards-Version to 4.4.0, no changes required.
+  * Momentarily disable always_autotect_qt_versions patch, the code has
+    changed and we need to check if it's really needed.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 24 Aug 2019 19:43:09 -0300
 
