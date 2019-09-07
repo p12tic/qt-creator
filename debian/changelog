@@ -1,5 +1,6 @@
-qtcreator (4.9.2-1) UNRELEASED; urgency=medium
+qtcreator (4.10.0-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * New changelog entry.
   * Refresh patches dealing with the clazy plugin.
   * Bump debhelper compatibility to 12.
