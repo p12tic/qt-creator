@@ -1,4 +1,4 @@
-qtcreator (4.10.0-1) UNRELEASED; urgency=medium
+qtcreator (4.10.0-1) unstable; urgency=medium
 
   * New upstream release.
   * New changelog entry.
@@ -14,7 +14,7 @@ qtcreator (4.10.0-1) UNRELEASED; urgency=medium
     should switch to it as soon as it's considered stable enough.
   * Refresh debian/copyright.
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 24 Aug 2019 19:43:09 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 08 Sep 2019 12:41:07 -0300
 
 qtcreator (4.8.2-1) unstable; urgency=medium
 
