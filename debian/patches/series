@@ -1,3 +1,6 @@
+# Almost accepted patch (needs passing CI)
+ClangFormat-improve-the-message-the-users-see.patch
+
 # Debian patches.
 rpath_nonlinux.diff
 # Momentarily disable this patch, see 4.10.0-1's changelog entry.
