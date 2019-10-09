@@ -1,5 +1,4 @@
 # Almost accepted patch (needs passing CI)
-ClangFormat-improve-the-message-the-users-see.patch
 
 # Debian patches.
 rpath_nonlinux.diff
