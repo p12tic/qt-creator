@@ -1,11 +1,10 @@
-qtcreator (4.10.1-1) UNRELEASED; urgency=medium
+qtcreator (4.10.1-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Remove ClangFormat-improve-the-message-the-users-see.patch, applied
     upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 08 Oct 2019 22:34:15 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 08 Oct 2019 22:52:53 -0300
 
 qtcreator (4.10.0-2) unstable; urgency=medium
 
