@@ -1,9 +1,8 @@
-qtcreator (4.10.2-1) UNRELEASED; urgency=medium
+qtcreator (4.10.2-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 19 Nov 2019 15:31:24 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 19 Nov 2019 19:28:14 -0300
 
 qtcreator (4.10.1-1) unstable; urgency=medium
 
