@@ -3053,6 +3053,8 @@ Files: src/tools/perfparser/app/app.pro
        src/tools/perfparser/tests/auto/shared/shared.pri
        src/tools/perfparser/tests/tests.pro
        src/tools/perfparser/tests/tests.qbs
+Copyright: 2017 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@kdab.com>
+           2018 The Qt Company Ltd.
 License: GPL-3+
 Comment: No explicit license found, using license(s) from:
  src/tools/perfparser/LICENSE.GPLv3
@@ -3178,6 +3180,7 @@ Copyright: 2015-2017, Michael Park
 License: BSL-1
 
 Files: src/shared/qbs/examples/cocoa-application/CocoaApplication/en.lproj/*
+Copyright: 2017 The Qt Company
 License: BSD-3-clause
 Comment: No explicit license found, using license(s) from:
  src/shared/qbs/examples/cocoa-application/CocoaApplication/en.lproj/LICENSE
@@ -3295,14 +3298,17 @@ Copyright: 2007, Free Software Foundation, Inc. <http://fsf.org/>
 License: GPL-3+
 
 Files: share/qtcreator/debugger/README.txt
+Copyright: 2016 The Qt Company
 License: GPL-3+
 Comment: No explicit license found, using license(s) from:
  share/qtcreator/debugger/LICENSE.GPL3-EXCEPT
 
 Files: src/share/3rdparty/fonts/SourceCodePro.txt
+Copyright: 2010, 2012 Adobe Systems Incorporated
 License: OFL-1.1
 
 Files: src/libs/3rdparty/optional/CMakeLists.txt
+Copyright: 2011-2012 Andrzej Krzemienski
 License: BSL-1
 Comment: No explicit license found, using license(s) from:
  src/libs/3rdparty/optional/LICENSE_1_0.txt
