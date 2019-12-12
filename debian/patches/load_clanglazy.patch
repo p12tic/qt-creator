@@ -5,24 +5,22 @@ Description: Handle clazy plugin.
  This patch is a merge from two different patches done by Lisandro.
 Author: Alexander Volkov <a.volkov@rubistech.ru>
 Reviewed-by: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
-Last-Update: 2019-08-24
+Last-Update: 2019-12-12
 
 ---
- src/plugins/clangtools/clangtidyclazyrunner.cpp |    6 ++++--
- 1 file changed, 4 insertions(+), 2 deletions(-)
+ src/plugins/clangtools/clangtidyclazyrunner.cpp |    4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
 
 --- a/src/plugins/clangtools/clangtidyclazyrunner.cpp
 +++ b/src/plugins/clangtools/clangtidyclazyrunner.cpp
-@@ -85,8 +85,10 @@ QStringList ClangTidyClazyRunner::constr
+@@ -63,7 +63,9 @@ static QStringList clazyPluginArguments(
  
-     const QString clazyChecks = m_diagnosticConfig.clazyChecks();
+     const QString clazyChecks = diagnosticConfig.clazyChecks();
      if (!clazyChecks.isEmpty()) {
 -        arguments << XclangArgs({"-add-plugin",
--                                 "clazy",
 +        arguments << XclangArgs({"-load",
 +                                 "ClazyPlugin.so",
 +                                 "-add-plugin",
-+                                 "clazy",
+                                  "clazy",
                                   "-plugin-arg-clazy",
-                                  "enable-all-fixits",
-                                  "-plugin-arg-clazy",
+                                  diagnosticConfig.clazyChecks()});
