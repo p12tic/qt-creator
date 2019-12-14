@@ -6,6 +6,9 @@ qtcreator (4.11.0-1) UNRELEASED; urgency=medium
   * Refresh patches.
   * Bump Standards-Version to 4.4.1. No changes required.
 
+  [ Patrick Franz ]
+  * Added missing licence-texts in debian/copyright.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Dec 2019 14:08:04 -0300
 
 qtcreator (4.10.2-2) unstable; urgency=medium
