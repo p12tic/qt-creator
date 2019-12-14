@@ -8,6 +8,7 @@ qtcreator (4.11.0-1) UNRELEASED; urgency=medium
 
   [ Patrick Franz ]
   * Added missing licence-texts in debian/copyright.
+  * Fixed licence for metadata.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Dec 2019 14:08:04 -0300
 

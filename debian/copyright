@@ -3212,7 +3212,7 @@ License: LGPL-2.1+
 
 Files: dist/org.qt-project.qtcreator.appdata.xml
 Copyright: 2016, The Qt Company Ltd. Contact: https://www.qt.io/licensing
-License: CC0 or GPL-3
+License: CC0-1.0
 
 Files: debian/*
 Copyright: 2014-2019, Adam Majer <adamm@zombino.com>
@@ -3303,7 +3303,7 @@ License: BSL-1
  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  DEALINGS IN THE SOFTWARE.
 
-License: CC0
+License: CC0-1.0
  In Debian systems, the complete text of the Creative Commons CC0 1.0
  Universal license (CC0-1.0) can be found in
  "/usr/share/common-licenses/CC0-1.0"
