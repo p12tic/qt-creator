@@ -5,13 +5,11 @@ qtcreator (4.11.0-1) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * Refresh patches.
   * Bump Standards-Version to 4.4.1. No changes required.
+  * Switch to using debhelper-compat as a build dependency.
 
   [ Patrick Franz ]
   * Added missing licence-texts in debian/copyright.
   * Fixed licence for metadata.
-
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Switch to using debhelper-compat as a build dependency.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 12 Dec 2019 14:08:04 -0300
 
