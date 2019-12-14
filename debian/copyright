@@ -2535,10 +2535,7 @@ Files: src/shared/qbs/src/lib/corelib/buildgraph/transformerchangetracking.cpp
        src/shared/qbs/tests/auto/blackbox/testdata/product-dependencies-by-type/main.cpp
        src/shared/qbs/tests/auto/blackbox/testdata/productproperties/main.cpp
        src/shared/qbs/tests/auto/blackbox/testdata/project_filepath_check/main.cpp
-       src/shared/qbs/tests/auto/blackbox/testdata/proper quoting/main.cpp
-       src/shared/qbs/tests/auto/blackbox/testdata/proper quoting/my static lib helper.cpp
-       src/shared/qbs/tests/auto/blackbox/testdata/proper quoting/my static lib.cpp
-       src/shared/qbs/tests/auto/blackbox/testdata/proper quoting/some helper/*
+       src/shared/qbs/tests/auto/blackbox/testdata/proper quoting/*
        src/shared/qbs/tests/auto/blackbox/testdata/properties-in-export-items/main1.cpp
        src/shared/qbs/tests/auto/blackbox/testdata/properties-in-export-items/main2.cpp
        src/shared/qbs/tests/auto/blackbox/testdata/propertyChanges/lib.cpp
