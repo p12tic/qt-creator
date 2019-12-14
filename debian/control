@@ -6,7 +6,7 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Jeremy Lainé <jeremy.laine@m4x.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Simon Quigley <tsimonq2@debian.org>
-Build-Depends: debhelper (>= 12),
+Build-Depends: debhelper-compat (= 12),
                libbotan-2-dev,
                libclang-8-dev,
                libicu-dev,
