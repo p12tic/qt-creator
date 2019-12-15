@@ -49,6 +49,7 @@ Depends: libqt5sql5-sqlite,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: clang,
+            clang-tidy,
             gdb,
             make,
             qmlscene,
