@@ -1,12 +1,11 @@
-qtcreator (4.11.0-2) UNRELEASED; urgency=medium
+qtcreator (4.11.0-2) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Use Rules-Requires-Root: no.
   * Make qtcreator recommend clang-tidy, used in the Analyze menu.
   * Backport patch to detect compilers supported by ccache, if present.
   * Update Standards-Version to 4.5.0. No changes required.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 14 Dec 2019 15:45:09 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 29 Jan 2020 14:48:28 -0300
 
 qtcreator (4.11.0-1) unstable; urgency=medium
 
