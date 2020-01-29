@@ -1,0 +1,41 @@
+Description: GCC: Detect ccache executables
+ This patch detects compilers that ccache handles, if available.
+ The patch has been backported by Lisadro (read below) and might be
+ removed in the next Qt Creator's release.
+Author: Christian Kandeler <christian.kandeler@qt.io>
+Origin: https://codereview.qt-project.org/c/qt-creator/qt-creator/+/288385
+Forwarded: not-needed
+Reviewed-By: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+
+From 2028b399e85ce879b856102915d271bbb7cf87ba Mon Sep 17 00:00:00 2001
+From: Christian Kandeler <christian.kandeler@qt.io>
+Date: Wed, 29 Jan 2020 13:33:28 +0100
+Subject: [PATCH] GCC: Detect ccache executables
+
+These are not in the system PATH as to not make them the default, but it
+still makes sense to auto-detect them.
+
+Fixes: QTCREATORBUG-23473
+Change-Id: Ia044bd948a7a338f34f729e77e1365d048e87172
+---
+ src/plugins/projectexplorer/gcctoolchain.cpp |    9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+--- a/src/plugins/projectexplorer/gcctoolchain.cpp
++++ b/src/plugins/projectexplorer/gcctoolchain.cpp
+@@ -1070,7 +1070,14 @@ QList<ToolChain *> GccToolChainFactory::
+         FilePathList searchPaths = Environment::systemEnvironment().path();
+         searchPaths << gnuSearchPathsFromRegistry();
+         searchPaths << atmelSearchPathsFromRegistry();
+-        for (const FilePath &dir : searchPaths) {
++        if (HostOsInfo::isAnyUnixHost()) {
++            FilePath ccachePath = FilePath::fromString("/usr/lib/ccache/bin");
++            if (!ccachePath.exists())
++                ccachePath = FilePath::fromString("/usr/lib/ccache");
++            if (ccachePath.exists() && !searchPaths.contains(ccachePath))
++                searchPaths << ccachePath;
++        }
++	for (const FilePath &dir : searchPaths) {
+             static const QRegularExpression regexp(binaryRegexp);
+             QDir binDir(dir.toString());
+             QStringList nameFilters(compilerName);
