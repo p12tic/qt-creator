@@ -23,7 +23,7 @@ Change-Id: Ia044bd948a7a338f34f729e77e1365d048e87172
 
 --- a/src/plugins/projectexplorer/gcctoolchain.cpp
 +++ b/src/plugins/projectexplorer/gcctoolchain.cpp
-@@ -1070,7 +1070,14 @@ QList<ToolChain *> GccToolChainFactory::
+@@ -1073,7 +1073,14 @@ QList<ToolChain *> GccToolChainFactory::
          FilePathList searchPaths = Environment::systemEnvironment().path();
          searchPaths << gnuSearchPathsFromRegistry();
          searchPaths << atmelSearchPathsFromRegistry();
