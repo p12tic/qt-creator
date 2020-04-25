@@ -7,7 +7,6 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Simon Quigley <tsimonq2@debian.org>
 Build-Depends: debhelper-compat (= 12),
-               libbotan-2-dev,
                libclang-8-dev,
                libicu-dev,
                libjs-jquery,
