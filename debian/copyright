@@ -371,7 +371,7 @@ Files: src/libs/3rdparty/json/*
 Copyright: 2013-2019 Niels Lohmann <http://nlohmann.me>
 License: MIT
 
-Files: src/libs/3rdparty/yaml-cpp
+Files: src/libs/3rdparty/yaml-cpp/*
 Copyright: 2008-2015 Jesse Beder
 License: Expat
 
