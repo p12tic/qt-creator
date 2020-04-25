@@ -8,6 +8,7 @@ qtcreator (4.12.0-1) UNRELEASED; urgency=medium
   * Adapt load_clanglazy.patch, it hopefully still works.
   * Drop botan dependency, as now Qt Creator uses OpenSSH tools
     (Closes: #955465). Thanks Michael Weghorn for the bug report!
+  * Use system liblitehtml-dev (Closes: #956341).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 06 Feb 2020 10:55:32 -0300
 
