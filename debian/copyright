@@ -114,6 +114,10 @@ License: BSD-3-clause
 
 ## GFDL-NIV-1.3
 
+Files: src/shared/qbs/doc/reference/modules/freedesktop-module.qdoc
+Copyright: 2019 Alberto Mardegan
+License: GFDL-NIV-1.3
+
 Files: src/shared/qbs/doc/reference/items/probe/iar-probe.qdoc
        src/shared/qbs/doc/reference/items/probe/keil-probe.qdoc
        src/shared/qbs/doc/reference/items/probe/sdcc-probe.qdoc
@@ -126,12 +130,14 @@ Copyright: 2017 Denis Shienkov <denis.shienkov@gmail.com>
            2017 The Qt Company Ltd.
 License: GFDL-NIV-1.3
 
-Files: src/shared/qbs/doc/reference/items/probe/binary-probe.qdoc
+Files: src/shared/qbs/doc/reference/items/convenience/library.qdoc
+       src/shared/qbs/doc/reference/items/probe/binary-probe.qdoc
        src/shared/qbs/doc/reference/items/probe/framework-probe.qdoc
        src/shared/qbs/doc/reference/items/probe/include-probe.qdoc
+       src/shared/qbs/doc/reference/items/probe/library-probe.qdoc
        src/shared/qbs/doc/reference/items/probe/path-probe.qdoc
        src/shared/qbs/doc/reference/items/probe/pkgconfig-probe.qdoc
-Copyright: 2018-2019 Ivan Komissarov <ABBAPOH@gmail.com>
+Copyright: 2018-2020 Ivan Komissarov <ABBAPOH@gmail.com>
 License: GFDL-NIV-1.3
 
 Files: src/shared/qbs/doc/reference/jsextensions/jsextension-temporarydir.qdoc
@@ -153,9 +159,18 @@ Copyright: 2019 Jochen Ulrich <jochenulrich@t-online.de>
            2017 The Qt Company Ltd.
 License: GFDL-NIV-1.3
 
+Files: doc/qtdesignstudio/src/qtquick3d-editor/exporting-3d/exporting-3d-assets.qdoc
+Copyright: 1993-2009 NVIDIA Corporation.
+           2020 The Qt Company Ltd.
+License: GFDL-NIV-1.3
+
 Files: src/shared/qbs/doc/reference/jsextensions/jsextensions-general.qdoc
 Copyright: 2015 Petroules Corporation.
            2016 The Qt Company Ltd.
+License: GFDL-NIV-1.3
+
+Files: src/shared/qbs/doc/reference/items/probe/conanfile-probe.qdoc
+Copyright: 2020 Richard Weickelt
 License: GFDL-NIV-1.3
 
 ## GPL-3
@@ -188,8 +203,7 @@ License: GPL-3 with Qt-1.0 exception
 
 Files: src/shared/qbs/tests/auto/api/tst_api.cpp
        src/shared/qbs/tests/auto/api/tst_api.h
-       src/shared/qbs/tests/auto/blac
-       kbox/tst_blackbox.cpp
+       src/shared/qbs/tests/auto/blackbox/tst_blackbox.cpp
        src/shared/qbs/tests/auto/blackbox/tst_blackbox.h
 Copyright: 2019 Jochen Ulrich <jochenulrich@t-online.de>
            2016 The Qt Company Ltd.
@@ -220,12 +234,10 @@ Files: src/shared/qbs/src/app/qbs-setup-toolchains/iarewprobe.cpp
        src/shared/qbs/src/lib/corelib/generators/xmlworkspace.cpp
        src/shared/qbs/src/lib/corelib/generators/xmlworkspace.h
        src/shared/qbs/src/plugins/generator/iarew/iarewgeneratorplugin.cpp
-       src/shared/qbs/src/plugins/generator/iarew/iarewversioninfo.cpp
        src/shared/qbs/src/plugins/generator/iarew/iarewversioninfo.h
        src/shared/qbs/src/plugins/generator/iarew/iarewworkspace.cpp
        src/shared/qbs/src/plugins/generator/iarew/iarewworkspace.h
        src/shared/qbs/src/plugins/generator/keiluv/keiluvgeneratorplugin.cpp
-       src/shared/qbs/src/plugins/generator/keiluv/keiluvversioninfo.cpp
        src/shared/qbs/src/plugins/generator/keiluv/keiluvversioninfo.h
        src/shared/qbs/src/plugins/generator/keiluv/keiluvworkspace.cpp
        src/shared/qbs/src/plugins/generator/keiluv/keiluvworkspace.h
@@ -283,13 +295,13 @@ Copyright: 2014-2015 Petroules Corporation.
 License: LGPL-3 or GPL-2
 
 Files: src/shared/qbs/docker/bionic/entrypoint.sh
-       src/shared/qbs/docker/stretch/entrypoint.sh
 Copyright: 2019 Richard Weickelt <richard@weickelt.de>
 License: LGPL-3 or GPL-2
 
 Files: src/shared/qbs/scripts/build-qbs-with-qbs.sh
        src/shared/qbs/scripts/build-qbs-with-qmake.sh
        src/shared/qbs/scripts/install-qt.sh
+       src/shared/qbs/scripts/test-qt-for-android.sh
 Copyright: 2019 Richard Weickelt.
 License: LGPL-3 or GPL-2
 
