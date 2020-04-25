@@ -4,6 +4,7 @@ qtcreator (4.12.0-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Refresh detect_ccache_executables.patch.
   * Update debian/copyright.
+  * Remove detect_ccache_executables.patch, it's present in this version.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 06 Feb 2020 10:55:32 -0300
 
