@@ -24,11 +24,11 @@ override_dh_auto_configure:
 		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 $(extra_configure_opts)
 
 override_dh_auto_install:
+	dh_auto_install --destdir=debian/tmp/usr
 ifneq (,$(filter qtcreator-doc, $(shell dh_listpackages)))
 	dh_auto_build -- qch_docs
+	dh_auto_build -- install_inst_qch_docs install_inst_html_docs INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
 endif
-	dh_auto_install --destdir=debian/tmp/usr
-	dh_auto_build -- install_docs INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
 
 	# Do not install the file, we better symlink it.
 	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
