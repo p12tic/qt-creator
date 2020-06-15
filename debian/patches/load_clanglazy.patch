@@ -7,19 +7,18 @@ Author: Alexander Volkov <a.volkov@rubistech.ru>
   Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Reviewed-by: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Last-Update: 2020-04-25
-
 ---
- src/plugins/clangtools/clangtidyclazyrunner.cpp |    2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ src/plugins/clangtools/clangtidyclazyrunner.cpp |    1 +
+ 1 file changed, 1 insertion(+)
 
 --- a/src/plugins/clangtools/clangtidyclazyrunner.cpp
 +++ b/src/plugins/clangtools/clangtidyclazyrunner.cpp
-@@ -69,7 +69,7 @@ static QStringList clazyPluginArguments(
-     if (diagnosticConfig.isClazyEnabled()) {
-         arguments << XclangArgs({"-add-plugin", "clazy"});
-         if (!diagnosticConfig.clazyChecks().isEmpty())
--            arguments << XclangArgs({"-plugin-arg-clazy", diagnosticConfig.clazyChecks()});
-+            arguments << XclangArgs({"-load","ClazyPlugin.so","-add-plugin","-plugin-arg-clazy", diagnosticConfig.clazyChecks()});
-     }
+@@ -67,7 +67,7 @@ static QStringList clazyPluginArguments(
+     QStringList arguments;
  
-     return arguments;
+     if (diagnosticConfig.isClazyEnabled()) {
+-        arguments << XclangArgs({"-add-plugin", "clazy"});
++        arguments << XclangArgs({"-add-plugin", "clazy", "-load", "ClazyPlugin.so"});
+         if (!diagnosticConfig.clazyChecks().isEmpty())
+             arguments << XclangArgs({"-plugin-arg-clazy", diagnosticConfig.clazyChecks()});
+     }
