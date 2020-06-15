@@ -14,6 +14,9 @@ qtcreator (4.12.0-1) UNRELEASED; urgency=medium
   * Install only qtcreator’s own docs, not also QBS docs.
   * Remove qbs-dev build-dependency, it is no longer used.
 
+  [ Enrico Zini ]
+  * Added libdw-dev build-dependency to make sure perfparser is built.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 06 Feb 2020 10:55:32 -0300
 
 qtcreator (4.11.0-2) unstable; urgency=medium
