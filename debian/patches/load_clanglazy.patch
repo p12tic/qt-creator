@@ -6,7 +6,7 @@ Description: Handle clazy plugin.
 Author: Alexander Volkov <a.volkov@rubistech.ru>
   Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Reviewed-by: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
-Last-Update: 2020-04-25
+Last-Update: 2020-06-16
 ---
  src/plugins/clangtools/clangtidyclazyrunner.cpp |    1 +
  1 file changed, 1 insertion(+)
