@@ -14,6 +14,7 @@ qtcreator (4.12.3-1) UNRELEASED; urgency=medium
   * Install only qtcreator’s own docs, not also QBS docs.
   * Remove qbs-dev build-dependency, it is no longer used.
   * Add licenses for AppStream metadata to debian/copyright.
+  * Remove libqt5webkit5-dev build-dependency, unused since 4.2.0.
 
   [ Enrico Zini ]
   * Added libdw-dev build-dependency to make sure perfparser is built.
