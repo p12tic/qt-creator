@@ -15,6 +15,7 @@ qtcreator (4.12.3-1) UNRELEASED; urgency=medium
   * Remove qbs-dev build-dependency, it is no longer used.
   * Add licenses for AppStream metadata to debian/copyright.
   * Remove libqt5webkit5-dev build-dependency, unused since 4.2.0.
+  * Bump Qt build-dependencies to 5.11.0.
 
   [ Enrico Zini ]
   * Added libdw-dev build-dependency to make sure perfparser is built.
