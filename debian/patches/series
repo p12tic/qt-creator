@@ -8,3 +8,4 @@ rpath_nonlinux.diff
 remove_libexec.diff
 fix_documentation_path.diff
 load_clanglazy.patch
+perfparser_big_endian.patch
