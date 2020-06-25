@@ -1,4 +1,6 @@
-qtcreator (4.12.3-1) UNRELEASED; urgency=medium
+qtcreator (4.12.3-1) unstable; urgency=medium
+
+  * Team upload.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
@@ -21,7 +23,7 @@ qtcreator (4.12.3-1) UNRELEASED; urgency=medium
   * Added libdw-dev build-dependency to make sure perfparser is built.
   * Further update load_clanglazy.patch for Qt Creator 4.12.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 06 Feb 2020 10:55:32 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 25 Jun 2020 11:04:48 +0300
 
 qtcreator (4.11.0-2) unstable; urgency=medium
 
