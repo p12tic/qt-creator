@@ -1,0 +1,17 @@
+Description: undefine mips macro on MIPS
+ To fix this error:
+ src/tools/perfparser/app/perfregisterinfo.cpp:55:12: error: expected unqualified-id before numeric constant
+Author: Dmitry Shachnev <mitya57@debian.org>
+Forwarded: not-yet
+Last-Update: 2020-06-26
+
+--- a/src/tools/perfparser/app/perfregisterinfo.cpp
++++ b/src/tools/perfparser/app/perfregisterinfo.cpp
+@@ -52,6 +52,7 @@ static int aarch64[] = { 0,  1,  2,  3,
+ static int x86[] = {0, 2, 3, 1, 7, 6, 4, 5, 8};
+ static int x86_64[] = {0, 3, 2, 1, 4, 5, 6, 7, 16, 17, 18, 19, 20, 21, 22, 23, 8};
+ 
++#undef mips
+ static int mips[] = { 32,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17,
+                         18, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31};
+ 

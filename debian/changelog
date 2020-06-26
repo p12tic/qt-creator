@@ -1,5 +1,7 @@
 qtcreator (4.12.3-3) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Undefine mips macro to fix FTBFS on mipsel.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Jun 2020 19:36:59 +0300
 
