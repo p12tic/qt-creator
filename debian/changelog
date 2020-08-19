@@ -16,6 +16,8 @@ qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
   * Use dh_sameversiondep to force the version of libqt5designercomponents5 as
     dependency to be the same as used during the build (Closes: #966169)
     - add the pkg-kde-tools build dependency
+  * Remove the kate-data suggest, as it does not exist anymore; syntax
+    highlighting files are already provided by KF5SyntaxHighlighting.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2020 09:15:14 +0200
 
