@@ -13,6 +13,9 @@ qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
     - add the clang build dependency to get the used clang executable
   * Drop the Debian man page, as it is outdated, and it offers no useful
     information.
+  * Use dh_sameversiondep to force the version of libqt5designercomponents5 as
+    dependency to be the same as used during the build (Closes: #966169)
+    - add the pkg-kde-tools build dependency
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2020 09:15:14 +0200
 
