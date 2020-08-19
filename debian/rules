@@ -44,9 +44,10 @@ override_dh_installdocs:
 	dh_installdocs --remaining-packages
 
 override_dh_shlibdeps:
+	echo 'libQt5DesignerComponents 5 libqt5designercomponents5 (>= $(shell dpkg-query -f '$${Version}' -W libqt5designercomponents5 | sed -e 's/-[^-]*$$//')~)' > debian/shlibs.local
 	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator:\
 	$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/plugins/QtProject
+	rm debian/shlibs.local
 
 override_dh_gencontrol-arch:
-	dh_sameversiondep -a
 	dh_gencontrol -a -- -V'qtcreator:clang=$(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)'

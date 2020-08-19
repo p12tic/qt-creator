@@ -13,9 +13,8 @@ qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
     - add the clang build dependency to get the used clang executable
   * Drop the Debian man page, as it is outdated, and it offers no useful
     information.
-  * Use dh_sameversiondep to force the version of libqt5designercomponents5 as
-    dependency to be the same as used during the build (Closes: #966169)
-    - add the pkg-kde-tools build dependency
+  * Force the version of libqt5designercomponents5 as dependency to be at least
+    the same as used during the build. (Closes: #966169)
   * Remove the kate-data suggest, as it does not exist anymore; syntax
     highlighting files are already provided by KF5SyntaxHighlighting.
 
