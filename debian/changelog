@@ -11,6 +11,8 @@ qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
   * Switch the generic clang recommend to a dependency of the exact clang-N
     used to build (Closes: #919860, #952718)
     - add the clang build dependency to get the used clang executable
+  * Drop the Debian man page, as it is outdated, and it offers no useful
+    information.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2020 09:15:14 +0200
 
