@@ -1,5 +1,12 @@
 qtcreator (4.12.3-4) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Use the default LLVM/clang Debian versions, rather than hardcoding 8.
+    Hopefully qtcreator will properly support newer LLVM versions fast enough.
+    (Closes: #966007)
+    - switch the libclang-8-dev build dependency to libclang-dev >= 8
+    - switch the llvm-8-dev build dependency to llvm-dev >= 8
+    - get the LLVM root using llvm-config
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2020 09:15:14 +0200
 
