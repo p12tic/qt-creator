@@ -1,6 +1,7 @@
-qtcreator (4.12.3-4) UNRELEASED; urgency=medium
+qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream release.
   * Use the default LLVM/clang Debian versions, rather than hardcoding 8.
     Hopefully qtcreator will properly support newer LLVM versions fast enough.
     (Closes: #966007)
