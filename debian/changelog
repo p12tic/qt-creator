@@ -9,7 +9,7 @@ qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
     - switch the llvm-8-dev build dependency to llvm-dev >= 8
     - get the LLVM root using llvm-config
   * Switch the generic clang recommend to a dependency of the exact clang-N
-    used to build (Closes: #919860, #952718)
+    used to build (Closes: #919860, #952718) (LP: #1890434, #1877927)
     - add the clang build dependency to get the used clang executable
   * Drop the Debian man page, as it is outdated, and it offers no useful
     information.
