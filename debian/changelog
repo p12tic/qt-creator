@@ -7,6 +7,9 @@ qtcreator (4.12.3-4) UNRELEASED; urgency=medium
     - switch the libclang-8-dev build dependency to libclang-dev >= 8
     - switch the llvm-8-dev build dependency to llvm-dev >= 8
     - get the LLVM root using llvm-config
+  * Switch the generic clang recommend to a dependency of the exact clang-N
+    used to build (Closes: #919860, #952718)
+    - add the clang build dependency to get the used clang executable
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2020 09:15:14 +0200
 

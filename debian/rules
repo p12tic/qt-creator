@@ -46,3 +46,6 @@ override_dh_installdocs:
 override_dh_shlibdeps:
 	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator:\
 	$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/plugins/QtProject
+
+override_dh_gencontrol-arch:
+	dh_gencontrol -a -- -V'qtcreator:clang=$(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)'
