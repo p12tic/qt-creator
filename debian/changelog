@@ -1,6 +1,6 @@
-qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
+qtcreator (4.12.4-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Use the default LLVM/clang Debian versions, rather than hardcoding 8.
     Hopefully qtcreator will properly support newer LLVM versions fast enough.
@@ -18,7 +18,7 @@ qtcreator (4.12.4-0r1) UNRELEASED; urgency=medium
   * Remove the kate-data suggest, as it does not exist anymore; syntax
     highlighting files are already provided by KF5SyntaxHighlighting.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Aug 2020 09:15:14 +0200
+ -- Pino Toscano <pino@debian.org>  Wed, 19 Aug 2020 19:00:23 +0200
 
 qtcreator (4.12.3-3) unstable; urgency=medium
 
