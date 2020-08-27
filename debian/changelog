@@ -1,6 +1,6 @@
-qtcreator (4.13.0-0r1) UNRELEASED; urgency=medium
+qtcreator (4.13.0-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update the patches:
     - load_clanglazy.patch: drop, clazy can be called only as external tool
@@ -13,7 +13,7 @@ qtcreator (4.13.0-0r1) UNRELEASED; urgency=medium
   * Install desktop and AppStream files also on non-Linux architectures;
     patch desktop_nonlinux.diff.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Aug 2020 07:26:54 +0200
+ -- Pino Toscano <pino@debian.org>  Thu, 27 Aug 2020 10:00:26 +0200
 
 qtcreator (4.12.4-1) unstable; urgency=medium
 
