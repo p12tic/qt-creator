@@ -10,6 +10,8 @@ qtcreator (4.13.0-0r1) UNRELEASED; urgency=medium
   * Pass KSYNTAXHIGHLIGHTING_INCLUDE_DIR with the path of the includes of
     KF5SyntaxHighlighting, so they can be found on any architecture (and not
     only on Linux).
+  * Install desktop and AppStream files also on non-Linux architectures;
+    patch desktop_nonlinux.diff.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Aug 2020 07:26:54 +0200
 

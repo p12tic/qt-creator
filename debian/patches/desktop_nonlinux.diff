@@ -1,0 +1,16 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Install desktop/AppStream bits also on kFreeBSD and Hurd
+Last-Update: 2020-08-27
+Forwarded: no
+
+--- a/qtcreator.pro
++++ b/qtcreator.pro
+@@ -97,7 +97,7 @@ else: PLATFORM = "unknown"
+ BASENAME = $$(INSTALL_BASENAME)
+ isEmpty(BASENAME): BASENAME = qt-creator-$${PLATFORM}$(INSTALL_EDITION)-$${QTCREATOR_VERSION}$(INSTALL_POSTFIX)
+ 
+-linux {
++linux|glibc|hurd {
+     appstream.files = share/metainfo/org.qt-project.qtcreator.appdata.xml
+     appstream.path = $$QTC_PREFIX/share/metainfo/
+ 

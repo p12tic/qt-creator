@@ -9,3 +9,4 @@ remove_libexec.diff
 fix_documentation_path.diff
 perfparser_big_endian.patch
 perfparser_undef_mips.patch
+desktop_nonlinux.diff
