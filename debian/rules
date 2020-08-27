@@ -20,6 +20,7 @@ override_dh_auto_configure:
 		QBS_INSTALL_DIR=/usr \
 		LLVM_INSTALL_DIR="$(LLVM_INSTALL_DIR)" \
 		KSYNTAXHIGHLIGHTING_LIB_DIR="/usr/lib/$(DEB_HOST_MULTIARCH)/" \
+		KSYNTAXHIGHLIGHTING_INCLUDE_DIR="/usr/include/KF5/KSyntaxHighlighting/" \
 		CONFIG+="disable_external_rpath" \
 		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 $(extra_configure_opts)
 
