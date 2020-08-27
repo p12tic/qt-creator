@@ -2,6 +2,8 @@ qtcreator (4.13.0-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - load_clanglazy.patch: drop, clazy can be called only as external tool
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Aug 2020 07:26:54 +0200
 
