@@ -1,5 +1,9 @@
 qtcreator (4.13.2-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make the mime types defined in debian/Nokia-QtCreator.xml a sub class of
+    text/plain. This makes other editors like KDevelop not open them in the hex
+    editor. Thanks Sune Vuorela for the patch!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 14 Nov 2020 18:49:33 -0300
 

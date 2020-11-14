@@ -5,11 +5,13 @@
   <mime-type type="application/vnd.nokia.qt.qmakeprofile">
     <comment xml:lang="en">Qt QMake Profile</comment>
     <glob pattern="*.pro"/>
+    <sub-class-of type="text/plain"/>
   </mime-type> 
   <!-- Note: KDE already has application/x-designer. -->
   <mime-type type="application/vnd.nokia.xml.qt.resource">
     <comment xml:lang="en">Qt Resource File</comment>
     <glob pattern="*.qrc"/>
+    <sub-class-of type="text/plain"/>
   </mime-type> 
   
 </mime-info>
