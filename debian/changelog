@@ -1,4 +1,6 @@
-qtcreator (4.13.3-0r1) UNRELEASED; urgency=medium
+qtcreator (4.13.3-1) unstable; urgency=medium
+
+  * Team upload.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Make the mime types defined in debian/Nokia-QtCreator.xml a sub class of
@@ -9,7 +11,7 @@ qtcreator (4.13.3-0r1) UNRELEASED; urgency=medium
   * New upstream release.
   * Bump Standards-Version to 4.5.1, no changes required.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 14 Nov 2020 18:49:33 -0300
+ -- Pino Toscano <pino@debian.org>  Fri, 20 Nov 2020 15:35:24 +0100
 
 qtcreator (4.13.2-1) unstable; urgency=medium
 
