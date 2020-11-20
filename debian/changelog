@@ -7,6 +7,7 @@ qtcreator (4.13.3-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Bump Standards-Version to 4.5.1, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 14 Nov 2020 18:49:33 -0300
 
