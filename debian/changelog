@@ -2,6 +2,9 @@ qtcreator (4.14.0-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the build dependencies according to the upstream build system:
+    - bump the Qt packages to 5.14.0
+    - bump the LLVM/clang packages to 10
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 Dec 2020 15:53:33 +0100
 
