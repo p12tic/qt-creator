@@ -5,7 +5,7 @@ Forwarded: no
 
 --- a/qtcreator.pro
 +++ b/qtcreator.pro
-@@ -97,7 +97,7 @@ else: PLATFORM = "unknown"
+@@ -98,7 +98,7 @@ else: PLATFORM = "unknown"
  BASENAME = $$(INSTALL_BASENAME)
  isEmpty(BASENAME): BASENAME = qt-creator-$${PLATFORM}$(INSTALL_EDITION)-$${QTCREATOR_VERSION}$(INSTALL_POSTFIX)
  

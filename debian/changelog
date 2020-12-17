@@ -5,6 +5,11 @@ qtcreator (4.14.0-0r1) UNRELEASED; urgency=medium
   * Update the build dependencies according to the upstream build system:
     - bump the Qt packages to 5.14.0
     - bump the LLVM/clang packages to 10
+  * Update the patches:
+    - remove_libexec.diff: refresh
+    - perfparser_big_endian.patch: drop, fixed upstream
+    - perfparser_undef_mips.patch: drop, fixed upstream
+    - desktop_nonlinux.diff: refresh
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 Dec 2020 15:53:33 +0100
 
