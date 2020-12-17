@@ -1,6 +1,6 @@
-qtcreator (4.14.0-0r1) UNRELEASED; urgency=medium
+qtcreator (4.14.0-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update the build dependencies according to the upstream build system:
     - bump the Qt packages to 5.14.0
@@ -12,7 +12,7 @@ qtcreator (4.14.0-0r1) UNRELEASED; urgency=medium
     - perfparser_undef_mips.patch: drop, fixed upstream
     - desktop_nonlinux.diff: refresh
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 17 Dec 2020 15:53:33 +0100
+ -- Pino Toscano <pino@debian.org>  Thu, 17 Dec 2020 22:47:49 +0100
 
 qtcreator (4.13.3-1) unstable; urgency=medium
 
