@@ -7,6 +7,7 @@ qtcreator (4.14.0-0r1) UNRELEASED; urgency=medium
     - bump the LLVM/clang packages to 10
   * Update the patches:
     - remove_libexec.diff: refresh
+    - fix_documentation_path.diff: refresh
     - perfparser_big_endian.patch: drop, fixed upstream
     - perfparser_undef_mips.patch: drop, fixed upstream
     - desktop_nonlinux.diff: refresh
