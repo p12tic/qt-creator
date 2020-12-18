@@ -40,6 +40,9 @@ endif
 	# the embedded copy: https://bugreports.qt.io/browse/QTCREATORBUG-25143
 	rm -rfv debian/tmp/usr/share/qtcreator/generic-highlighter/syntax/
 
+	# At the end, remove empty directories
+	find debian/tmp -type d -empty -delete
+
 override_dh_install:
 	dh_install
 	# Copied in qtcreator-doc already
