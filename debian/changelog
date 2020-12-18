@@ -26,6 +26,11 @@ qtcreator (4.14.0-2) UNRELEASED; urgency=medium
   * Disable shlibs on the internal libraries, as it is pointless.
   * Add the libqt5svg5-dev, and libzstd-dev build dependencies for extra
     features.
+  * Drop the unapplied patches always_autotect_qt_versions, and
+    fix_qt_version_autodetection.diff: they were added many years ago, with
+    not many details on what was the actual problem or whether it was reported
+    upstream; they have not been applied for a year and we got no reports about
+    them, so drop them for good.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 18 Dec 2020 12:30:16 +0100
 
