@@ -3,32 +3,31 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
 export QT_SELECT := qt5
-export LLVM_INSTALL_DIR = $(shell llvm-config --prefix)
 
 # Upstream changelog
 upstream_changes := $(wildcard dist/changes-*)
+
+# Do build the HelloWorld plugin, as it is not needed
+export QTC_BUILD_PLUGIN_HelloWorld=FALSE
 
 %:
 	dh $@ --builddirectory=builddir
 
 override_dh_auto_configure:
-	dh_auto_configure --buildsystem=qmake -- \
-		-recursive \
-		QBS_INSTALL_DIR=/usr \
-		LLVM_INSTALL_DIR="$(LLVM_INSTALL_DIR)" \
-		KSYNTAXHIGHLIGHTING_LIB_DIR="/usr/lib/$(DEB_HOST_MULTIARCH)/" \
-		KSYNTAXHIGHLIGHTING_INCLUDE_DIR="/usr/include/KF5/KSyntaxHighlighting/" \
-		CONFIG+="disable_external_rpath" \
-		$(CURDIR) IDE_LIBRARY_BASENAME=lib/$(DEB_HOST_MULTIARCH) IDE_PACKAGE_MODE=1 $(extra_configure_opts)
+	dh_auto_configure --buildsystem=cmake -- \
+		-DBUILD_DEVELOPER_DOCS=ON \
+		-DBUILD_QBS=OFF \
+		-DWITH_DOCS=$(if $(filter qtcreator-doc, $(shell dh_listpackages)),ON,OFF)
+
+override_dh_auto_build-indep:
+	dh_auto_build -- docs
 
 override_dh_auto_install:
-	dh_auto_install --destdir=debian/tmp/usr
+	dh_auto_install
 ifneq (,$(filter qtcreator-doc, $(shell dh_listpackages)))
-	dh_auto_build -- qch_docs
-	dh_auto_build -- install_inst_qch_docs install_inst_html_docs INSTALL_ROOT=$(CURDIR)/debian/tmp/usr
+	DESTDIR=$(CURDIR)/debian/tmp cmake --install $(CURDIR)/builddir --component qch_docs
+	DESTDIR=$(CURDIR)/debian/tmp cmake --install $(CURDIR)/builddir --component html_docs
 endif
 
 	# Do not install the file, we better symlink it.
@@ -36,6 +35,15 @@ endif
 
 	# Not needed
 	rm debian/tmp/usr/bin/qtcreator.sh
+
+	# The system KSyntaxHighlighting is used, so we do not need the files of
+	# the embedded copy: https://bugreports.qt.io/browse/QTCREATORBUG-25143
+	rm -rfv debian/tmp/usr/share/qtcreator/generic-highlighter/syntax/
+
+override_dh_install:
+	dh_install
+	# Copied in qtcreator-doc already
+	rm -r debian/qtcreator-data/usr/share/qtcreator/doc/
 
 override_dh_missing:
 	dh_missing --fail-missing

@@ -1,5 +1,24 @@
 qtcreator (4.14.0-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Build qtcreator with cmake instead of qmake, as it is supported (and
+    encouraged) by upstream:
+    - adapt the installation paths to the Debian locations; patch
+      debian_paths.diff
+    - add the cmake build dependency
+    - drop all the other patches related to qmake bits that are not needed
+      anymore: rpath_nonlinux.diff, remove_libexec.diff,
+      fix_documentation_path.diff, and desktop_nonlinux.diff
+    - adapt rules:
+      - force the cmake buildsystem, as dh prefers qmake when autodetecting
+      - pass -DBUILD_QBS=OFF to not build the embedded copy of qbs
+      - enable, build, and install the documentation only when qtcreator-doc
+        is built
+      - remove duplicated installed files to keep qtcreator-data.install simple
+      - export QTC_BUILD_PLUGIN_HelloWorld=FALSE to not build the HelloWorld
+        plugin (replaces the qmake variable IDE_PACKAGE_MODE=1)
+    - update install files
+    - create compatibility symlinks for the moved paths of the HTML docs
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 18 Dec 2020 12:30:16 +0100
 
