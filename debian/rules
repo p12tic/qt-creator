@@ -37,6 +37,9 @@ endif
 	# the embedded copy: https://bugreports.qt.io/browse/QTCREATORBUG-25143
 	rm -rfv debian/tmp/usr/share/qtcreator/generic-highlighter/syntax/
 
+	# Remove extra exec permissions
+	find debian/tmp -name qmldir -type f -exec chmod -x {} \;
+
 	# At the end, remove empty directories
 	find debian/tmp -type d -empty -delete
 
