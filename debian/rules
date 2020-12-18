@@ -11,7 +11,7 @@ export QT_SELECT := qt5
 upstream_changes := $(wildcard dist/changes-*)
 
 # Do build the HelloWorld plugin, as it is not needed
-export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
+export QTC_BUILD_PLUGIN_HelloWorld=FALSE
 
 %:
 	dh $@ --builddirectory=builddir
@@ -56,6 +56,9 @@ override_dh_missing:
 override_dh_installdocs:
 	dh_installdocs -pqtcreator-data $(upstream_changes)
 	dh_installdocs --remaining-packages
+
+override_dh_makeshlibs:
+	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/
 
 override_dh_shlibdeps:
 	echo 'libQt5DesignerComponents 5 libqt5designercomponents5 (>= $(shell dpkg-query -f '$${Version}' -W libqt5designercomponents5 | sed -e 's/-[^-]*$$//')~)' > debian/shlibs.local

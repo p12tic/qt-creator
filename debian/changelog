@@ -23,6 +23,7 @@ qtcreator (4.14.0-2) UNRELEASED; urgency=medium
     not installed anymore.
   * Remove extra executable permissions from qmldir files.
   * Update lintian overrides.
+  * Disable shlibs on the internal libraries, as it is pointless.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 18 Dec 2020 12:30:16 +0100
 
