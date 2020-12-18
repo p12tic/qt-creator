@@ -30,9 +30,6 @@ ifneq (,$(filter qtcreator-doc, $(shell dh_listpackages)))
 	DESTDIR=$(CURDIR)/debian/tmp cmake --install $(CURDIR)/builddir --component html_docs
 endif
 
-	# Do not install the file, we better symlink it.
-	rm -vf debian/tmp/usr/share/qtcreator/debugger/LICENSE.LGPL
-
 	# Not needed
 	rm debian/tmp/usr/bin/qtcreator.sh
 
