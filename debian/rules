@@ -48,7 +48,7 @@ endif
 override_dh_install:
 	dh_install
 	# Copied in qtcreator-doc already
-	rm -r debian/qtcreator-data/usr/share/qtcreator/doc/
+	rm -rf debian/qtcreator-data/usr/share/qtcreator/doc/
 
 override_dh_missing:
 	dh_missing --fail-missing
