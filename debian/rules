@@ -11,7 +11,7 @@ export QT_SELECT := qt5
 upstream_changes := $(wildcard dist/changes-*)
 
 # Do build the HelloWorld plugin, as it is not needed
-export QTC_BUILD_PLUGIN_HelloWorld=FALSE
+export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
 
 %:
 	dh $@ --builddirectory=builddir

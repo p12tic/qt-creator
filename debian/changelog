@@ -15,7 +15,7 @@ qtcreator (4.14.0-2) UNRELEASED; urgency=medium
       - enable, build, and install the documentation only when qtcreator-doc
         is built
       - remove duplicated installed files to keep qtcreator-data.install simple
-      - export QTC_BUILD_PLUGIN_HelloWorld=FALSE to not build the HelloWorld
+      - export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE to not build the HelloWorld
         plugin (replaces the qmake variable IDE_PACKAGE_MODE=1)
     - update install files
     - create compatibility symlinks for the moved paths of the HTML docs
