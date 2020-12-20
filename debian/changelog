@@ -31,6 +31,11 @@ qtcreator (4.14.0-2) UNRELEASED; urgency=medium
     not many details on what was the actual problem or whether it was reported
     upstream; they have not been applied for a year and we got no reports about
     them, so drop them for good.
+  * Export QTC_BUILD_PLUGIN_CLANGFORMAT=FALSE to disable the build of the
+    ClangFormat plugin, as it requires clang-format with a patch not accepted
+    yet (Closes: #939825) (LP: #1876436); see:
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=939825#49
+    - https://bugreports.qt.io/browse/QTCREATORBUG-22923
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 18 Dec 2020 12:30:16 +0100
 
