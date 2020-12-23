@@ -1,5 +1,9 @@
 qtcreator (4.14.0-3) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Bump the debhelper compatibility to 13:
+    - switch the debhelper-compat build dependency to 13
+    - stop passing --fail-missing to dh_missing, as it is the default now
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Dec 2020 12:49:34 +0100
 

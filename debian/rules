@@ -56,9 +56,6 @@ override_dh_install:
 	# Copied in qtcreator-doc already
 	rm -rf debian/qtcreator-data/usr/share/qtcreator/doc/
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_installdocs:
 	dh_installdocs -pqtcreator-data $(upstream_changes)
 	dh_installdocs --remaining-packages

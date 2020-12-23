@@ -8,7 +8,7 @@ Uploaders: Adam Majer <adamm@zombino.com>,
            Simon Quigley <tsimonq2@debian.org>
 Build-Depends: clang (>= 1:10~),
                cmake (>= 3.10~),
-               debhelper-compat (= 12),
+               debhelper-compat (= 13),
                libclang-dev (>= 1:10~),
                libdw-dev,
                libicu-dev,
