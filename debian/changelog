@@ -11,6 +11,7 @@ qtcreator (4.14.0-3) UNRELEASED; urgency=medium
     - bump to v4, no changes required
     - drop repack and compress options, as the original tarball is fine
   * Add Repository, and Repository-Browse to debian/upstream/metadata.
+  * Add the configuration for the CI on salsa.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Dec 2020 12:49:34 +0100
 
