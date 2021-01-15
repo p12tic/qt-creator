@@ -23,6 +23,10 @@ qtcreator (4.14.0-3) UNRELEASED; urgency=medium
   * Require the same version of the clang-N used for the build: this is because
     creator hardcodes the clang version and its include path, so we should not
     let an older clang than the build one be usable.
+  * Backport upstream commit c650c9473db32fc2197a32017b0ef3406cf75280 to not
+    install KSyntaxHighlighting files from the embedded copy; patch
+    upstream_cmake-build-Don-t-install-highlighting-files-when-us.patch
+    - drop their removal from rules
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Dec 2020 12:49:34 +0100
 

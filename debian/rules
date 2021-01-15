@@ -46,15 +46,8 @@ endif
 	# Not needed
 	rm debian/tmp/usr/bin/qtcreator.sh
 
-	# The system KSyntaxHighlighting is used, so we do not need the files of
-	# the embedded copy: https://bugreports.qt.io/browse/QTCREATORBUG-25143
-	rm -rfv debian/tmp/usr/share/qtcreator/generic-highlighter/syntax/
-
 	# Remove extra exec permissions
 	find debian/tmp -name qmldir -type f -exec chmod -x {} \;
-
-	# At the end, remove empty directories
-	find debian/tmp -type d -empty -delete
 
 override_dh_install:
 	dh_install

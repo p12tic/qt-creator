@@ -4,3 +4,4 @@ upstream_cmake-build-Use-GNUInstallDirs-for-installation-path.patch
 
 # Debian patches.
 debian_paths.diff
+upstream_cmake-build-Don-t-install-highlighting-files-when-us.patch
