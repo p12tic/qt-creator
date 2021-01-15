@@ -21,6 +21,8 @@ export QTC_BUILD_PLUGIN_CLANGFORMAT=FALSE
 
 # The clang-N used for the build by the unversioned clang
 current_clang_pkg = $(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)
+# The upstream version of a package passed as parameter
+upstream_version_of_pkg = $(shell dpkg-query -f '$${Version}' -W $(1) | sed -e 's/-[^-]*$$//')
 
 %:
 	dh $@ --builddirectory=builddir
@@ -67,7 +69,7 @@ override_dh_makeshlibs:
 	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/
 
 override_dh_shlibdeps:
-	echo 'libQt5DesignerComponents 5 libqt5designercomponents5 (>= $(shell dpkg-query -f '$${Version}' -W libqt5designercomponents5 | sed -e 's/-[^-]*$$//')~)' > debian/shlibs.local
+	echo 'libQt5DesignerComponents 5 libqt5designercomponents5 (>= $(call upstream_version_of_pkg,libqt5designercomponents5)~)' > debian/shlibs.local
 	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator:\
 	$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/plugins/QtProject
 	rm debian/shlibs.local
