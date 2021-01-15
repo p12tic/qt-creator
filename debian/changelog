@@ -27,6 +27,7 @@ qtcreator (4.14.0-3) UNRELEASED; urgency=medium
     install KSyntaxHighlighting files from the embedded copy; patch
     upstream_cmake-build-Don-t-install-highlighting-files-when-us.patch
     - drop their removal from rules
+  * Lazy-evaluate the list of dist/changes-* (for dh_installdocs).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Dec 2020 12:49:34 +0100
 
