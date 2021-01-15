@@ -1,6 +1,6 @@
-qtcreator (4.14.0-3) UNRELEASED; urgency=medium
+qtcreator (4.14.0-3) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * Bump the debhelper compatibility to 13:
     - switch the debhelper-compat build dependency to 13
     - stop passing --fail-missing to dh_missing, as it is the default now
@@ -29,7 +29,7 @@ qtcreator (4.14.0-3) UNRELEASED; urgency=medium
     - drop their removal from rules
   * Lazy-evaluate the list of dist/changes-* (for dh_installdocs).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Dec 2020 12:49:34 +0100
+ -- Pino Toscano <pino@debian.org>  Fri, 15 Jan 2021 20:20:31 +0100
 
 qtcreator (4.14.0-2) unstable; urgency=medium
 
