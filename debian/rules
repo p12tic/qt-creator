@@ -75,4 +75,4 @@ override_dh_shlibdeps:
 	rm debian/shlibs.local
 
 override_dh_gencontrol-arch:
-	dh_gencontrol -a -- -V'qtcreator:clang=$(current_clang_pkg)'
+	dh_gencontrol -a -- -V'qtcreator:clang=$(current_clang_pkg) (>= $(call upstream_version_of_pkg,$(current_clang_pkg))~)'
