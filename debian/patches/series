@@ -1,7 +1,7 @@
 #Backported patches
 upstream_cmake-build-Fix-fallback-LLVM-Clang-paths.patch
 upstream_cmake-build-Use-GNUInstallDirs-for-installation-path.patch
+upstream_cmake-build-Don-t-install-highlighting-files-when-us.patch
 
 # Debian patches.
 debian_paths.diff
-upstream_cmake-build-Don-t-install-highlighting-files-when-us.patch
