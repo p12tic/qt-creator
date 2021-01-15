@@ -33,7 +33,7 @@ override_dh_auto_configure:
 		-DBUILD_QBS=OFF \
 		-DWITH_DOCS=$(if $(filter qtcreator-doc, $(shell dh_listpackages)),ON,OFF)
 
-override_dh_auto_build-indep:
+execute_after_dh_auto_build-indep:
 	dh_auto_build -- docs
 
 override_dh_auto_install:
