@@ -1,11 +1,11 @@
-qtcreator (4.14.0-4) UNRELEASED; urgency=medium
+qtcreator (4.14.0-4) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * Build the documentation in addition to what dh_auto_build does, not
     replacing altogether the -indep step; otherwise dh_auto_build is not
     run in -indep build, and thus not all the data files are available.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Jan 2021 20:55:13 +0100
+ -- Pino Toscano <pino@debian.org>  Fri, 15 Jan 2021 20:59:13 +0100
 
 qtcreator (4.14.0-3) unstable; urgency=medium
 
