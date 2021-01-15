@@ -1,4 +1,5 @@
 #Backported patches
+upstream_cmake-build-Fix-fallback-LLVM-Clang-paths.patch
 
 # Debian patches.
 debian_paths.diff
