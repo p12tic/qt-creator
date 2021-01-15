@@ -19,6 +19,9 @@ export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
 # https://reviews.llvm.org/D53072
 export QTC_BUILD_PLUGIN_CLANGFORMAT=FALSE
 
+# The clang-N used for the build by the unversioned clang
+current_clang_pkg = $(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)
+
 %:
 	dh $@ --builddirectory=builddir
 
@@ -70,4 +73,4 @@ override_dh_shlibdeps:
 	rm debian/shlibs.local
 
 override_dh_gencontrol-arch:
-	dh_gencontrol -a -- -V'qtcreator:clang=$(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)'
+	dh_gencontrol -a -- -V'qtcreator:clang=$(current_clang_pkg)'
