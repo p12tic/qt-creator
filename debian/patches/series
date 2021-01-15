@@ -1,5 +1,6 @@
 #Backported patches
 upstream_cmake-build-Fix-fallback-LLVM-Clang-paths.patch
+upstream_cmake-build-Use-GNUInstallDirs-for-installation-path.patch
 
 # Debian patches.
 debian_paths.diff

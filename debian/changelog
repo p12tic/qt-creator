@@ -15,6 +15,11 @@ qtcreator (4.14.0-3) UNRELEASED; urgency=medium
   * Backport upstream commit 86348d562214a27574ddbd65825414ae7e731438 to fix
     the paths to Clang include & library directories; patch
     upstream_cmake-build-Fix-fallback-LLVM-Clang-paths.patch. (Closes: #979577)
+  * Backport upstream commit c81baf1a9cc938a283f6c52c8fd10bab84183391 to set
+    installation paths using the GNUInstallDirs module of CMake; patch
+    upstream_cmake-build-Use-GNUInstallDirs-for-installation-path.patch
+    - remove the majority of debian_paths.diff, leaving only the change to the
+      documentation path
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 23 Dec 2020 12:49:34 +0100
 
