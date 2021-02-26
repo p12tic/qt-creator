@@ -1,6 +1,6 @@
-qtcreator (4.14.1-0r1) UNRELEASED; urgency=medium
+qtcreator (4.14.1-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update the patches:
     - upstream_cmake-build-Fix-fallback-LLVM-Clang-paths.patch: drop,
@@ -14,7 +14,7 @@ qtcreator (4.14.1-0r1) UNRELEASED; urgency=medium
   * Limit the dh bits for installing the upstream changelogs to -indep packages
     only.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Feb 2021 08:56:44 +0100
+ -- Pino Toscano <pino@debian.org>  Fri, 26 Feb 2021 10:37:39 +0100
 
 qtcreator (4.14.0-4) unstable; urgency=medium
 
