@@ -11,6 +11,8 @@ qtcreator (4.14.1-0r1) UNRELEASED; urgency=medium
       drop, backported from upstream
   * Use execute_after_dh_auto_install, and execute_after_dh_install to avoid
     invoking dh_auto_install, and dh_install manually.
+  * Limit the dh bits for installing the upstream changelogs to -indep packages
+    only.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Feb 2021 08:56:44 +0100
 
