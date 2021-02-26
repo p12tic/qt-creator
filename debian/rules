@@ -36,8 +36,7 @@ override_dh_auto_configure:
 execute_after_dh_auto_build-indep:
 	dh_auto_build -- docs
 
-override_dh_auto_install:
-	dh_auto_install
+execute_after_dh_auto_install:
 ifneq (,$(filter qtcreator-doc, $(shell dh_listpackages)))
 	DESTDIR=$(CURDIR)/debian/tmp cmake --install $(CURDIR)/builddir --component qch_docs
 	DESTDIR=$(CURDIR)/debian/tmp cmake --install $(CURDIR)/builddir --component html_docs
@@ -49,8 +48,7 @@ endif
 	# Remove extra exec permissions
 	find debian/tmp -name qmldir -type f -exec chmod -x {} \;
 
-override_dh_install:
-	dh_install
+execute_after_dh_install:
 	# Copied in qtcreator-doc already
 	rm -rf debian/qtcreator-data/usr/share/qtcreator/doc/
 
