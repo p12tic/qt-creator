@@ -2,6 +2,13 @@ qtcreator (4.14.1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - upstream_cmake-build-Fix-fallback-LLVM-Clang-paths.patch: drop,
+      backported from upstream
+    - upstream_cmake-build-Use-GNUInstallDirs-for-installation-path.patch:
+      drop, backported from upstream
+    - upstream_cmake-build-Don-t-install-highlighting-files-when-us.patch:
+      drop, backported from upstream
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 26 Feb 2021 08:56:44 +0100
 
