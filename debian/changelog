@@ -1,11 +1,11 @@
-qtcreator (4.15.2-0r1) UNRELEASED; urgency=medium
+qtcreator (4.15.2-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update the patches:
     - debian_paths.diff: refresh
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 15 Aug 2021 13:07:55 +0200
+ -- Pino Toscano <pino@debian.org>  Sun, 15 Aug 2021 15:45:36 +0200
 
 qtcreator (4.14.1-1) unstable; urgency=medium
 
