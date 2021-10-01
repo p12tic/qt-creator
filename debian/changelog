@@ -1,10 +1,10 @@
-qtcreator (5.0.2-0r1) UNRELEASED; urgency=medium
+qtcreator (5.0.2-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * The rebuild will use the newer LLVM 11. (Closes: #995228)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 Oct 2021 19:34:28 +0200
+ -- Pino Toscano <pino@debian.org>  Fri, 01 Oct 2021 19:40:38 +0200
 
 qtcreator (5.0.1-1) unstable; urgency=medium
 
