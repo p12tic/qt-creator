@@ -1,12 +1,12 @@
-qtcreator (6.0.0~beta1-0r1) UNRELEASED; urgency=medium
+qtcreator (6.0.0~beta1-1) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream development release.
   * Switch watch file to the unstable releases, mangling -beta/-rc in the
     version.
   * Switch Vcs-* fields to the 'experimental' packaging branch.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 14 Oct 2021 19:44:47 +0200
+ -- Pino Toscano <pino@debian.org>  Thu, 14 Oct 2021 20:45:24 +0200
 
 qtcreator (5.0.2-1) unstable; urgency=medium
 
