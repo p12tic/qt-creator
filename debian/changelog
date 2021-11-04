@@ -20,6 +20,13 @@ qtcreator (6.0.0~beta1-1) experimental; urgency=medium
 
  -- Pino Toscano <pino@debian.org>  Thu, 14 Oct 2021 20:45:24 +0200
 
+qtcreator (5.0.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Pino Toscano <pino@debian.org>  Thu, 04 Nov 2021 19:05:40 +0100
+
 qtcreator (5.0.2-1) unstable; urgency=medium
 
   * Team upload.
