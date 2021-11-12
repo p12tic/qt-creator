@@ -1,6 +1,7 @@
-qtcreator (6.0.0~beta2-2) UNRELEASED; urgency=medium
+qtcreator (6.0.0~rc1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream development release.
   * Merge changes from 5.0.3-1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Nov 2021 19:25:19 +0100
