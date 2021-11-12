@@ -28,6 +28,14 @@ qtcreator (6.0.0~beta1-1) experimental; urgency=medium
 
  -- Pino Toscano <pino@debian.org>  Thu, 14 Oct 2021 20:45:24 +0200
 
+qtcreator (5.0.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Do not assume that ${YAML_CPP_INCLUDE_DIR} (from the CMake config files of
+    yaml-cpp) is not empty; patch yaml-cpp_empty_includedir.diff.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 12 Nov 2021 07:39:18 +0100
+
 qtcreator (5.0.3-1) unstable; urgency=medium
 
   * Team upload.

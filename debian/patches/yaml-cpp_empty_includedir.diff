@@ -1,0 +1,19 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Do not assume that ${YAML_CPP_INCLUDE_DIR} is not empty
+ It may be empty, in case the CMake config files of yaml-cpp specify no
+ particular include path needed (or it is set directly for the "yaml-cpp"
+ target).
+Forwarded: no
+Last-Update: 2021-11-12
+
+--- a/cmake/Findyaml-cpp.cmake
++++ b/cmake/Findyaml-cpp.cmake
+@@ -9,7 +9,7 @@
+ find_package(yaml-cpp 0.5 QUIET NO_MODULE)
+ if (yaml-cpp_FOUND)
+   # target doesn't set include directory for some reason
+-  get_filename_component(yaml_cpp_include_dir ${YAML_CPP_INCLUDE_DIR} ABSOLUTE)
++  get_filename_component(yaml_cpp_include_dir "${YAML_CPP_INCLUDE_DIR}" ABSOLUTE)
+   if (NOT EXISTS yaml_cpp_include_dir)
+     unset(yaml_cpp_include_dir)
+     unset(yaml_cpp_include_dir CACHE)
