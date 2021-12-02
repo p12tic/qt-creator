@@ -31,6 +31,8 @@ override_dh_auto_configure:
 	dh_auto_configure --buildsystem=cmake -- \
 		-DBUILD_DEVELOPER_DOCS=ON \
 		-DBUILD_QBS=OFF \
+		-DWITH_TESTS=OFF \
+		-DBUILD_TESTING=OFF \
 		-DWITH_DOCS=$(if $(filter qtcreator-doc, $(shell dh_listpackages)),ON,OFF)
 
 execute_after_dh_auto_build-indep:
