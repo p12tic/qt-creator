@@ -1,13 +1,13 @@
-qtcreator (6.0.1-0r1) UNRELEASED; urgency=medium
+qtcreator (6.0.1-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Update the patches:
     - yaml-cpp_empty_includedir.diff: drop, fixed upstream
   * Suggest python3-pylsp, as it contains the Python language server optionally
     used by the Python plugin.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 16 Dec 2021 20:32:18 +0100
+ -- Pino Toscano <pino@debian.org>  Thu, 16 Dec 2021 20:44:53 +0100
 
 qtcreator (6.0.0-2) unstable; urgency=medium
 
