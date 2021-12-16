@@ -2,6 +2,8 @@ qtcreator (6.0.1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - yaml-cpp_empty_includedir.diff: drop, fixed upstream
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 16 Dec 2021 20:32:18 +0100
 

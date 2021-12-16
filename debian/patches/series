@@ -2,4 +2,3 @@
 
 # Debian patches.
 debian_paths.diff
-yaml-cpp_empty_includedir.diff
