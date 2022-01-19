@@ -1,0 +1,31 @@
+From 8acd2b15a9f12ba7de7281e6617963543a96056e Mon Sep 17 00:00:00 2001
+From: Eike Ziller <eike.ziller@qt.io>
+Date: Tue, 18 Jan 2022 14:46:14 +0100
+Subject: [PATCH] Disable QmlDesigner plugin for Qt 5 based builds
+
+Design Studio is Qt 6 based only, and since QmlDesigner development is
+mostly done for that and by that team, don't restrict it to stay
+compatible.
+
+Change-Id: I9252a2a34f7395d9dc6800f59a37fc23d9f30052
+Reviewed-by: hjk <hjk@qt.io>
+---
+ src/plugins/qmldesigner/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/plugins/qmldesigner/CMakeLists.txt b/src/plugins/qmldesigner/CMakeLists.txt
+index aad701fc30..b032f2c818 100644
+--- a/src/plugins/qmldesigner/CMakeLists.txt
++++ b/src/plugins/qmldesigner/CMakeLists.txt
+@@ -4,7 +4,7 @@ if (APPLE)
+ endif()
+ 
+ add_qtc_plugin(QmlDesigner
+-  CONDITION TARGET Qt5::QuickWidgets AND TARGET Qt5::Svg
++  CONDITION Qt5_VERSION VERSION_GREATER_EQUAL 6.2.0 AND TARGET Qt5::QuickWidgets AND TARGET Qt5::Svg
+   DEPENDS
+     QmlJS LanguageUtils QmlEditorWidgets AdvancedDockingSystem
+     Qt5::QuickWidgets Qt5::CorePrivate Sqlite Qt5::Xml Qt5::Svg
+-- 
+2.34.1
+

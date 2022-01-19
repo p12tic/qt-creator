@@ -1,4 +1,5 @@
 #Backported patches
+upstream_Disable-QmlDesigner-plugin-for-Qt-5-based-builds.patch
 
 # Debian patches.
 debian_paths.diff

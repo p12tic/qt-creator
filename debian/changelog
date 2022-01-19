@@ -1,5 +1,10 @@
 qtcreator (6.0.2-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Backport upstream commit 8acd2b15a9f12ba7de7281e6617963543a96056e to disable
+    the build of the QmlDesigner plugin with Qt < 6.2.0; qtcreator is currently
+    build with Qt 5, and that plugin fails to build on 32bit architectures;
+    patch upstream_Disable-QmlDesigner-plugin-for-Qt-5-based-builds.patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 19 Jan 2022 21:06:03 +0100
 
