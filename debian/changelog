@@ -4,6 +4,7 @@ qtcreator (7.0.0~beta1-0r1) UNRELEASED; urgency=medium
   * New upstream development release.
   * Switch watch file to the unstable releases, mangling -beta/-rc in the
     version.
+  * Switch Vcs-* fields to the 'experimental' packaging branch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Feb 2022 22:47:39 +0100
 
