@@ -8,6 +8,9 @@ qtcreator (7.0.0~beta1-0r1) UNRELEASED; urgency=medium
   * Update the build dependencies according to the upstream build system:
     - bump cmake to 3.16
     - bump the Qt packages to 5.15.2
+  * Update the patches:
+    - upstream_Disable-QmlDesigner-plugin-for-Qt-5-based-builds.patch:
+      dropped, backported from upstream
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Feb 2022 22:47:39 +0100
 
