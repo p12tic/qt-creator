@@ -1,6 +1,6 @@
-qtcreator (7.0.0~beta1-0r1) UNRELEASED; urgency=medium
+qtcreator (7.0.0~beta1-1) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream development release.
   * Switch watch file to the unstable releases, mangling -beta/-rc in the
     version.
@@ -12,7 +12,7 @@ qtcreator (7.0.0~beta1-0r1) UNRELEASED; urgency=medium
     - upstream_Disable-QmlDesigner-plugin-for-Qt-5-based-builds.patch:
       dropped, backported from upstream
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Feb 2022 22:47:39 +0100
+ -- Pino Toscano <pino@debian.org>  Mon, 14 Feb 2022 21:38:02 +0100
 
 qtcreator (6.0.2-2) unstable; urgency=medium
 
