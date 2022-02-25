@@ -58,8 +58,7 @@ override_dh_makeshlibs:
 
 override_dh_shlibdeps:
 	echo 'libQt5DesignerComponents 5 libqt5designercomponents5 (>= $(call upstream_version_of_pkg,libqt5designercomponents5)~)' > debian/shlibs.local
-	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator:\
-	$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/plugins/QtProject
+	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator
 	rm debian/shlibs.local
 
 override_dh_gencontrol-arch:
