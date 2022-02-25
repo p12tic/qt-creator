@@ -12,12 +12,6 @@ upstream_changes = $(wildcard dist/changes-*)
 
 # Do build the HelloWorld plugin, as it is not needed
 export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
-# Do not build the ClangFormat plugin, as it requires clang-format with
-# a patch not accepted yet (and available only in the QtC fork):
-# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=939825#49
-# https://bugreports.qt.io/browse/QTCREATORBUG-22923
-# https://reviews.llvm.org/D53072
-export QTC_BUILD_PLUGIN_CLANGFORMAT=FALSE
 
 # The clang-N used for the build by the unversioned clang
 current_clang_pkg = $(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)
