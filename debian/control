@@ -63,7 +63,6 @@ Recommends: clang-tidy,
             qtdeclarative5-dev-tools,
             qttools5-dev-tools,
             qttranslations5-l10n,
-            qtxmlpatterns5-dev-tools,
             xterm | x-terminal-emulator
 Suggests: clazy (>= 1.5), cmake, g++, git, meson, subversion, valgrind,
           python3-pylsp,
