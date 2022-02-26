@@ -10,7 +10,7 @@ export QT_SELECT := qt5
 # Upstream changelog
 upstream_changes = $(wildcard dist/changes-*)
 
-# Do build the HelloWorld plugin, as it is not needed
+# Do not build the HelloWorld plugin, as it is not needed
 export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
 
 # The clang-N used for the build by the unversioned clang
