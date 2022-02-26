@@ -34,7 +34,6 @@ Build-Depends: clang (>= 1:10~),
                qttools5-dev (>= 5.15.2~),
                qttools5-dev-tools (>= 5.15.2~),
                qttools5-private-dev (>= 5.15.2~),
-               qtxmlpatterns5-dev-tools (>= 5.15.2~),
                zlib1g-dev
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
