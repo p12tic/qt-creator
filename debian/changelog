@@ -1,13 +1,13 @@
-qtcreator (7.0.0~rc1-0r1) UNRELEASED; urgency=medium
+qtcreator (7.0.0~rc1-1) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream development release.
   * Drop the qtxmlpatterns5-dev-tools build dependency, not actually needed.
   * Stop recommending qtxmlpatterns5-dev-tools: nothing in qtcreator actually
     uses it, and QtXmlPatterns is considered deprecated upstream, so avoid
     installing it by default.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 Feb 2022 10:05:54 +0100
+ -- Pino Toscano <pino@debian.org>  Sat, 12 Mar 2022 08:11:01 +0100
 
 qtcreator (7.0.0~beta2-2) experimental; urgency=medium
 
