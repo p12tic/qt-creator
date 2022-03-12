@@ -1,6 +1,7 @@
-qtcreator (7.0.0~beta2-3) UNRELEASED; urgency=medium
+qtcreator (7.0.0~rc1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream development release.
   * Drop the qtxmlpatterns5-dev-tools build dependency, not actually needed.
   * Stop recommending qtxmlpatterns5-dev-tools: nothing in qtcreator actually
     uses it, and QtXmlPatterns is considered deprecated upstream, so avoid
