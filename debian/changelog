@@ -1,10 +1,10 @@
-qtcreator (7.0.1-0r1) UNRELEASED; urgency=medium
+qtcreator (7.0.1-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Drop the libjs-jquery build dependency, unused for a long time.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 23 Apr 2022 23:12:07 +0200
+ -- Pino Toscano <pino@debian.org>  Thu, 28 Apr 2022 04:47:18 +0200
 
 qtcreator (7.0.0-1) unstable; urgency=medium
 
