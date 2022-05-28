@@ -3,9 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Adam Majer <adamm@zombino.com>,
-           Jeremy Lainé <jeremy.laine@m4x.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
-           Simon Quigley <tsimonq2@debian.org>
 Build-Depends: clang (>= 1:10~),
                cmake (>= 3.16~),
                debhelper-compat (= 13),
