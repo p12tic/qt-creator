@@ -1,5 +1,4 @@
 #Backported patches
-upstream_Correctly-include-KSyntaxHighlighting-headers.patch
 
 # Debian patches.
 debian_paths.diff
