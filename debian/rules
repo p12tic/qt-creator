@@ -5,8 +5,6 @@
 
 include /usr/share/dpkg/architecture.mk
 
-export QT_SELECT := qt5
-
 # Upstream changelog
 upstream_changes = $(wildcard dist/changes-*)
 
@@ -57,7 +55,7 @@ override_dh_makeshlibs:
 	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/
 
 override_dh_shlibdeps:
-	echo 'libQt5DesignerComponents 5 libqt5designercomponents5 (>= $(call upstream_version_of_pkg,libqt5designercomponents5)~)' > debian/shlibs.local
+	echo 'libQt6DesignerComponents 6 libqt6designercomponents6 (>= $(call upstream_version_of_pkg,libqt6designercomponents6)~)' > debian/shlibs.local
 	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator
 	rm debian/shlibs.local
 

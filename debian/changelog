@@ -1,5 +1,33 @@
 qtcreator (7.0.2-100) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Switch qtcreator to build with Qt6 instead of Qt5:
+    - remove libkf5syntaxhighlighting-dev, libqt5opengl5-dev,
+      libqt5serialport5-dev, libqt5sql5-sqlite, libqt5svg5-dev,
+      libqt5x11extras5-dev, qml-module-qtquick-controls, qml-module-qtquick2,
+      qtbase5-dev, qtbase5-private-dev, qtdeclarative5-dev,
+      qtdeclarative5-private-dev, qtscript5-dev, qttools5-dev,
+      qttools5-dev-tools, and qttools5-private-dev
+    - add libqt6core5compat6-dev, libqt6opengl6-dev, libqt6quicktimeline6-dev,
+      libqt6serialport6-dev, libqt6shadertools6-dev, libqt6svg6-dev,
+      qt6-base-dev, qt6-base-private-dev, qt6-declarative-dev,
+      qt6-declarative-private-dev, qt6-quick3d-dev, qt6-tools-dev, and
+      qt6-tools-private-dev
+    - stop exporting QT_SELECT, no more needed
+    - replace libqt5designercomponents5 with libqt6designercomponents6 in the
+      strict dependency for Designer bits
+    - update the runtime dependencies/recommends/suggests:
+      - switch libqt5sql5-sqlite to libqt6sql6-sqlite
+      - switch qml-module-qtqml-models2 to qml6-module-qtqml-models
+      - switch qml-module-qtquick-controls to qml6-module-qtquick-controls
+      - switch qml-module-qtquick2 to qml6-module-qtquick
+      - drop qtchooser, no more needed with Qt6
+      - switch qmlscene to qmlscene-qt6
+      - drop qt5-doc, there is no Qt6 equivalent in Debian yet
+      - switch qtbase5-dev-tools to qt6-base-dev-tools
+      - switch qtdeclarative5-dev-tools to qt6-declarative-dev-tools
+      - switch qttools5-dev-tools to qt6-tools-dev-tools
+      - switch qttranslations5-l10n to qt6-translations-l10n
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2022 22:10:50 +0200
 
