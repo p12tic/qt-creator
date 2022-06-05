@@ -28,6 +28,8 @@ qtcreator (7.0.2-100) UNRELEASED; urgency=medium
       - switch qtdeclarative5-dev-tools to qt6-declarative-dev-tools
       - switch qttools5-dev-tools to qt6-tools-dev-tools
       - switch qttranslations5-l10n to qt6-translations-l10n
+    - the switch enables the build of the QML Designer plugin, which is built
+      only when using Qt >= 6.2.0 (Closes: #1006555)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2022 22:10:50 +0200
 
