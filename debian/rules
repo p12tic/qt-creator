@@ -40,6 +40,9 @@ endif
 	# Not needed
 	rm debian/tmp/usr/bin/qtcreator.sh
 
+	# License files of the embedded copy of KSyntaxHighlighting
+	rm -rf debian/tmp/usr/share/qtcreator/generic-highlighter/syntax/licenses/
+
 	# Remove extra exec permissions
 	find debian/tmp -name qmldir -type f -exec chmod -x {} \;
 

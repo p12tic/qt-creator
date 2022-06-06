@@ -32,6 +32,8 @@ qtcreator (7.0.2-100) UNRELEASED; urgency=medium
       which does not change the embedded copy of KSyntaxHighlighting, breaking
       its usage (used because there is no Qt6 version of KSyntaxHighlighting
       yet)
+    - remove the license files installed from the embedded copy of
+      KSyntaxHighlighting
     - the switch enables the build of the QML Designer plugin, which is built
       only when using Qt >= 6.2.0 (Closes: #1006555)
 
