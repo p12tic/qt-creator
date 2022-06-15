@@ -1,6 +1,8 @@
 qtcreator (7.0.2-100) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * Switch watch file to the unstable releases, mangling -beta/-rc in the
+    version.
   * Switch qtcreator to build with Qt6 instead of Qt5:
     - remove libkf5syntaxhighlighting-dev, libqt5opengl5-dev,
       libqt5serialport5-dev, libqt5sql5-sqlite, libqt5svg5-dev,
