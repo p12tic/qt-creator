@@ -8,6 +8,7 @@ qtcreator (8.0.0~beta1-0r1) UNRELEASED; urgency=medium
   * Update the patches:
     - upstream_Correctly-include-KSyntaxHighlighting-headers.patch: drop,
       backported from upstream
+    - debian_paths.diff: refresh
   * Switch qtcreator to build with Qt6 instead of Qt5:
     - remove libkf5syntaxhighlighting-dev, libqt5opengl5-dev,
       libqt5serialport5-dev, libqt5sql5-sqlite, libqt5svg5-dev,
