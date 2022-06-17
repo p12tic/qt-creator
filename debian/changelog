@@ -1,6 +1,7 @@
-qtcreator (7.0.2-100) UNRELEASED; urgency=medium
+qtcreator (8.0.0~beta1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream development release.
   * Switch watch file to the unstable releases, mangling -beta/-rc in the
     version.
   * Switch Vcs-* fields to the 'experimental' packaging branch.
