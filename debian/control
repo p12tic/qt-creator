@@ -5,6 +5,7 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Adam Majer <adamm@zombino.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
 Build-Depends: clang (>= 1:10~),
+               clangd (>= 1:14~),
                cmake (>= 3.16~),
                debhelper-compat (= 13),
                libclang-dev (>= 1:10~),
@@ -37,13 +38,13 @@ Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qtcreator/-/tree/experiment
 
 Package: qtcreator
 Architecture: any
-Depends: libqt6sql6-sqlite,
+Depends: clangd (>= 1:14~),
+         libqt6sql6-sqlite,
          qml6-module-qtqml-models,
          qml6-module-qtquick-controls,
          qml6-module-qtquick,
          qtcreator-data (= ${source:Version}),
          ${misc:Depends},
-         ${qtcreator:clang},
          ${shlibs:Depends}
 Recommends: clang-tidy,
             gdb,

@@ -39,6 +39,15 @@ qtcreator (8.0.0~beta1-0r1) UNRELEASED; urgency=medium
       KSyntaxHighlighting
     - the switch enables the build of the QML Designer plugin, which is built
       only when using Qt >= 6.2.0 (Closes: #1006555)
+  * qtcreator now uses clangd instead of libclang for the Clang code model:
+    - add clangd >= 14 as dependency: the unversioned name is used, and the
+      current requirement is 14+
+    - stop depending on the version of clang-N used by the unversioned clang,
+      as there is no more need for the exact Clang version to locale the Clang
+      includes
+    - add the same clangd version also as build dependency: while it is not
+      needed at build time, it makes sure that qtcreator can be built only when
+      the runtime clangd requirement is satisfied
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2022 22:10:50 +0200
 

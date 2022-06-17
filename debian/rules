@@ -11,8 +11,6 @@ upstream_changes = $(wildcard dist/changes-*)
 # Do not build the HelloWorld plugin, as it is not needed
 export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
 
-# The clang-N used for the build by the unversioned clang
-current_clang_pkg = $(shell dpkg -S "$(shell realpath $(shell env PATH=$$(echo "$$PATH" | sed -r -e 's|/usr/lib/ccache/?:||') which clang))" | cut -d: -f1)
 # The upstream version of a package passed as parameter
 upstream_version_of_pkg = $(shell dpkg-query -f '$${Version}' -W $(1) | sed -e 's/-[^-]*$$//')
 
@@ -61,6 +59,3 @@ override_dh_shlibdeps:
 	echo 'libQt6DesignerComponents 6 libqt6designercomponents6 (>= $(call upstream_version_of_pkg,libqt6designercomponents6)~)' > debian/shlibs.local
 	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator
 	rm debian/shlibs.local
-
-override_dh_gencontrol-arch:
-	dh_gencontrol -a -- -V'qtcreator:clang=$(current_clang_pkg) (>= $(call upstream_version_of_pkg,$(current_clang_pkg))~)'
