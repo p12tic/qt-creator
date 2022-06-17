@@ -1,6 +1,6 @@
-qtcreator (8.0.0~beta1-0r1) UNRELEASED; urgency=medium
+qtcreator (8.0.0~beta1-1) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream development release.
   * Switch watch file to the unstable releases, mangling -beta/-rc in the
     version.
@@ -50,7 +50,7 @@ qtcreator (8.0.0~beta1-0r1) UNRELEASED; urgency=medium
       needed at build time, it makes sure that qtcreator can be built only when
       the runtime clangd requirement is satisfied
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2022 22:10:50 +0200
+ -- Pino Toscano <pino@debian.org>  Fri, 17 Jun 2022 20:16:14 +0200
 
 qtcreator (7.0.2-2) unstable; urgency=medium
 
