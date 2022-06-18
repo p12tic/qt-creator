@@ -5,9 +5,6 @@
 
 include /usr/share/dpkg/architecture.mk
 
-# Upstream changelog
-upstream_changes = $(wildcard dist/changes-*)
-
 # Do not build the HelloWorld plugin, as it is not needed
 export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
 
@@ -47,10 +44,6 @@ endif
 execute_after_dh_install:
 	# Copied in qtcreator-doc already
 	rm -rf debian/qtcreator-data/usr/share/qtcreator/doc/
-
-override_dh_installdocs-indep:
-	dh_installdocs -pqtcreator-data $(upstream_changes)
-	dh_installdocs -i --remaining-packages
 
 override_dh_makeshlibs:
 	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qtcreator/

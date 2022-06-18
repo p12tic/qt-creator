@@ -7,6 +7,8 @@ qtcreator (8.0.0~beta1-2) UNRELEASED; urgency=medium
       embedded copy
     - drop zlib1g-dev, not directly used
     - explicitly add python3, used during the build
+  * Use a qtcreator-data.docs file to install the upstream changelog files,
+    rather than passing all of them as arguments to dh_installdocs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jun 2022 07:00:29 +0200
 
