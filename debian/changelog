@@ -9,6 +9,8 @@ qtcreator (8.0.0~beta1-2) UNRELEASED; urgency=medium
     - explicitly add python3, used during the build
   * Use a qtcreator-data.docs file to install the upstream changelog files,
     rather than passing all of them as arguments to dh_installdocs.
+  * Limit the search of 'qmldir' files only to those executable, and make the
+    chmod call verbose so it is easier to see whether there are any.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jun 2022 07:00:29 +0200
 

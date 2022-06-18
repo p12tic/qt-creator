@@ -39,7 +39,7 @@ endif
 	rm -rf debian/tmp/usr/share/qtcreator/generic-highlighter/syntax/licenses/
 
 	# Remove extra exec permissions
-	find debian/tmp -name qmldir -type f -exec chmod -x {} \;
+	find debian/tmp -name qmldir -type f -perm /111 -exec chmod -v -x {} \;
 
 execute_after_dh_install:
 	# Copied in qtcreator-doc already
