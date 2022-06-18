@@ -1,5 +1,12 @@
 qtcreator (8.0.0~beta1-2) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Update the build dependencies according to the upstream build system:
+    - drop libicu-dev, no more used for many releases already
+    - drop liblitehtml-dev, as the system version is not enough to replace the
+      embedded copy
+    - drop zlib1g-dev, not directly used
+    - explicitly add python3, used during the build
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Jun 2022 07:00:29 +0200
 
