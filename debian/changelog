@@ -1,6 +1,7 @@
-qtcreator (8.0.0~beta1-2) UNRELEASED; urgency=medium
+qtcreator (8.0.0~beta2-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream development release.
   * Update the build dependencies according to the upstream build system:
     - drop libicu-dev, no more used for many releases already
     - drop liblitehtml-dev, as the system version is not enough to replace the
