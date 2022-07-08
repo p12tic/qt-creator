@@ -11,6 +11,14 @@ export QTC_BUILD_PLUGIN_HELLOWORLD=FALSE
 # The upstream version of a package passed as parameter
 upstream_version_of_pkg = $(shell dpkg-query -f '$${Version}' -W $(1) | sed -e 's/-[^-]*$$//')
 
+# the dwz processing for all the libraries and plugins can take a lot of memory,
+# which may be not enough on some architectures (typically 32bit), resulting in
+# dwz failing with "Could not allocate memory: Cannot allocate memory" errors;
+# hence, on architectures where we see this result, try to use a more memory
+# friendly processing for a lower number of DIEs (dwz default is 10M)
+archs_with_dwz_low_mem = armel armhf mipsel
+dwz_low_mem = 5000000
+
 %:
 	dh $@ --builddirectory=builddir
 
@@ -52,3 +60,8 @@ override_dh_shlibdeps:
 	echo 'libQt6DesignerComponents 6 libqt6designercomponents6 (>= $(call upstream_version_of_pkg,libqt6designercomponents6)~)' > debian/shlibs.local
 	dh_shlibdeps -l$(CURDIR)/debian/qtcreator/usr/lib/$(DEB_HOST_MULTIARCH)/qtcreator
 	rm debian/shlibs.local
+
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(archs_with_dwz_low_mem)))
+override_dh_dwz:
+	dh_dwz -- --low-mem-die-limit $(dwz_low_mem)
+endif
