@@ -17,7 +17,7 @@ upstream_version_of_pkg = $(shell dpkg-query -f '$${Version}' -W $(1) | sed -e '
 # hence, on architectures where we see this result, try to use a more memory
 # friendly processing for a lower number of DIEs (dwz default is 10M)
 archs_with_dwz_low_mem = armel armhf mipsel
-dwz_low_mem = 5000000
+dwz_low_mem = 3000000
 
 %:
 	dh $@ --builddirectory=builddir

@@ -1,7 +1,7 @@
 qtcreator (8.0.0~rc1-2) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
-  * Pass --low-mem-die-limit 5000000 to dwz on some architectures (currently:
+  * Pass --low-mem-die-limit 3000000 to dwz on some architectures (currently:
     armel armhf mipsel), as an attempt to complete the dwz processing without
     running into "out of memory" failures.
 
