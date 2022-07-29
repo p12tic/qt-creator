@@ -1,3 +1,10 @@
+qtcreator (8.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Fri, 29 Jul 2022 05:55:19 +0200
+
 qtcreator (8.0.0-1) experimental; urgency=medium
 
   * Team upload.
