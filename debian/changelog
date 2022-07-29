@@ -1,5 +1,8 @@
 qtcreator (8.0.0-3) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Add the qml6-module-qtqml-workerscript, and qml6-module-qtquick-layouts
+    dependencies, needed in various QML sources. (Closes: #1016210)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Jul 2022 00:33:06 +0200
 
