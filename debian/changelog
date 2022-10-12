@@ -7,6 +7,9 @@ qtcreator (9.0.0~beta1-0r1) UNRELEASED; urgency=medium
   * Update the build dependencies according to the upstream build system:
     - bump all the Qt packages to 6.2, in case they did not have a version set
       already
+  * Stop shipping the upstream changelogs in /usr/share/doc/qtcreator-data/,
+    as upstream now installs them in /usr/share/qtcreator/changelog/, and they
+    can be opened from the Help menu.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 12 Oct 2022 20:22:58 +0200
 
