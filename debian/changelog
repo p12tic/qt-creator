@@ -4,6 +4,9 @@ qtcreator (9.0.0~beta1-0r1) UNRELEASED; urgency=medium
   * New upstream development release.
   * Switch watch file to the unstable releases.
   * Switch Vcs-* fields to the 'experimental' packaging branch.
+  * Update the build dependencies according to the upstream build system:
+    - bump all the Qt packages to 6.2, in case they did not have a version set
+      already
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 12 Oct 2022 20:22:58 +0200
 
