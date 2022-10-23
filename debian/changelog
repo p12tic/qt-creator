@@ -1,6 +1,7 @@
-qtcreator (8.0.1-2) UNRELEASED; urgency=medium
+qtcreator (8.0.2-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream release.
   * Drop the qt6-qpa-plugins dependency, as the Qt6 6.3.1 packaging provides
     all the essential bits in library packages.
 
