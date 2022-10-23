@@ -4,6 +4,7 @@ qtcreator (8.0.2-0r1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop the qt6-qpa-plugins dependency, as the Qt6 6.3.1 packaging provides
     all the essential bits in library packages.
+  * Remove breaks/replaces for versions older than oldstable.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Aug 2022 05:46:43 +0200
 

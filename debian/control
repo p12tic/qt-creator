@@ -59,8 +59,6 @@ Recommends: clang-tidy,
             xterm | x-terminal-emulator
 Suggests: clazy (>= 1.5), cmake, g++, git, meson, subversion, valgrind,
           python3-pylsp,
-Breaks: qtcreator-data (<< 4.5.2-2~)
-Replaces: qtcreator-data (<< 4.5.2-2~)
 Description: integrated development environment (IDE) for Qt
  Qt Creator is a cross-platform integrated development environment (IDE)
  designed to make development with the Qt application framework faster
