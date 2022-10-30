@@ -1,6 +1,6 @@
-qtcreator (9.0.0~beta2-0r1) UNRELEASED; urgency=medium
+qtcreator (9.0.0~beta2-1) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream development release.
   * Switch watch file to the unstable releases.
   * Switch Vcs-* fields to the 'experimental' packaging branch.
@@ -11,7 +11,7 @@ qtcreator (9.0.0~beta2-0r1) UNRELEASED; urgency=medium
     as upstream now installs them in /usr/share/qtcreator/changelog/, and they
     can be opened from the Help menu.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 12 Oct 2022 20:22:58 +0200
+ -- Pino Toscano <pino@debian.org>  Sun, 30 Oct 2022 07:53:39 +0100
 
 qtcreator (8.0.1-1) unstable; urgency=medium
 
