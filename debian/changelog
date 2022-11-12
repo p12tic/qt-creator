@@ -2,6 +2,9 @@ qtcreator (9.0.0~rc1-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream development release.
+  * Add the qt6-image-formats-plugins dependency to qtcreator-doc: some of the
+    images are in webp format, and qt6-image-formats-plugins contains the Qt
+    plugin to open them.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 12 Nov 2022 08:53:16 +0100
 

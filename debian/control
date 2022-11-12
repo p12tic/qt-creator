@@ -88,7 +88,8 @@ Package: qtcreator-doc
 Architecture: all
 Multi-Arch: foreign
 Section: doc
-Depends: ${misc:Depends}
+Depends: qt6-image-formats-plugins,
+         ${misc:Depends},
 Description: documentation for Qt Creator IDE
  Qt Creator is a cross-platform integrated development environment (IDE)
  designed to make development with the Qt application framework faster
