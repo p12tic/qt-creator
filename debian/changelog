@@ -1,10 +1,10 @@
-qtcreator (9.0.0-0r1) UNRELEASED; urgency=medium
+qtcreator (9.0.0-1) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Switch watch file back to stable releases.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Nov 2022 20:39:52 +0100
+ -- Pino Toscano <pino@debian.org>  Thu, 24 Nov 2022 22:05:01 +0100
 
 qtcreator (9.0.0~rc1-1) experimental; urgency=medium
 
