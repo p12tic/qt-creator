@@ -1,6 +1,6 @@
-qtcreator (8.0.2-0r1) UNRELEASED; urgency=medium
+qtcreator (8.0.2-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Drop the qt6-qpa-plugins dependency, as the Qt6 6.3.1 packaging provides
     all the essential bits in library packages.
@@ -10,7 +10,7 @@ qtcreator (8.0.2-0r1) UNRELEASED; urgency=medium
     the current version pulled by llvm-dev): it is still affected by #1021857,
     and the LLVM maintainers have not fixed it in testing for almost 2 months.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Aug 2022 05:46:43 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 26 Nov 2022 08:30:01 +0100
 
 qtcreator (8.0.1-1) unstable; urgency=medium
 
