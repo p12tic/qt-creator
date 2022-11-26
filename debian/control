@@ -28,6 +28,9 @@ Build-Depends: clang (>= 1:10~),
                qt6-quick3d-dev (>= 6.2.4-2~),
                qt6-tools-dev (>= 6.2.4-2~),
                qt6-tools-private-dev (>= 6.2.4-2~),
+# workaround dependency issues in llvm (#1021857)
+               clang-tidy,
+               clang-tools,
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://doc.qt.io/qt-5/topics-app-development.html
