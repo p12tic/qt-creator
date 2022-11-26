@@ -28,6 +28,9 @@ Build-Depends: clang (>= 1:10~),
                qt6-quick3d-dev (>= 6.2.4-2~),
                qt6-tools-dev (>= 6.2.4-2~),
                qt6-tools-private-dev (>= 6.2.4-2~),
+# workaround dependency issues in llvm (#1021857)
+               clang-tidy,
+               clang-tools,
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://doc.qt.io/qt-5/topics-app-development.html
@@ -43,7 +46,6 @@ Depends: clangd (>= 1:14~),
          qml6-module-qtquick-controls,
          qml6-module-qtquick-layouts,
          qml6-module-qtquick,
-         qt6-qpa-plugins,
          qtcreator-data (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
@@ -60,8 +62,6 @@ Recommends: clang-tidy,
             xterm | x-terminal-emulator
 Suggests: clazy (>= 1.5), cmake, g++, git, meson, subversion, valgrind,
           python3-pylsp,
-Breaks: qtcreator-data (<< 4.5.2-2~)
-Replaces: qtcreator-data (<< 4.5.2-2~)
 Description: integrated development environment (IDE) for Qt
  Qt Creator is a cross-platform integrated development environment (IDE)
  designed to make development with the Qt application framework faster
