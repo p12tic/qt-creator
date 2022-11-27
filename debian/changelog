@@ -2,6 +2,11 @@ qtcreator (9.0.0-2) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * Merge changes from 8.0.2-1.
+  * Build using clang on mips64el, and mipsel, to workaround a GCC bug:
+    https://gcc.gnu.org/bugzilla/show_bug.cgi?id=102602
+    - point CC & CXX to clang
+    - restore explicit as-needed linking, as it seems needed when using clang
+    - disable the build with precompiled headers (PCH), as it is not working
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 Nov 2022 08:53:12 +0100
 
