@@ -23,6 +23,8 @@ archs_using_clang = mips64el mipsel
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(archs_using_clang)))
 export CC=clang
 export CXX=clang++
+export DEB_CFLAGS_MAINT_APPEND := -gdwarf-4
+export DEB_CXXFLAGS_MAINT_APPEND := -gdwarf-4
 export DEB_LDFLAGS_MAINT_APPEND := -Wl,--as-needed
 EXTRA_CMAKE_ARGS += -DBUILD_WITH_PCH=OFF
 endif
