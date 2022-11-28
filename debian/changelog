@@ -1,12 +1,12 @@
-qtcreator (9.0.0-3) UNRELEASED; urgency=medium
+qtcreator (9.0.0-3) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * When building with clang, force the v4 of the DWARF info: apparently the
     DWARF v5 that clang produces are not fully supported by dwz (see also
     #1016936):
     - append -gdwarf-4 to CFLAGS and CXXFLAGS
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 28 Nov 2022 07:25:12 +0100
+ -- Pino Toscano <pino@debian.org>  Mon, 28 Nov 2022 20:51:55 +0100
 
 qtcreator (9.0.0-2) experimental; urgency=medium
 
