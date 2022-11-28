@@ -1,3 +1,8 @@
+qtcreator (9.0.0-3) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 28 Nov 2022 07:25:12 +0100
+
 qtcreator (9.0.0-2) experimental; urgency=medium
 
   * Team upload.
