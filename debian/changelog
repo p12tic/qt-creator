@@ -1,5 +1,7 @@
 qtcreator (9.0.0-4) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Switch Vcs-* fields back to the 'master' packaging branch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 29 Nov 2022 09:16:08 +0100
 
