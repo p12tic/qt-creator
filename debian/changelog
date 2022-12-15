@@ -1,3 +1,10 @@
+qtcreator (9.0.1-0r1) UNRELEASED; urgency=medium
+
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 15 Dec 2022 21:57:09 +0100
+
 qtcreator (9.0.0-4) unstable; urgency=medium
 
   * Team upload.
